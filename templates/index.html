@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDC Dataset Search</title>
+    <script>
+        async function search() {
+            let query = document.getElementById("query").value;
+            let response = await fetch(`/search?query=${query}`);
+            let data = await response.json();
+
+            let resultsDiv = document.getElementById("results");
+            resultsDiv.innerHTML = "";
+
+            if (data.length === 0) {
+                resultsDiv.innerHTML = "<p>No results found.</p>";
+                return;
+            }
+
+            data.forEach(item => {
+                resultsDiv.innerHTML += `<p><a href="${item.url}" target="_blank">${item.title}</a> - ${item.description}</p>`;
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>CDC Dataset Search</h1>
+    <input type="text" id="query" placeholder="Enter a search term...">
+    <button onclick="search()">Search</button>
+    <div id="results"></div>
+</body>
+</html>
