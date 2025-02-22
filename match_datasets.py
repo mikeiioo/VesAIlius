@@ -1,30 +1,45 @@
 from pymongo import MongoClient
-from process_query import process_query_with_mistral
+from sentence_transformers import SentenceTransformer
+import numpy as np
 from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME
-import openai
 
+# Load SentenceTransformer model
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
+# Connect to MongoDB Atlas
 client = MongoClient(MONGO_URI)
 db = client[DATABASE_NAME]
 collection = db[COLLECTION_NAME]
 
-def search_and_rank_datasets(user_query):
-    """Search MongoDB datasets and rank them using Mistral AI."""
-    
-    query_filter = {"$text": {"$search": user_query}}
-    initial_results = list(collection.find(query_filter, {"_id": 0}).limit(10))
+def generate_query_embedding(query):
+    """Generate an embedding for the user's query."""
+    return model.encode(query).tolist()
 
-    if not initial_results:
-        return []
+def search_and_rank_datasets(user_query, num_results=5):
+    """Search for the most relevant datasets using MongoDB Atlas vector search."""
+    query_embedding = generate_query_embedding(user_query)
 
-    dataset_text = "\n".join([f"{d['title']}: {d['description']}" for d in initial_results])
+    search_results = collection.aggregate([
+        {
+            "$vectorSearch": {
+                "index": "default",  # Replace with your actual index name
+                "path": "embedding",
+                "queryVector": query_embedding,
+                "numCandidates": 10,  # Number of candidates for search
+                "limit": num_results
+            }
+        }
+    ])
 
-    response = openai.ChatCompletion.create(
-        model="mistral-tiny",
-        messages=[
-            {"role": "system", "content": "Rank the following datasets based on query relevance."},
-            {"role": "user", "content": f"Query: {user_query}\n\nAvailable Datasets:\n{dataset_text}\n\nRank the top 5."}
-        ],
-        api_key=MISTRAL_API_KEY
-    )
+    return list(search_results)
 
-    return response["choices"][0]["message"]["content"]
+# Example usage
+if __name__ == "__main__":
+    query = "I want Reproductive data"
+    results = search_and_rank_datasets(query)
+ 
+    for dataset in results:
+        print(f"Title: {dataset['title']}")
+        print(f"Tags: {', '.join(dataset['tags'])}")
+        print(f"URL: {dataset['url']}")
+        print("---")

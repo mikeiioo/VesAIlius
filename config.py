@@ -1,5 +1,5 @@
 MISTRAL_API_KEY = "your_api_key_here"
-MONGO_URI = "mongodb://localhost:27017/"
+MONGO_URI = "mongodb+srv://hatmatty:mLT7nUkr6OLdc0xW@cluster0.enmtn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0&tlsAllowInvalidCertificates=true"
 DATABASE_NAME = "cdc_database"
 COLLECTION_NAME = "datasets"
 CONFIG_COLLECTION = "config"

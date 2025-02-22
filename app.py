@@ -20,12 +20,25 @@ def home():
 
 @app.route('/search', methods=['GET'])
 def search_datasets():
-    user_query = request.args.get("query", "")
+    """Search and return relevant datasets based on user query."""
+    user_query = request.args.get("query", "").strip()
+
     if not user_query:
         return jsonify({"error": "No query provided"}), 400
 
     results = search_and_rank_datasets(user_query)
-    return jsonify(results)
+
+    # Format response
+    formatted_results = [
+        {
+            "title": dataset["title"],
+            "tags": dataset.get("tags", []),
+            "url": dataset["url"]
+        }
+        for dataset in results
+    ]
+
+    return jsonify(formatted_results)
 
 if __name__ == '__main__':
     app.run(debug=True)
