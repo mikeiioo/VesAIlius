@@ -11,6 +11,8 @@ client = MongoClient(MONGO_URI)
 db = client[DATABASE_NAME]
 collection = db[COLLECTION_NAME]
 
+fetch_and_store_cdc_data()
+
 @app.route('/')
 def home():
     return render_template("index.html")
@@ -24,12 +26,12 @@ def search_datasets():
     results = search_and_rank_datasets(user_query)
     return jsonify(results)
 
-@app.route('/update_datasets', methods=['POST'])
-def update_datasets():
-    """Manually trigger dataset fetching by setting the update flag."""
-    set_fetch_flag(False) # Set to True to fetch data
-    fetch_and_store_cdc_data()
-    return jsonify({"message": "Dataset update triggered."})
+# @app.route('/update_datasets', methods=['POST'])
+# def update_datasets():
+#     """Manually trigger dataset fetching by setting the update flag."""
+#     set_fetch_flag(True) # Set to True to fetch data, False when not fetching
+#     fetch_and_store_cdc_data()
+#     return jsonify({"message": "Dataset update triggered."})
 
 if __name__ == '__main__':
     app.run(debug=True)

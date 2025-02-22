@@ -21,17 +21,17 @@
             });
         }
 
-        async function updateDatasets() {
-            await fetch("/update_datasets", { method: "POST" });
-            alert("Dataset update triggered!");
-        }
+        // async function updateDatasets() {
+        //     await fetch("/update_datasets", { method: "POST" });
+        //     alert("Dataset update triggered!");
+        // }
     </script>
 </head>
 <body>
     <h1>CDC Dataset Search</h1>
     <input type="text" id="query" placeholder="Enter a search term...">
     <button onclick="search()">Search</button>
-    <button onclick="updateDatasets()">Update Datasets</button>
+    <!-- <button onclick="updateDatasets()">Update Datasets</button> -->
     <div id="results"></div>
 </body>
 </html>

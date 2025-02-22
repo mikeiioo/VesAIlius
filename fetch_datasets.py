@@ -2,7 +2,9 @@ import logging
 import internetarchive as ia
 import pandas as pd
 from pymongo import MongoClient
-from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME, CONFIG_COLLECTION
+from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME, CONFIG_COLLECTION, AUTO_FETCH_ON_START
+
+##### If you want to fetch on startup, set AUTO_FETCH_ON_START to True in config.py #####
 
 logging.basicConfig(filename="dataset_fetch.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
@@ -14,7 +16,7 @@ config_collection = db[CONFIG_COLLECTION]
 def should_fetch_data():
     """Check if the dataset update flag is set to True."""
     config = config_collection.find_one({"_id": "update_flag"})
-    return config and config.get("fetch", False)
+    return config and config.get("fetch", False) 
 
 def set_fetch_flag(value):
     """Set the dataset update flag to True or False."""
@@ -50,6 +52,8 @@ def fetch_and_store_cdc_data():
 
     # Reset the fetch flag after updating
     set_fetch_flag(False)
-
+    
 if __name__ == "__main__":
+    if AUTO_FETCH_ON_START:
+        set_fetch_flag(True)
     fetch_and_store_cdc_data()
