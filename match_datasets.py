@@ -15,7 +15,7 @@ def generate_query_embedding(query):
     """Generate an embedding for the user's query."""
     return model.encode(query).tolist()
 
-def search_and_rank_datasets(user_query, num_results=5):
+def search_and_rank_datasets(user_query, num_results=10):
     """Search for the most relevant datasets using MongoDB Atlas vector search."""
     query_embedding = generate_query_embedding(user_query)
 
