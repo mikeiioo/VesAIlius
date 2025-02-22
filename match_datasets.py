@@ -1,6 +1,7 @@
 from pymongo import MongoClient
 from sentence_transformers import SentenceTransformer
 import numpy as np
+import math
 from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME
 
 # Load SentenceTransformer model
@@ -25,7 +26,7 @@ def search_and_rank_datasets(user_query, num_results=5):
                 "index": "default",  # Replace with your actual index name
                 "path": "embedding",
                 "queryVector": query_embedding,
-                "numCandidates": 100,  # Number of candidates for search
+                "numCandidates": math.max(num_results*3, 100),  # Number of candidates for search
                 "limit": num_results
             }
         }
