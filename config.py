@@ -5,4 +5,4 @@ COLLECTION_NAME = "datasets"
 CONFIG_COLLECTION = "config"
 
 # Automatically fetch datasets on app start
-AUTO_FETCH_ON_START = False  # Implementer should change this if updates are needed
+AUTO_FETCH_ON_START = True  # Implementer should change this if updates are needed
