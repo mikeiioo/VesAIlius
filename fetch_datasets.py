@@ -1,12 +1,13 @@
 import logging
 import internetarchive as ia
 from pymongo import MongoClient
-from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME, AUTO_FETCH_ON_START
+from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME
 import os
 import csv
 import requests
 from sentence_transformers import SentenceTransformer
 import numpy as np
+import math
 
 LOG_FILE = "dataset_fetch.log"
 MAX_LOG_LINES = 1000  # Maximum lines before truncation
@@ -71,14 +72,19 @@ def generate_embedding(title, tags):
     return model.encode(combined_text).tolist()  # Convert to list for MongoDB storage
 
 # if you want to limit how many files are used for testing purposes
-# maxIterations = math.inf
-maxIterations = 10
+maxIterations = math.inf
+# maxIterations = 10
 def fetch_and_store_cdc_data():
     """Fetch CDC datasets, process metadata, and store in MongoDB with embeddings."""
-    if not AUTO_FETCH_ON_START:
-        logging.info("🚫 Auto-fetch is disabled in config. Skipping dataset fetch.")
-        return
 
+    # 🚨 Ask for user confirmation
+    print("⚠️ WARNING: This operation will DELETE all existing data in the database and re-fetch everything!")
+    confirm = input("Are you sure you want to continue? (yes/no): ").strip().lower()
+
+    if confirm not in ["y", "yes"]:
+        print("🚫 Operation canceled. No changes were made.")
+        return
+        
     truncate_log()
     COLLECTION_ID = "20250128-cdc-datasets"
     logging.info("🔄 Fetching dataset file list from Internet Archive...")
@@ -123,5 +129,4 @@ def fetch_and_store_cdc_data():
 
 if __name__ == "__main__":
     # ✅ Auto-fetch only runs if explicitly enabled
-    if AUTO_FETCH_ON_START:
-        fetch_and_store_cdc_data()
+    fetch_and_store_cdc_data()
