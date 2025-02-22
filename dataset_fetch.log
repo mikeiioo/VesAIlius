@@ -1,0 +1,1232 @@
+2025-02-22 12:20:21,929 - INFO - Fetching datasets from Internet Archive...
+2025-02-22 12:20:22,337 - INFO - ✅ 0 datasets successfully stored in MongoDB.
+2025-02-22 12:20:22,357 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 12:20:22,358 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-22 12:20:22,367 - INFO -  * Restarting with watchdog (fsevents)
+2025-02-22 12:20:23,057 - INFO - Fetching datasets from Internet Archive...
+2025-02-22 12:20:23,550 - INFO - ✅ 0 datasets successfully stored in MongoDB.
+2025-02-22 12:20:23,564 - WARNING -  * Debugger is active!
+2025-02-22 12:20:23,580 - INFO -  * Debugger PIN: 137-700-184
+2025-02-22 12:21:04,505 - INFO - 127.0.0.1 - - [22/Feb/2025 12:21:04] "GET / HTTP/1.1" 200 -
+2025-02-22 12:21:10,129 - INFO - 🔍 User searched: covid
+2025-02-22 12:21:10,153 - INFO - ❌ No results found.
+2025-02-22 12:21:10,154 - INFO - 127.0.0.1 - - [22/Feb/2025 12:21:10] "GET /search?query=covid HTTP/1.1" 200 -2025-02-22 12:27:58,936 - INFO - 🔄 Fetching datasets from Internet Archive...
+2025-02-22 12:27:59,439 - INFO - ✅ 0 datasets successfully stored in MongoDB.
+2025-02-22 12:27:59,454 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 12:27:59,454 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-22 12:27:59,461 - INFO -  * Restarting with watchdog (fsevents)
+2025-02-22 12:28:00,128 - INFO - 🔄 Fetching datasets from Internet Archive...
+2025-02-22 12:28:00,508 - INFO - ✅ 0 datasets successfully stored in MongoDB.
+2025-02-22 12:28:00,516 - WARNING -  * Debugger is active!
+2025-02-22 12:28:00,528 - INFO -  * Debugger PIN: 137-700-184
+2025-02-22 12:30:54,119 - INFO -  * Detected change in '/Users/donghyunkim/Georgia_Tech/CS/Hackalytics25/VesAIlius/fetch_datasets.py', reloading
+2025-02-22 12:30:55,649 - INFO -  * Restarting with watchdog (fsevents)
+2025-02-22 12:30:56,812 - INFO - 🔄 Fetching datasets from Internet Archive...
+2025-02-22 12:30:57,606 - INFO - ✅ 0 datasets successfully stored in MongoDB.
+2025-02-22 12:30:57,617 - WARNING -  * Debugger is active!
+2025-02-22 12:30:57,629 - INFO -  * Debugger PIN: 137-700-184
+2025-02-22 12:37:35,762 - INFO -  * Detected change in '/Users/donghyunkim/Georgia_Tech/CS/Hackalytics25/VesAIlius/fetch_datasets.py', reloading
+2025-02-22 12:37:36,725 - INFO -  * Restarting with watchdog (fsevents)
+2025-02-22 12:37:37,820 - INFO - 🔄 Fetching dataset file list from Internet Archive...
+2025-02-22 12:37:38,654 - INFO - ✅ Stored dataset: 1998-2022 Serotype Data for Invasive Pneumococcal Disease Cases by Age Group from Active Bacterial Core surveillance.csv
+2025-02-22 12:37:38,657 - INFO - ✅ Stored dataset: 2013-2014 PHAP Associates by State.csv
+2025-02-22 12:37:38,658 - INFO - ✅ Stored dataset: 2020-2021 Nationwide Blood Donor Seroprevalence Survey Combined Infection and Vaccination-Induced Seroprevalence Estimates.csv
+2025-02-22 12:37:38,658 - INFO - ✅ Stored dataset: 2020-2021 Nationwide Blood Donor Seroprevalence Survey Infection-Induced Seroprevalence Estimates.csv
+2025-02-22 12:37:38,659 - INFO - ✅ Stored dataset: 2020 Final Assisted Reproductive Technology ART Patient and Cycle Characteristics.csv
+2025-02-22 12:37:38,660 - INFO - ✅ Stored dataset: 2020 Final Assisted Reproductive Technology ART Services and Profiles.csv
+2025-02-22 12:37:38,661 - INFO - ✅ Stored dataset: 2020 Final Assisted Reproductive Technology ART Success Rates.csv
+2025-02-22 12:37:38,661 - INFO - ✅ Stored dataset: 2020 Final Assisted Reproductive Technology ART Summary.csv
+2025-02-22 12:37:38,662 - INFO - ✅ Stored dataset: 2021 Final Assisted Reproductive Technology ART Patient and Cycle Characteristics.csv
+2025-02-22 12:37:38,663 - INFO - ✅ Stored dataset: 2021 Final Assisted Reproductive Technology ART Services and Profiles.csv
+2025-02-22 12:37:38,664 - INFO - ✅ Stored dataset: 2021 Final Assisted Reproductive Technology ART Success Rates.csv
+2025-02-22 12:37:38,664 - INFO - ✅ Stored dataset: 2021 Final Assisted Reproductive Technology ART Summary.csv
+2025-02-22 12:37:38,665 - INFO - ✅ Stored dataset: 2022 2023 Nationwide Blood Donor Seroprevalence Survey Combined Infection and Vaccination-Induced Seroprevalence Estimates.csv
+2025-02-22 12:37:38,666 - INFO - ✅ Stored dataset: 2022 Final Assisted Reproductive Technology ART Patient and Cycle Characteristics.csv
+2025-02-22 12:37:38,666 - INFO - ✅ Stored dataset: 2022 Final Assisted Reproductive Technology ART Services and Profiles.csv
+2025-02-22 12:37:38,667 - INFO - ✅ Stored dataset: 2022 Final Assisted Reproductive Technology ART Success Rates.csv
+2025-02-22 12:37:38,668 - INFO - ✅ Stored dataset: 2022 Final Assisted Reproductive Technology ART Summary.csv
+2025-02-22 12:37:38,669 - INFO - ✅ Stored dataset: 2023 Respiratory Virus Response NSSP Emergency Department Visit Trajectories by State COVID-19 Flu RSV Combined.csv
+2025-02-22 12:37:38,669 - INFO - ✅ Stored dataset: 2023 Respiratory Virus Response NSSP Emergency Department Visits COVID-19 Flu RSV Combined.csv
+2025-02-22 12:37:38,670 - INFO - ✅ Stored dataset: 500 Cities Census Tract-level Data GIS Friendly Format 2016 release.csv
+2025-02-22 12:37:38,671 - INFO - ✅ Stored dataset: 500 Cities Census Tract-level Data GIS Friendly Format 2017 release.csv
+2025-02-22 12:37:38,672 - INFO - ✅ Stored dataset: 500 Cities Census Tract-level Data GIS Friendly Format 2018 release.csv
+2025-02-22 12:37:38,672 - INFO - ✅ Stored dataset: 500 Cities Census Tract-level Data GIS Friendly Format 2019 release.csv
+2025-02-22 12:37:38,673 - INFO - ✅ Stored dataset: 500 Cities City-level Data GIS Friendly Format 2016 release.csv
+2025-02-22 12:37:38,674 - INFO - ✅ Stored dataset: 500 Cities City-level Data GIS Friendly Format 2017 release.csv
+2025-02-22 12:37:38,674 - INFO - ✅ Stored dataset: 500 Cities City-level Data GIS Friendly Format 2018 release.csv
+2025-02-22 12:37:38,675 - INFO - ✅ Stored dataset: 500 Cities City-level Data GIS Friendly Format 2019 release.csv
+2025-02-22 12:37:38,676 - INFO - ✅ Stored dataset: 500 Cities Local Data for Better Health 2016 release.csv
+2025-02-22 12:37:38,676 - INFO - ✅ Stored dataset: 500 Cities Local Data for Better Health 2017 release.csv
+2025-02-22 12:37:38,677 - INFO - ✅ Stored dataset: 500 Cities Local Data for Better Health 2018 release.csv
+2025-02-22 12:37:38,678 - INFO - ✅ Stored dataset: 500 Cities Local Data for Better Health 2019 release.csv
+2025-02-22 12:37:38,679 - INFO - ✅ Stored dataset: AH COVID-19 Death Counts by County and Week 2020-present.csv
+2025-02-22 12:37:38,679 - INFO - ✅ Stored dataset: AH County of Occurrence COVID-19 Death Counts 2020 Provisional.csv
+2025-02-22 12:37:38,681 - INFO - ✅ Stored dataset: AH County of Residence COVID-19 Deaths Counts 2020 Provisional.csv
+2025-02-22 12:37:38,682 - INFO - ✅ Stored dataset: AH Cumulative Provisional COVID-19 Death Counts by Place of Death and Age Group from 2 1 2020 to 7 18 2020.csv
+2025-02-22 12:37:38,682 - INFO - ✅ Stored dataset: AH Cumulative Provisional COVID-19 Deaths by Sex Race and Age from 1 1 2020 to 7 28 2020.csv
+2025-02-22 12:37:38,683 - INFO - ✅ Stored dataset: AH Cumulative Provisional Death Counts by Sex Race and Age from 1 1 2020 to 7 4 2020.csv
+2025-02-22 12:37:38,683 - INFO - ✅ Stored dataset: AH Deaths by Educational Attainment 2019-2020.csv
+2025-02-22 12:37:38,684 - INFO - ✅ Stored dataset: AH Deaths by Week Sex and Age for 2018-2020.csv
+2025-02-22 12:37:38,685 - INFO - ✅ Stored dataset: AH Deaths by Year Sex and Age for 2015-2020.csv
+2025-02-22 12:37:38,686 - INFO - ✅ Stored dataset: AH Excess Deaths by Sex Age and Race and Hispanic Origin.csv
+2025-02-22 12:37:38,686 - INFO - ✅ Stored dataset: AH Monthly COVID-19 Deaths by Census Region Age Place and Race and Hispanic Origin 2020 Provisional.csv
+2025-02-22 12:37:38,687 - INFO - ✅ Stored dataset: AH Monthly Provisional COVID-19 Deaths by Census Region Age and Race and Hispanic Origin.csv
+2025-02-22 12:37:38,688 - INFO - ✅ Stored dataset: AH Monthly Provisional Counts of Deaths by Age Group and HHS region for Select Causes of Death 2019-2021.csv
+2025-02-22 12:37:38,688 - INFO - ✅ Stored dataset: AH Monthly Provisional Counts of Deaths for Select Causes of Death by Age and Race and Hispanic Origin.csv
+2025-02-22 12:37:38,689 - INFO - ✅ Stored dataset: AH Monthly Provisional Counts of Deaths for Select Causes of Death by Sex Age and Race and Hispanic Origin.csv
+2025-02-22 12:37:38,690 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Death Counts by Quarter and County.csv
+2025-02-22 12:37:38,690 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Death Counts by Week Race and Age US 2020-2023.csv
+2025-02-22 12:37:38,691 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths By Race Age and Sex from 3 1 2020 to 7 31 2020.csv
+2025-02-22 12:37:38,692 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths Counts by Health Service Area.csv
+2025-02-22 12:37:38,693 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths and Contributing Conditions by Sex Race and Hispanic Origin and Age 2020.csv
+2025-02-22 12:37:38,694 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by Age US Week 40 2020 through Week 39 2021.csv
+2025-02-22 12:37:38,695 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by County and Age for 2020.csv
+2025-02-22 12:37:38,696 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by Educational Attainment Race Sex and Age.csv
+2025-02-22 12:37:38,697 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by HHS Region Race Age 65plus.csv
+2025-02-22 12:37:38,708 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by HHS Region Race and Age 2015-2021.csv
+2025-02-22 12:37:38,709 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by HHS Region Race and Age 2015 to date.csv
+2025-02-22 12:37:38,712 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by HHS Region Race and Age Group 2020-2021 (1).csv
+2025-02-22 12:37:38,713 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by HHS Region Race and Age Group 2020-2021.csv
+2025-02-22 12:37:38,713 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by Hospital Referral Region.csv
+2025-02-22 12:37:38,714 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by Quarter County and Age for 2020.csv
+2025-02-22 12:37:38,714 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by Race and Educational Attainment.csv
+2025-02-22 12:37:38,715 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by Week Place of Death and Age.csv
+2025-02-22 12:37:38,715 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by Week Sex and Race and Hispanic Origin.csv
+2025-02-22 12:37:38,716 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by Week and Age (1).csv
+2025-02-22 12:37:38,726 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by Week and Age (2).csv
+2025-02-22 12:37:38,729 - INFO - ✅ Stored dataset: AH Provisional COVID-19 Deaths by Week and Age.csv
+2025-02-22 12:37:38,730 - INFO - ✅ Stored dataset: AH Provisional Cancer Death Counts by Month and Year 2020-2021.csv
+2025-02-22 12:37:38,731 - INFO - ✅ Stored dataset: AH Provisional Diabetes Death Counts for 2020.csv
+2025-02-22 12:37:38,732 - INFO - ✅ Stored dataset: AH Quarterly Excess Deaths by State Sex Age and Race.csv
+2025-02-22 12:37:38,733 - INFO - ✅ Stored dataset: AH Sickle Cell Disease Provisional Death Counts 2019-2021.csv
+2025-02-22 12:37:38,734 - INFO - ✅ Stored dataset: ASTDD Synopses of State Oral Health Programs Number of health agencies serving large jurisdictions with a dental program directed by a dental professional with public health training.csv
+2025-02-22 12:37:38,735 - INFO - ✅ Stored dataset: ASTDD Synopses of State Oral Health Programs Selected indicators.csv
+2025-02-22 12:37:38,736 - INFO - ✅ Stored dataset: ASTDD Synopses of State Oral Health Programs States with cleft lip palate registries and referral systems.csv
+2025-02-22 12:37:38,737 - INFO - ✅ Stored dataset: ASTDD Synopses of State Oral Health Programs States with dental directors or statewide oral health coalitions.csv
+2025-02-22 12:37:38,739 - INFO - ✅ Stored dataset: Access and Use of Telemedicine During COVID-19.csv
+2025-02-22 12:37:38,740 - INFO - ✅ Stored dataset: Active Bacterial Core surveillance ABCs Group A Streptococcus.csv
+2025-02-22 12:37:38,741 - INFO - ✅ Stored dataset: Active Bacterial Core surveillance ABCs Group B Streptococcus.csv
+2025-02-22 12:37:38,742 - INFO - ✅ Stored dataset: Active Bacterial Core surveillance ABCs Haemophilus influenzae.csv
+2025-02-22 12:37:38,743 - INFO - ✅ Stored dataset: Active Bacterial Core surveillance ABCs Neisseria meningitidis.csv
+2025-02-22 12:37:38,744 - INFO - ✅ Stored dataset: Active Bacterial Core surveillance ABCs Streptococcus pneumoniae.csv
+2025-02-22 12:37:38,745 - INFO - ✅ Stored dataset: Adult Tobacco Consumption In The U.S. 2000-Present.csv
+2025-02-22 12:37:38,746 - INFO - ✅ Stored dataset: Age-Related Disparities in Cigarette Smoking Among Adults.csv
+2025-02-22 12:37:38,747 - INFO - ✅ Stored dataset: Air Quality Measures on the National Environmental Health Tracking Network.csv
+2025-02-22 12:37:38,748 - INFO - ✅ Stored dataset: Alzheimer s Disease and Healthy Aging Data.csv
+2025-02-22 12:37:38,749 - INFO - ✅ Stored dataset: Alzheimer s Disease and Healthy Aging Indicators Caregiving.csv
+2025-02-22 12:37:38,750 - INFO - ✅ Stored dataset: Alzheimer s Disease and Healthy Aging Indicators Cognitive Decline.csv
+2025-02-22 12:37:38,751 - INFO - ✅ Stored dataset: American Community Survey ACS Vision and Eye Health Surveillance.csv
+2025-02-22 12:37:38,751 - INFO - ✅ Stored dataset: American Rescue Plan ARP Rural Payments.csv
+2025-02-22 12:37:38,752 - INFO - ✅ Stored dataset: An aggregated dataset of serially collected influenza A virus morbidity and titer measurements from virus-infected ferrets..csv
+2025-02-22 12:37:38,753 - INFO - ✅ Stored dataset: Archive COVID-19 LTC Program Vaccinations and Trends in the US Jurisdiction.csv
+2025-02-22 12:37:38,754 - INFO - ✅ Stored dataset: Archive COVID-19 Vaccination Demographic Trends by Report Date National.csv
+2025-02-22 12:37:38,755 - INFO - ✅ Stored dataset: Archive COVID-19 Vaccination and Case Trends by Age Group US.csv
+2025-02-22 12:37:38,756 - INFO - ✅ Stored dataset: Archived Cumulative percent of pregnant people aged 18-49 years receiving one+ dose of a COVID-19 vaccine during pregnancy by race ethnicity and date reported to Vaccine Safety Datalink US December.csv
+2025-02-22 12:37:38,757 - INFO - ✅ Stored dataset: Asthma in children younger than age 18 by selected characteristics US..csv
+2025-02-22 12:37:38,758 - INFO - ✅ Stored dataset: BEAM Dashboard Isolates by HHS Region.csv
+2025-02-22 12:37:38,759 - INFO - ✅ Stored dataset: BEAM Dashboard Report Data.csv
+2025-02-22 12:37:38,760 - INFO - ✅ Stored dataset: BEAM Dashboard Serotypes of concern Burden and Trajectory.csv
+2025-02-22 12:37:38,761 - INFO - ✅ Stored dataset: BEAM Dashboard Serotypes of concern Illnesses and Outbreaks.csv
+2025-02-22 12:37:38,762 - INFO - ✅ Stored dataset: BEAM Dashboard Top 30 Most Common Serotypes.csv
+2025-02-22 12:37:38,763 - INFO - ✅ Stored dataset: BRFSS Prevalence And Trends Data Health Care Access Coverage for 1995-2010.csv
+2025-02-22 12:37:38,764 - INFO - ✅ Stored dataset: BRFSS Prevalence And Trends Data Health Care Access Coverage for 2011.csv
+2025-02-22 12:37:38,765 - INFO - ✅ Stored dataset: BRFSS Prevalence And Trends Data Tobacco Use Adults Who Are Current Smokers for 1995-2010.csv
+2025-02-22 12:37:38,766 - INFO - ✅ Stored dataset: BRFSS Prevalence and Trends Data Tobacco Use Four Level Smoking Data for 1995-2010.csv
+2025-02-22 12:37:38,767 - INFO - ✅ Stored dataset: BRFSS Prevalence and Trends Data Tobacco Use Four Level Smoking Data for 2011.csv
+2025-02-22 12:37:38,768 - INFO - ✅ Stored dataset: BRFSS Table of Alcohol Consumption.csv
+2025-02-22 12:37:38,769 - INFO - ✅ Stored dataset: BRFSS Table of Cholesterol Awareness.csv
+2025-02-22 12:37:38,770 - INFO - ✅ Stored dataset: BRFSS Table of Chronic Health Indicators.csv
+2025-02-22 12:37:38,771 - INFO - ✅ Stored dataset: BRFSS Table of Colorectal Cancer Screening.csv
+2025-02-22 12:37:38,772 - INFO - ✅ Stored dataset: BRFSS Table of Demographics.csv
+2025-02-22 12:37:38,773 - INFO - ✅ Stored dataset: BRFSS Table of HIV-AIDS.csv
+2025-02-22 12:37:38,774 - INFO - ✅ Stored dataset: BRFSS Table of Health Care Access Coverage.csv
+2025-02-22 12:37:38,775 - INFO - ✅ Stored dataset: BRFSS Table of Health Status.csv
+2025-02-22 12:37:38,776 - INFO - ✅ Stored dataset: BRFSS Table of Hypertension Awareness.csv
+2025-02-22 12:37:38,777 - INFO - ✅ Stored dataset: BRFSS Table of Immunization.csv
+2025-02-22 12:37:38,779 - INFO - ✅ Stored dataset: BRFSS Table of Injury.csv
+2025-02-22 12:37:38,780 - INFO - ✅ Stored dataset: BRFSS Table of Oral Health.csv
+2025-02-22 12:37:38,781 - INFO - ✅ Stored dataset: BRFSS Table of Overweight and Obesity BMI.csv
+2025-02-22 12:37:38,782 - INFO - ✅ Stored dataset: BRFSS Table of Physical Activity.csv
+2025-02-22 12:37:38,782 - INFO - ✅ Stored dataset: BRFSS Table of Prostate Cancer.csv
+2025-02-22 12:37:38,784 - INFO - ✅ Stored dataset: BRFSS Table of Tobacco Use.csv
+2025-02-22 12:37:38,785 - INFO - ✅ Stored dataset: BRFSS Table of Women s Health.csv
+2025-02-22 12:37:38,786 - INFO - ✅ Stored dataset: BRFSS Vision Module Data Vision Eye Health.csv
+2025-02-22 12:37:38,787 - INFO - ✅ Stored dataset: Behavioral Risk Factor Data Tobacco Use 2010 And Prior.csv
+2025-02-22 12:37:38,788 - INFO - ✅ Stored dataset: Behavioral Risk Factor Data Tobacco Use 2011 to present.csv
+2025-02-22 12:37:38,789 - INFO - ✅ Stored dataset: Behavioral Risk Factor Surveillance System BRFSS Age-Adjusted Prevalence Data 2011 to present.csv
+2025-02-22 12:37:38,790 - INFO - ✅ Stored dataset: Behavioral Risk Factor Surveillance System BRFSS Historical Questions.csv
+2025-02-22 12:37:38,791 - INFO - ✅ Stored dataset: Behavioral Risk Factor Surveillance System BRFSS National Cardiovascular Disease Surveillance Data.csv
+2025-02-22 12:37:38,792 - INFO - ✅ Stored dataset: Behavioral Risk Factor Surveillance System BRFSS Prevalence Data 2010 and prior.csv
+2025-02-22 12:37:38,793 - INFO - ✅ Stored dataset: Behavioral Risk Factor Surveillance System BRFSS Prevalence Data 2011 to present.csv
+2025-02-22 12:37:38,794 - INFO - ✅ Stored dataset: Behavioral Risk Factors Selected Metropolitan Area Risk Trends SMART County Prevalence Data 2010 and prior.csv
+2025-02-22 12:37:38,795 - INFO - ✅ Stored dataset: Behavioral Risk Factors Selected Metropolitan Area Risk Trends SMART County Prevalence Data 2011 to 2012.csv
+2025-02-22 12:37:38,796 - INFO - ✅ Stored dataset: Behavioral Risk Factors Selected Metropolitan Area Risk Trends SMART MMSA Age-adjusted Prevalence Data 2011 to Present.csv
+2025-02-22 12:37:38,797 - INFO - ✅ Stored dataset: Behavioral Risk Factors Selected Metropolitan Area Risk Trends SMART MMSA Prevalence Data 2010 and Prior.csv
+2025-02-22 12:37:38,798 - INFO - ✅ Stored dataset: Behavioral Risk Factors Selected Metropolitan Area Risk Trends SMART MMSA Prevalence Data 2011 to Present.csv
+2025-02-22 12:37:38,800 - INFO - ✅ Stored dataset: Behavioral Risk Factors Vision and Eye Health Surveillance.csv
+2025-02-22 12:37:38,801 - INFO - ✅ Stored dataset: Biennial Overview of Post-acute and Long-term Care in the US Data from the 2020 National Post-acute and Long-term Care Study.csv
+2025-02-22 12:37:38,802 - INFO - ✅ Stored dataset: Blind or Serious Difficulty Seeing Age-Adjusted Prevalence by Total.csv
+2025-02-22 12:37:38,803 - INFO - ✅ Stored dataset: Botulism.csv
+2025-02-22 12:37:38,804 - INFO - ✅ Stored dataset: CDC.gov CleanSlate and Relaunch URL Mappings.csv
+2025-02-22 12:37:38,804 - INFO - ✅ Stored dataset: CDC.gov metrics hits by year.csv
+2025-02-22 12:37:38,806 - INFO - ✅ Stored dataset: CDC Best Practices for Comprehensive Tobacco Control Programs 2007.csv
+2025-02-22 12:37:38,807 - INFO - ✅ Stored dataset: CDC Best Practices for Comprehensive Tobacco Control Programs 2014.csv
+2025-02-22 12:37:38,808 - INFO - ✅ Stored dataset: CDC COVID-19 Cases and Deaths Ensemble Forecast Archive.csv
+2025-02-22 12:37:38,809 - INFO - ✅ Stored dataset: CDC Epidemic Trends and Rt.csv
+2025-02-22 12:37:38,810 - INFO - ✅ Stored dataset: CDC Library Subscription Databases.csv
+2025-02-22 12:37:38,811 - INFO - ✅ Stored dataset: CDC Nutrition Physical Activity and Obesity Legislation.csv
+2025-02-22 12:37:38,812 - INFO - ✅ Stored dataset: CDC PRAMStat Data for 2000.csv
+2025-02-22 12:37:38,813 - INFO - ✅ Stored dataset: CDC PRAMStat Data for 2001.csv
+2025-02-22 12:37:38,814 - INFO - ✅ Stored dataset: CDC PRAMStat Data for 2002.csv
+2025-02-22 12:37:38,814 - INFO - ✅ Stored dataset: CDC PRAMStat Data for 2003.csv
+2025-02-22 12:37:38,816 - INFO - ✅ Stored dataset: CDC PRAMStat Data for 2004.csv
+2025-02-22 12:37:38,817 - INFO - ✅ Stored dataset: CDC PRAMStat Data for 2005.csv
+2025-02-22 12:37:38,833 - INFO - ✅ Stored dataset: CDC PRAMStat Data for 2006.csv
+2025-02-22 12:37:38,835 - INFO - ✅ Stored dataset: CDC PRAMStat Data for 2007.csv
+2025-02-22 12:37:38,838 - INFO - ✅ Stored dataset: CDC PRAMStat Data for 2008.csv
+2025-02-22 12:37:38,840 - INFO - ✅ Stored dataset: CDC PRAMStat Data for 2009.csv
+2025-02-22 12:37:38,842 - INFO - ✅ Stored dataset: CDC PRAMStat Data for 2010.csv
+2025-02-22 12:37:38,843 - INFO - ✅ Stored dataset: CDC PRAMStat Data for 2011.csv
+2025-02-22 12:37:38,845 - INFO - ✅ Stored dataset: CDC STATE System E-Cigarette Legislation Licensure.csv
+2025-02-22 12:37:38,846 - INFO - ✅ Stored dataset: CDC STATE System E-Cigarette Legislation Preemption.csv
+2025-02-22 12:37:38,847 - INFO - ✅ Stored dataset: CDC STATE System E-Cigarette Legislation Preemption Summary.csv
+2025-02-22 12:37:38,848 - INFO - ✅ Stored dataset: CDC STATE System E-Cigarette Legislation Smokefree Campus.csv
+2025-02-22 12:37:38,848 - INFO - ✅ Stored dataset: CDC STATE System E-Cigarette Legislation Smokefree Indoor Air.csv
+2025-02-22 12:37:38,849 - INFO - ✅ Stored dataset: CDC STATE System E-Cigarette Legislation Smokefree Indoor Air Summary.csv
+2025-02-22 12:37:38,850 - INFO - ✅ Stored dataset: CDC STATE System E-Cigarette Legislation Tax.csv
+2025-02-22 12:37:38,851 - INFO - ✅ Stored dataset: CDC STATE System E-Cigarette Legislation Youth Access.csv
+2025-02-22 12:37:38,852 - INFO - ✅ Stored dataset: CDC STATE System Tobacco Legislation Licensure.csv
+2025-02-22 12:37:38,852 - INFO - ✅ Stored dataset: CDC STATE System Tobacco Legislation Preemption.csv
+2025-02-22 12:37:38,853 - INFO - ✅ Stored dataset: CDC STATE System Tobacco Legislation Preemption Summary.csv
+2025-02-22 12:37:38,854 - INFO - ✅ Stored dataset: CDC STATE System Tobacco Legislation Smokefree Campus.csv
+2025-02-22 12:37:38,854 - INFO - ✅ Stored dataset: CDC STATE System Tobacco Legislation Smokefree Indoor Air.csv
+2025-02-22 12:37:38,855 - INFO - ✅ Stored dataset: CDC STATE System Tobacco Legislation Smokefree Indoor Air Summary.csv
+2025-02-22 12:37:38,855 - INFO - ✅ Stored dataset: CDC STATE System Tobacco Legislation Tax.csv
+2025-02-22 12:37:38,856 - INFO - ✅ Stored dataset: CDC STATE System Tobacco Legislation Youth Access.csv
+2025-02-22 12:37:38,856 - INFO - ✅ Stored dataset: CDC Text Corpora for Learners HTML Mirrors of MMWR EID and PCD.csv
+2025-02-22 12:37:38,857 - INFO - ✅ Stored dataset: CDC Text Corpora for Learners MMWR EID and PCD Article Metadata.csv
+2025-02-22 12:37:38,857 - INFO - ✅ Stored dataset: CDT INDIVIDUAL BY WEEK LOCAL.csv
+2025-02-22 12:37:38,858 - INFO - ✅ Stored dataset: CDT INDIVIDUAL LINEAGES BY WEEK LOCAL.csv
+2025-02-22 12:37:38,859 - INFO - ✅ Stored dataset: CDT INDIVIDUAL LINEAGES BY WEEK LOCAL PIVOTED.csv
+2025-02-22 12:37:38,860 - INFO - ✅ Stored dataset: COVID-19-associated school closures US February 18 June 30 2020.csv
+2025-02-22 12:37:38,861 - INFO - ✅ Stored dataset: COVID-19-related School Closures USA 2020-2022.csv
+2025-02-22 12:37:38,862 - INFO - ✅ Stored dataset: COVID-19 Booster Dose Eligibility in the US.csv
+2025-02-22 12:37:38,862 - INFO - ✅ Stored dataset: COVID-19 Case Surveillance Public Use Data.csv
+2025-02-22 12:37:38,863 - INFO - ✅ Stored dataset: COVID-19 Case Surveillance Public Use Data with Geography.csv
+2025-02-22 12:37:38,863 - INFO - ✅ Stored dataset: COVID-19 Cases Among Healthcare Personnel by week ARCHIVED.csv
+2025-02-22 12:37:38,864 - INFO - ✅ Stored dataset: COVID-19 Coverage Assistance Fund Claims Reimbursement to Health Care Providers and Facilities for Services to the Underinsured.csv
+2025-02-22 12:37:38,865 - INFO - ✅ Stored dataset: COVID-19 Deaths Among Healthcare Personnel by week ARCHIVED.csv
+2025-02-22 12:37:38,865 - INFO - ✅ Stored dataset: COVID-19 Hospital Data from the National Hospital Care Survey.csv
+2025-02-22 12:37:38,866 - INFO - ✅ Stored dataset: COVID-19 Primary Series Completion Booster Dose Eligibility and Booster Dose Receipt by Age US.csv
+2025-02-22 12:37:38,867 - INFO - ✅ Stored dataset: COVID-19 State Tribal Local and Territorial Funding.csv
+2025-02-22 12:37:38,867 - INFO - ✅ Stored dataset: COVID-19 Updated Vaccines Distributed.csv
+2025-02-22 12:37:38,869 - INFO - ✅ Stored dataset: COVID-19 Vaccination Age and Sex Trends in the US National and Jurisdictional.csv
+2025-02-22 12:37:38,869 - INFO - ✅ Stored dataset: COVID-19 Vaccination Demographics in the US National.csv
+2025-02-22 12:37:38,870 - INFO - ✅ Stored dataset: COVID-19 Vaccination Trends in the US National and Jurisdictional.csv
+2025-02-22 12:37:38,871 - INFO - ✅ Stored dataset: COVID-19 Vaccinations in the US County.csv
+2025-02-22 12:37:38,872 - INFO - ✅ Stored dataset: COVID-19 Vaccinations in the US Jurisdiction.csv
+2025-02-22 12:37:38,873 - INFO - ✅ Stored dataset: COVID-19 Vaccine Distribution Allocations by Jurisdiction Janssen.csv
+2025-02-22 12:37:38,874 - INFO - ✅ Stored dataset: COVID-19 Vaccine Distribution Allocations by Jurisdiction Moderna.csv
+2025-02-22 12:37:38,875 - INFO - ✅ Stored dataset: COVID-19 Vaccine Distribution Allocations by Jurisdiction Pfizer.csv
+2025-02-22 12:37:38,876 - INFO - ✅ Stored dataset: COVID-19 Vaccines Up to Date Status.csv
+2025-02-22 12:37:38,877 - INFO - ✅ Stored dataset: COVID-19 Weekly Cases and Deaths by Age Race Ethnicity and Sex ARCHIVED.csv
+2025-02-22 12:37:38,878 - INFO - ✅ Stored dataset: Cancer Research Citation Search.csv
+2025-02-22 12:37:38,879 - INFO - ✅ Stored dataset: Cardiovascular Disease Death Rates Trends and Excess Death Rates Among US Adults 35 by County and Age Group 2010-2020.csv
+2025-02-22 12:37:38,880 - INFO - ✅ Stored dataset: Center for Medicare Medicaid Services CMS Medicare Claims data.csv
+2025-02-22 12:37:38,880 - INFO - ✅ Stored dataset: Characteristics Associated with Successful Foodborne Outbreak Investigations NEARS 2014 2016.csv
+2025-02-22 12:37:38,881 - INFO - ✅ Stored dataset: Claims Reimbursement to Health Care Providers and Facilities for Testing Treatment and Vaccine Administration of the Uninsured.csv
+2025-02-22 12:37:38,882 - INFO - ✅ Stored dataset: Commercial Medical Insurance MSCANCC Vision and Eye Health Surveillance.csv
+2025-02-22 12:37:38,883 - INFO - ✅ Stored dataset: Community Water Fluoridation State and County Level Statistics.csv
+2025-02-22 12:37:38,884 - INFO - ✅ Stored dataset: Conditions Contributing to COVID-19 Deaths by State and Age Provisional 2020-2023.csv
+2025-02-22 12:37:38,885 - INFO - ✅ Stored dataset: Cumulative Influenza Vaccination Coverage Adults 18 years and older by Age Group and Race Ethnicity US.csv
+2025-02-22 12:37:38,886 - INFO - ✅ Stored dataset: Cumulative Influenza Vaccination Coverage Differences by Race Ethnicity Children 6 months through 17 years US.csv
+2025-02-22 12:37:38,887 - INFO - ✅ Stored dataset: Cumulative Influenza Vaccination Coverage and Comparison Adults 18 Years and Older US National Immunization Survey-Adult COVID Module.csv
+2025-02-22 12:37:38,888 - INFO - ✅ Stored dataset: Cumulative Influenza Vaccination Coverage and Intent for Vaccination Among Adults 18 Years and Older by Age Race Ethnicity and COVID-19 Vaccination and Intent 2025.csv
+2025-02-22 12:37:38,891 - INFO - ✅ Stored dataset: Cumulative Influenza Vaccination Coverage by Age Group Race Ethnicity Urbanicity and Jurisdiction NIS-ACM Adults 18 Years and Older NIS ACM.csv
+2025-02-22 12:37:38,892 - INFO - ✅ Stored dataset: Cumulative Influenza Vaccination Coverage by Flu Season and Race Ethnicity Pregnant Persons 18-49 years.csv
+2025-02-22 12:37:38,893 - INFO - ✅ Stored dataset: Cumulative Influenza Vaccination Coverage by Race Ethnicity and Age Group NIS-ACM.csv
+2025-02-22 12:37:38,893 - INFO - ✅ Stored dataset: Cumulative Influenza Vaccination Coverage by Race Ethnicity and Age Group NIS-ACM Archived.csv
+2025-02-22 12:37:38,894 - INFO - ✅ Stored dataset: Cumulative Percentage of Adults 18 Years and Older Vaccinated with the Updated 2023-24 COVID-19 Vaccine.csv
+2025-02-22 12:37:38,895 - INFO - ✅ Stored dataset: Cumulative Percentage of Adults 60 Years and Older Vaccinated with RSV Vaccine by Demographic Characteristics.csv
+2025-02-22 12:37:38,895 - INFO - ✅ Stored dataset: Cumulative Percentage of Children Ages 6 Months 17 Years Who Are Up to Date with the Updated 2023-24 COVID-19 Vaccine.csv
+2025-02-22 12:37:38,897 - INFO - ✅ Stored dataset: DASH GSHS Fast Food.csv
+2025-02-22 12:37:38,897 - INFO - ✅ Stored dataset: DASH Global School-based Student Health Survey GSHS.csv
+2025-02-22 12:37:38,898 - INFO - ✅ Stored dataset: DASH YRBSS Alcohol and Other Drug Use HS.csv
+2025-02-22 12:37:38,899 - INFO - ✅ Stored dataset: DASH YRBSS Alcohol and Other Drug Use MS.csv
+2025-02-22 12:37:38,900 - INFO - ✅ Stored dataset: DASH YRBSS HS Cigar Use.csv
+2025-02-22 12:37:38,901 - INFO - ✅ Stored dataset: DASH YRBSS HS Cigar Use by total grade sex race sexual identity sexual contacts.csv
+2025-02-22 12:37:38,901 - INFO - ✅ Stored dataset: DASH YRBSS Sexual Behaviors HS.csv
+2025-02-22 12:37:38,902 - INFO - ✅ Stored dataset: DASH YRBSS Tobacco Use HS.csv
+2025-02-22 12:37:38,903 - INFO - ✅ Stored dataset: DASH YRBSS Weight Control MS.csv
+2025-02-22 12:37:38,904 - INFO - ✅ Stored dataset: DASH Youth Risk Behavior Surveillance System YRBSS High School Excluding Sexual Identity.csv
+2025-02-22 12:37:38,905 - INFO - ✅ Stored dataset: DASH Youth Risk Behavior Surveillance System YRBSS High School Including Sexual Orientation.csv
+2025-02-22 12:37:38,906 - INFO - ✅ Stored dataset: DASH Youth Risk Behavior Surveillance System YRBSS Middle School.csv
+2025-02-22 12:37:38,907 - INFO - ✅ Stored dataset: DHDS Prevalence of Disability Status and Types.csv
+2025-02-22 12:37:38,907 - INFO - ✅ Stored dataset: DHDS Prevalence of Disability Status and Types by Demographic Groups 2021.csv
+2025-02-22 12:37:38,908 - INFO - ✅ Stored dataset: DQS Cholesterol in adults age 20 and older by selected characteristics US.csv
+2025-02-22 12:37:38,909 - INFO - ✅ Stored dataset: DQS Community hospital beds by state US.csv
+2025-02-22 12:37:38,909 - INFO - ✅ Stored dataset: DQS Death rates for heart disease by sex race Hispanic origin and age US from CDC WONDER.csv
+2025-02-22 12:37:38,910 - INFO - ✅ Stored dataset: DQS Death rates for malignant neoplasms by sex race Hispanic origin and age US.csv
+2025-02-22 12:37:38,911 - INFO - ✅ Stored dataset: DQS Death rates for suicide by sex race Hispanic origin and age US from CDC WONDER.csv
+2025-02-22 12:37:38,912 - INFO - ✅ Stored dataset: DQS Delay or nonreceipt of needed medical care prescription drugs or dental care during the past 12 months due to cost US.csv
+2025-02-22 12:37:38,913 - INFO - ✅ Stored dataset: DQS Dentists by state US..csv
+2025-02-22 12:37:38,913 - INFO - ✅ Stored dataset: DQS Drug overdose death rates by drug type sex age race and Hispanic origin US from CDC WONDER.csv
+2025-02-22 12:37:38,914 - INFO - ✅ Stored dataset: DQS Estimate of Emergency Department Visits in the US 2016-2022.csv
+2025-02-22 12:37:38,917 - INFO - ✅ Stored dataset: DQS Estimate of Emergency Department Visits in the US Footnotes.csv
+2025-02-22 12:37:38,918 - INFO - ✅ Stored dataset: DQS Fetal late fetal and perinatal mortality rates by detailed race and Hispanic origin of mother US.csv
+2025-02-22 12:37:38,920 - INFO - ✅ Stored dataset: DQS Functional difficulties in adults age 18 and older by selected characteristics US.csv
+2025-02-22 12:37:38,921 - INFO - ✅ Stored dataset: DQS Health US Dataset Footnote Lookup.csv
+2025-02-22 12:37:38,922 - INFO - ✅ Stored dataset: DQS Health care employment and wages by selected occupations US.csv
+2025-02-22 12:37:38,925 - INFO - ✅ Stored dataset: DQS Hospital admission average length of stay outpatient visits and outpatient surgery by type of ownership and size of hospital US.csv
+2025-02-22 12:37:38,926 - INFO - ✅ Stored dataset: DQS Hypertension in adults age 20 and older by selected characteristics US..csv
+2025-02-22 12:37:38,926 - INFO - ✅ Stored dataset: DQS Infant mortality rates by race and Hispanic origin of mother state and territory US and U.S. dependent areas Archived.csv
+2025-02-22 12:37:38,927 - INFO - ✅ Stored dataset: DQS Infant neonatal and postneonatal mortality rates by detailed race and Hispanic origin of mother US.csv
+2025-02-22 12:37:38,928 - INFO - ✅ Stored dataset: DQS Initial injury-related visits to hospital emergency departments by sex age and intent and mechanism of injury US.csv
+2025-02-22 12:37:38,929 - INFO - ✅ Stored dataset: DQS Low birthweight live births by race and Hispanic origin of mother state and territory US and U.S. dependent areas.csv
+2025-02-22 12:37:38,930 - INFO - ✅ Stored dataset: DQS Medicaid coverage among persons under age 65 by selected characteristics US.csv
+2025-02-22 12:37:38,931 - INFO - ✅ Stored dataset: DQS NHANES Footnotes.csv
+2025-02-22 12:37:38,932 - INFO - ✅ Stored dataset: DQS NHANES Select Chronic Conditions Prevalence Estimates.csv
+2025-02-22 12:37:38,933 - INFO - ✅ Stored dataset: DQS NHANES Select Infectious Diseases Prevalence Estimates.csv
+2025-02-22 12:37:38,933 - INFO - ✅ Stored dataset: DQS NHANES Select Mean Dietary Intake Estimates.csv
+2025-02-22 12:37:38,934 - INFO - ✅ Stored dataset: DQS NHANES Select Oral Health Prevalence Estimates.csv
+2025-02-22 12:37:38,935 - INFO - ✅ Stored dataset: DQS NHIS Adult Summary Health Statistics.csv
+2025-02-22 12:37:38,937 - INFO - ✅ Stored dataset: DQS NHIS Adult Summary Statistics Footnotes.csv
+2025-02-22 12:37:38,939 - INFO - ✅ Stored dataset: DQS NHIS Children Summary Statistics.csv
+2025-02-22 12:37:38,940 - INFO - ✅ Stored dataset: DQS NHIS Children Summary Statistics Footnotes.csv
+2025-02-22 12:37:38,941 - INFO - ✅ Stored dataset: DQS Normal weight overweight and obesity among adults aged 20 and over by selected characteristics US.csv
+2025-02-22 12:37:38,942 - INFO - ✅ Stored dataset: DQS Obesity among children and adolescents aged 2 19 years by selected characteristics US.csv
+2025-02-22 12:37:38,944 - INFO - ✅ Stored dataset: DQS Prescription drug use in the past 30 days by sex race and Hispanic origin and age group US.csv
+2025-02-22 12:37:38,945 - INFO - ✅ Stored dataset: DQS Use of selected substances in the past 30 days among 12th graders 10th graders and 8th graders by sex and race US.csv
+2025-02-22 12:37:38,946 - INFO - ✅ Stored dataset: DQS Visits to physician offices hospital outpatient departments and hospital emergency departments by age sex and race US.csv
+2025-02-22 12:37:38,947 - INFO - ✅ Stored dataset: Daily Census Tract-Level Ozone Concentrations 2001-2005.csv
+2025-02-22 12:37:38,947 - INFO - ✅ Stored dataset: Daily Census Tract-Level Ozone Concentrations 2006-2010.csv
+2025-02-22 12:37:38,948 - INFO - ✅ Stored dataset: Daily Census Tract-Level Ozone Concentrations 2011-2014.csv
+2025-02-22 12:37:38,948 - INFO - ✅ Stored dataset: Daily County-Level Ozone Concentrations 2001-2019.csv
+2025-02-22 12:37:38,949 - INFO - ✅ Stored dataset: Daily County-Level PM2.5 Concentrations 2001-2014.csv
+2025-02-22 12:37:38,950 - INFO - ✅ Stored dataset: Daily County-Level PM2.5 Concentrations 2001-2019.csv
+2025-02-22 12:37:38,951 - INFO - ✅ Stored dataset: Data COVID-19 vaccination among pregnant people aged 18-49 years overall by race and ethnicity and date reported to CDC Vaccine Safety Datalink US.csv
+2025-02-22 12:37:38,952 - INFO - ✅ Stored dataset: Death rates for suicide by sex race Hispanic origin and age US.csv
+2025-02-22 12:37:38,952 - INFO - ✅ Stored dataset: Deaths from Pneumonia and Influenza P I and all deaths by state and region National Center For Health Statistics Mortality Surveillance System.csv
+2025-02-22 12:37:38,953 - INFO - ✅ Stored dataset: Deaths in 122 U.S. cities 1962-2016. 122 Cities Mortality Reporting System.csv
+2025-02-22 12:37:38,954 - INFO - ✅ Stored dataset: Delay or nonreceipt of needed medical care prescription drugs or dental care during the past 12 months due to cost US.csv
+2025-02-22 12:37:38,957 - INFO - ✅ Stored dataset: Development of an Empirically Derived Measure of Food Safety Culture in Restaurants.csv
+2025-02-22 12:37:38,959 - INFO - ✅ Stored dataset: Diabetes prevalence and glycemic control among adults 20 years of age and over by sex age and race and Hispanic origin US selected years 1988 1994 through 2003 2006 .csv
+2025-02-22 12:37:38,960 - INFO - ✅ Stored dataset: Diabetes prevalence and glycemic control among adults 20 years of age and over by sex age and race and Hispanic origin US selected years 1988 1994 through 2003 2006 meta.csv
+2025-02-22 12:37:38,961 - INFO - ✅ Stored dataset: Differences in Cumulative Influenza Vaccination Coverage by Selected Demographics Adults 18 Year and Older NIS Adult COVID Module.csv
+2025-02-22 12:37:38,961 - INFO - ✅ Stored dataset: Differences in Weekly Cumulative Percentage of Adults 60 Years and Older Vaccinated with Respiratory Syncytial Virus RSV Vaccine by Selected Demographics.csv
+2025-02-22 12:37:38,962 - INFO - ✅ Stored dataset: Disability-Related Disparities in Cigarette Smoking Among Adults.csv
+2025-02-22 12:37:38,963 - INFO - ✅ Stored dataset: Disability and Health Data System DHDS.csv
+2025-02-22 12:37:38,964 - INFO - ✅ Stored dataset: Distribution of COVID-19 Deaths and Populations by Jurisdiction Age and Race and Hispanic Origin.csv
+2025-02-22 12:37:38,964 - INFO - ✅ Stored dataset: Drug Use Data from Selected Hospitals.csv
+2025-02-22 12:37:38,965 - INFO - ✅ Stored dataset: Drug overdose death rates by drug type sex age race and Hispanic origin US.csv
+2025-02-22 12:37:38,965 - INFO - ✅ Stored dataset: Early Model-based Provisional Estimates of Drug Overdose Suicide and Transportation-related Deaths.csv
+2025-02-22 12:37:38,966 - INFO - ✅ Stored dataset: Education Attained Disparities in Cigarette Smoking Among Adults.csv
+2025-02-22 12:37:38,967 - INFO - ✅ Stored dataset: Efforts to sustain education and subsidized meal programs during COVID-19-related school closures US March-June 2020.csv
+2025-02-22 12:37:38,967 - INFO - ✅ Stored dataset: Electronic Health Information Legal Epidemiology Data Set 2014.csv
+2025-02-22 12:37:38,968 - INFO - ✅ Stored dataset: Employment-Related Disparities in Cigarette Smoking Among Adults.csv
+2025-02-22 12:37:38,969 - INFO - ✅ Stored dataset: Environmental Antecedents of Foodborne Illness Outbreaks.csv
+2025-02-22 12:37:38,970 - INFO - ✅ Stored dataset: Estimates of Emergency Department Visits in the US from 2016-2022.csv
+2025-02-22 12:37:38,970 - INFO - ✅ Stored dataset: Examination of SARS-CoV-2 serological test results from multiple commercial and laboratory platforms with an in-house serum panel.csv
+2025-02-22 12:37:38,971 - INFO - ✅ Stored dataset: Excess Deaths Associated with COVID-19.csv
+2025-02-22 12:37:38,972 - INFO - ✅ Stored dataset: Filtered View for BMI Viz.csv
+2025-02-22 12:37:38,973 - INFO - ✅ Stored dataset: Global Tobacco Surveillance System GTSS Global Adult Tobacco Survey GATS.csv
+2025-02-22 12:37:38,976 - INFO - ✅ Stored dataset: Global Tobacco Surveillance System GTSS Global Health Professions Student Survey GHPSS.csv
+2025-02-22 12:37:38,977 - INFO - ✅ Stored dataset: Global Tobacco Surveillance System GTSS Global School Personnel Survey GSPS.csv
+2025-02-22 12:37:38,977 - INFO - ✅ Stored dataset: Global Tobacco Surveillance System GTSS Global Youth Tobacco Survey GYTS.csv
+2025-02-22 12:37:38,978 - INFO - ✅ Stored dataset: HAICViz CDI.csv
+2025-02-22 12:37:38,978 - INFO - ✅ Stored dataset: HAICViz Candidemia.csv
+2025-02-22 12:37:38,979 - INFO - ✅ Stored dataset: HAICViz MuGSI.csv
+2025-02-22 12:37:38,980 - INFO - ✅ Stored dataset: HAICViz iSA.csv
+2025-02-22 12:37:38,980 - INFO - ✅ Stored dataset: HHS DRIVE.csv
+2025-02-22 12:37:38,981 - INFO - ✅ Stored dataset: HHS Provider Relief Fund.csv
+2025-02-22 12:37:38,982 - INFO - ✅ Stored dataset: HHS Unaccompanied Children Program.csv
+2025-02-22 12:37:38,982 - INFO - ✅ Stored dataset: HUS Footnote Look Up ASTHCH.csv
+2025-02-22 12:37:38,983 - INFO - ✅ Stored dataset: Health Service Area Population Greater Than 2Million.csv
+2025-02-22 12:37:38,984 - INFO - ✅ Stored dataset: Health conditions among children under 18 years of age by selected characteristics US average annual selected years 1997 1999 through 2008 2010.csv
+2025-02-22 12:37:38,984 - INFO - ✅ Stored dataset: Health conditions among children under age 18 by selected characteristics US.csv
+2025-02-22 12:37:38,985 - INFO - ✅ Stored dataset: Healthcare Cost and Utilization Project HCUP National Inpatient Sample.csv
+2025-02-22 12:37:38,986 - INFO - ✅ Stored dataset: Healthy People 2020 Final Progress Table.csv
+2025-02-22 12:37:38,986 - INFO - ✅ Stored dataset: Healthy People 2020 Final Progress by Population Group Chart and Table.csv
+2025-02-22 12:37:38,987 - INFO - ✅ Stored dataset: Healthy People 2020 Foundation Health Measures.csv
+2025-02-22 12:37:38,988 - INFO - ✅ Stored dataset: Healthy People 2020 Overview of Health Disparities.csv
+2025-02-22 12:37:38,989 - INFO - ✅ Stored dataset: Healthy People 2020 Tobacco Use Objectives.csv
+2025-02-22 12:37:38,990 - INFO - ✅ Stored dataset: Heart Disease Mortality Data Among US Adults 35 by State Territory and County.csv
+2025-02-22 12:37:38,990 - INFO - ✅ Stored dataset: Heart Disease Mortality Data Among US Adults 35 by State Territory and County 2015-2017.csv
+2025-02-22 12:37:38,991 - INFO - ✅ Stored dataset: Heart Disease Mortality Data Among US Adults 35 by State Territory and County 2016-2018.csv
+2025-02-22 12:37:38,992 - INFO - ✅ Stored dataset: Heart Disease Mortality Data Among US Adults 35 by State Territory and County 2017-2019.csv
+2025-02-22 12:37:38,993 - INFO - ✅ Stored dataset: Heart Disease Mortality Data Among US Adults 35 by State Territory and County 2018-2020.csv
+2025-02-22 12:37:38,993 - INFO - ✅ Stored dataset: Heart Disease Mortality Data Among US Adults 35 by State Territory and County 2019-2021.csv
+2025-02-22 12:37:38,994 - INFO - ✅ Stored dataset: Household Pulse Survey HPS COVID-19 Vaccination among People with Disabilities.csv
+2025-02-22 12:37:38,995 - INFO - ✅ Stored dataset: Impaired Driving Death Rate by Age and Gender 2012 2014 All States.csv
+2025-02-22 12:37:38,995 - INFO - ✅ Stored dataset: Impaired Driving Death Rate by Age and Gender 2012 2014 Region 10 Seattle.csv
+2025-02-22 12:37:38,996 - INFO - ✅ Stored dataset: Impaired Driving Death Rate by Age and Gender 2012 2014 Region 1 Boston.csv
+2025-02-22 12:37:38,997 - INFO - ✅ Stored dataset: Impaired Driving Death Rate by Age and Gender 2012 2014 Region 2 New York.csv
+2025-02-22 12:37:38,998 - INFO - ✅ Stored dataset: Impaired Driving Death Rate by Age and Gender 2012 2014 Region 3 Philadelphia.csv
+2025-02-22 12:37:38,999 - INFO - ✅ Stored dataset: Impaired Driving Death Rate by Age and Gender 2012 2014 Region 4 Atlanta.csv
+2025-02-22 12:37:39,000 - INFO - ✅ Stored dataset: Impaired Driving Death Rate by Age and Gender 2012 2014 Region 5 Chicago.csv
+2025-02-22 12:37:39,000 - INFO - ✅ Stored dataset: Impaired Driving Death Rate by Age and Gender 2012 2014 Region 6 Dallas.csv
+2025-02-22 12:37:39,002 - INFO - ✅ Stored dataset: Impaired Driving Death Rate by Age and Gender 2012 2014 Region 7 Kansas City.csv
+2025-02-22 12:37:39,003 - INFO - ✅ Stored dataset: Impaired Driving Death Rate by Age and Gender 2012 2014 Region 8 Denver.csv
+2025-02-22 12:37:39,005 - INFO - ✅ Stored dataset: Impaired Driving Death Rate by Age and Gender 2012 2014 Region 9 San Francisco.csv
+2025-02-22 12:37:39,006 - INFO - ✅ Stored dataset: Income-Related Disparities in Cigarette Smoking Among Adults.csv
+2025-02-22 12:37:39,008 - INFO - ✅ Stored dataset: Indicators of Anxiety or Depression Based on Reported Frequency of Symptoms During Last 7 Days.csv
+2025-02-22 12:37:39,009 - INFO - ✅ Stored dataset: Indicators of Health Insurance Coverage at the Time of Interview.csv
+2025-02-22 12:37:39,010 - INFO - ✅ Stored dataset: Indicators of Reduced Access to Care Due to the Coronavirus Pandemic During Last 4 Weeks.csv
+2025-02-22 12:37:39,011 - INFO - ✅ Stored dataset: Infant Protection Against Respiratory Syncytial Virus RSV by Maternal RSV Vaccination or Receipt of Nirsevimab and Intent for Nirsevimab Receipt US.csv
+2025-02-22 12:37:39,012 - INFO - ✅ Stored dataset: Infant neonatal postneonatal fetal and perinatal mortality rates by detailed race and Hispanic origin of mother US.csv
+2025-02-22 12:37:39,013 - INFO - ✅ Stored dataset: Influenza-related School Closures USA 2011-2022.csv
+2025-02-22 12:37:39,014 - INFO - ✅ Stored dataset: Influenza Vaccination Coverage for All Ages 6 Months.csv
+2025-02-22 12:37:39,016 - INFO - ✅ Stored dataset: Initial injury-related visits to hospital emergency departments by sex age and intent and mechanism of injury US.csv
+2025-02-22 12:37:39,017 - INFO - ✅ Stored dataset: JMK DHDS POC.csv
+2025-02-22 12:37:39,018 - INFO - ✅ Stored dataset: Lack of Social Connection.csv
+2025-02-22 12:37:39,020 - INFO - ✅ Stored dataset: Leading causes of death and numbers of deaths by sex race and Hispanic origin US 1980 and 2009.csv
+2025-02-22 12:37:39,021 - INFO - ✅ Stored dataset: Level of Acute Respiratory Illness ARI Activity by State.csv
+2025-02-22 12:37:39,023 - INFO - ✅ Stored dataset: Long-term Care and COVID-19.csv
+2025-02-22 12:37:39,025 - INFO - ✅ Stored dataset: Loss of Work Due to Illness from COVID-19.csv
+2025-02-22 12:37:39,026 - INFO - ✅ Stored dataset: Low birthweight live births by race and Hispanic origin of mother and state US 2000 2002 2003 2005 and 2006 2008.csv
+2025-02-22 12:37:39,027 - INFO - ✅ Stored dataset: LymeDisease 9211 county.csv
+2025-02-22 12:37:39,028 - INFO - ✅ Stored dataset: Mapping Injury Overdose and Violence Census Tract.csv
+2025-02-22 12:37:39,029 - INFO - ✅ Stored dataset: Mapping Injury Overdose and Violence County.csv
+2025-02-22 12:37:39,030 - INFO - ✅ Stored dataset: Mapping Injury Overdose and Violence National.csv
+2025-02-22 12:37:39,031 - INFO - ✅ Stored dataset: Mapping Injury Overdose and Violence State.csv
+2025-02-22 12:37:39,032 - INFO - ✅ Stored dataset: Measles Case and Genetic Metadata Operation Allies Welcome.csv
+2025-02-22 12:37:39,034 - INFO - ✅ Stored dataset: Medicaid Claims MAX Vision and Eye Health Surveillance.csv
+2025-02-22 12:37:39,035 - INFO - ✅ Stored dataset: Medicaid Coverage Of Cessation Treatments And Barriers To Treatments.csv
+2025-02-22 12:37:39,037 - INFO - ✅ Stored dataset: Medicaid coverage among persons under age 65 by selected characteristics US.csv
+2025-02-22 12:37:39,038 - INFO - ✅ Stored dataset: Mental Health-Related Disparities in Cigarette Smoking Among Adults.csv
+2025-02-22 12:37:39,040 - INFO - ✅ Stored dataset: Mental Health Care in the Last 4 Weeks.csv
+2025-02-22 12:37:39,041 - INFO - ✅ Stored dataset: Military Health System MHS Vision and Eye Health Surveillance System VEHSS.csv
+2025-02-22 12:37:39,043 - INFO - ✅ Stored dataset: Monthly COVID-19 Death Rates per 100 000 Population by Age Group Race and Ethnicity Sex and Region.csv
+2025-02-22 12:37:39,045 - INFO - ✅ Stored dataset: Monthly COVID-19 Death Rates per 100 000 Population by Age Group Race and Ethnicity Sex and Region with Double Stratification.csv
+2025-02-22 12:37:39,046 - INFO - ✅ Stored dataset: Monthly Counts of Deaths by Select Causes 2014-2019.csv
+2025-02-22 12:37:39,046 - INFO - ✅ Stored dataset: Monthly Cumulative Influenza Vaccination Coverage by Race Ethnicity Pregnant Persons 18 years to 49 years US.csv
+2025-02-22 12:37:39,048 - INFO - ✅ Stored dataset: Monthly Cumulative Number and Percent of Adults 60 Years and Older Who Received at least one RSV Vaccination Doses by Jurisdiction US.csv
+2025-02-22 12:37:39,048 - INFO - ✅ Stored dataset: Monthly Cumulative Number and Percent of Adults 75 Years and Older Who Received 1 RSV Vaccination Doses by Jurisdiction US.csv
+2025-02-22 12:37:39,049 - INFO - ✅ Stored dataset: Monthly Cumulative Number and Percent of Children 20 Months Who Received Nirsevimab by Age Group and Jurisdiction US.csv
+2025-02-22 12:37:39,050 - INFO - ✅ Stored dataset: Monthly Cumulative Number and Percent of Children 8 Months Who Received Nirsevimab by Jurisdiction US.csv
+2025-02-22 12:37:39,051 - INFO - ✅ Stored dataset: Monthly Cumulative Number and Percent of Persons Children 6 Months 17 Years Who Received 1 Influenza Vaccination Doses by Influenza Season Age Group and Jurisdiction US.csv
+2025-02-22 12:37:39,053 - INFO - ✅ Stored dataset: Monthly Cumulative Number and Percent of Persons Who Receive 1 Influenza Vaccination Doses and Comparison Between 2023-2024 and Two Previous Seasons by Jurisdiction US.csv
+2025-02-22 12:37:39,054 - INFO - ✅ Stored dataset: Monthly Cumulative Number and Percent of Persons Who Received 1 2024-25 COVID-19 Vaccination Doses and Comparison between 2024-25 and 2023-24 by Age Group and Jurisdiction US.csv
+2025-02-22 12:37:39,056 - INFO - ✅ Stored dataset: Monthly Cumulative Number and Percent of Persons Who Received 1 2024-25 COVID-19 Vaccination Doses by Age Group and Jurisdiction US.csv
+2025-02-22 12:37:39,057 - INFO - ✅ Stored dataset: Monthly Cumulative Number and Percent of Persons Who Received 1 Influenza Vaccination Doses by Flu Season Age Group and Jurisdiction.csv
+2025-02-22 12:37:39,058 - INFO - ✅ Stored dataset: Monthly Cumulative Number and Percent of Persons Who Received 1 updated 2023-24 COVID-19 Vaccination Doses by Age Group and Jurisdiction US.csv
+2025-02-22 12:37:39,061 - INFO - ✅ Stored dataset: Monthly Cumulative Number and Percent of Who Received 1 Influenza Vaccination Doses and Comparison Between 2024-25 and Two Previous Seasons by Jurisdiction US.csv
+2025-02-22 12:37:39,061 - INFO - ✅ Stored dataset: Monthly Nirsevimab Receipt and Intent Among Females Aged 18-49 Years Who Have a Baby 8 Months Are Currently Pregnant or Are Trying to Get Pregnant US.csv
+2025-02-22 12:37:39,062 - INFO - ✅ Stored dataset: Monthly Page Views to CDC.gov.csv
+2025-02-22 12:37:39,063 - INFO - ✅ Stored dataset: Monthly Provisional Counts of Deaths by Select Causes 2020-2023.csv
+2025-02-22 12:37:39,064 - INFO - ✅ Stored dataset: Monthly Rates of Laboratory-Confirmed COVID-19 Hospitalizations from the COVID-NET Surveillance System.csv
+2025-02-22 12:37:39,065 - INFO - ✅ Stored dataset: Monthly Rates of Laboratory-Confirmed RSV Hospitalizations from the RSV-NET Surveillance System.csv
+2025-02-22 12:37:39,067 - INFO - ✅ Stored dataset: Motor Vehicle Occupant Death Rate by Age and Gender 2012 2014 All States.csv
+2025-02-22 12:37:39,068 - INFO - ✅ Stored dataset: Motor Vehicle Occupant Death Rate by Age and Gender 2012 2014 HHS Region 1 Boston.csv
+2025-02-22 12:37:39,070 - INFO - ✅ Stored dataset: Motor Vehicle Occupant Death Rate by Age and Gender 2012 2014 Region 10 Seattle.csv
+2025-02-22 12:37:39,074 - INFO - ✅ Stored dataset: Motor Vehicle Occupant Death Rate by Age and Gender 2012 2014 Region 2 New York.csv
+2025-02-22 12:37:39,075 - INFO - ✅ Stored dataset: Motor Vehicle Occupant Death Rate by Age and Gender 2012 2014 Region 3 Philadelphia.csv
+2025-02-22 12:37:39,077 - INFO - ✅ Stored dataset: Motor Vehicle Occupant Death Rate by Age and Gender 2012 2014 Region 4 Atlanta.csv
+2025-02-22 12:37:39,078 - INFO - ✅ Stored dataset: Motor Vehicle Occupant Death Rate by Age and Gender 2012 2014 Region 5 Chicago.csv
+2025-02-22 12:37:39,079 - INFO - ✅ Stored dataset: Motor Vehicle Occupant Death Rate by Age and Gender 2012 2014 Region 6 Dallas.csv
+2025-02-22 12:37:39,079 - INFO - ✅ Stored dataset: Motor Vehicle Occupant Death Rate by Age and Gender 2012 2014 Region 7 Kansas City.csv
+2025-02-22 12:37:39,081 - INFO - ✅ Stored dataset: Motor Vehicle Occupant Death Rate by Age and Gender 2012 2014 Region 8 Denver.csv
+2025-02-22 12:37:39,083 - INFO - ✅ Stored dataset: Motor Vehicle Occupant Death Rate by Age and Gender 2012 2014 Region 9 San Francisco.csv
+2025-02-22 12:37:39,084 - INFO - ✅ Stored dataset: NAAG Tobacco Settlement Payments.csv
+2025-02-22 12:37:39,085 - INFO - ✅ Stored dataset: NCHS Age-adjusted Death Rates for Selected Major Causes of Death.csv
+2025-02-22 12:37:39,089 - INFO - ✅ Stored dataset: NCHS Birth Rates for Females by Age Group US.csv
+2025-02-22 12:37:39,091 - INFO - ✅ Stored dataset: NCHS Birth Rates for Unmarried Women by Age Race and Hispanic Origin US.csv
+2025-02-22 12:37:39,093 - INFO - ✅ Stored dataset: NCHS Birth Rates for Women Aged 15-17 17-18 and 15-19 US 1960-2015.csv
+2025-02-22 12:37:39,095 - INFO - ✅ Stored dataset: NCHS Births and General Fertility Rates US.csv
+2025-02-22 12:37:39,097 - INFO - ✅ Stored dataset: NCHS Births to Unmarried Women by Age Group US.csv
+2025-02-22 12:37:39,099 - INFO - ✅ Stored dataset: NCHS Childhood Mortality Rates.csv
+2025-02-22 12:37:39,102 - INFO - ✅ Stored dataset: NCHS Death rates and life expectancy at birth.csv
+2025-02-22 12:37:39,103 - INFO - ✅ Stored dataset: NCHS Drug Poisoning Mortality by County US 2016.csv
+2025-02-22 12:37:39,106 - INFO - ✅ Stored dataset: NCHS Drug Poisoning Mortality by County US 2017.csv
+2025-02-22 12:37:39,107 - INFO - ✅ Stored dataset: NCHS Drug Poisoning Mortality by County US 2019.csv
+2025-02-22 12:37:39,108 - INFO - ✅ Stored dataset: NCHS Drug Poisoning Mortality by State US.csv
+2025-02-22 12:37:39,110 - INFO - ✅ Stored dataset: NCHS Drug Poisoning Mortality by State US 2016.csv
+2025-02-22 12:37:39,110 - INFO - ✅ Stored dataset: NCHS Drug Poisoning Mortality by State US 2017.csv
+2025-02-22 12:37:39,111 - INFO - ✅ Stored dataset: NCHS Infant Mortality Rates by Race US 1915-2013.csv
+2025-02-22 12:37:39,112 - INFO - ✅ Stored dataset: NCHS Infant and neonatal mortality rates US 1915-2013.csv
+2025-02-22 12:37:39,113 - INFO - ✅ Stored dataset: NCHS Injury Mortality US 2016.csv
+2025-02-22 12:37:39,113 - INFO - ✅ Stored dataset: NCHS Injury Mortality US 2018.csv
+2025-02-22 12:37:39,114 - INFO - ✅ Stored dataset: NCHS Leading Causes of Death US.csv
+2025-02-22 12:37:39,115 - INFO - ✅ Stored dataset: NCHS Natality Measures for Females by Hispanic Origin Subgroup US.csv
+2025-02-22 12:37:39,118 - INFO - ✅ Stored dataset: NCHS Natality Measures for Females by Race and Hispanic Origin US.csv
+2025-02-22 12:37:39,119 - INFO - ✅ Stored dataset: NCHS Nonmarital Birth Rates by Age Group for All Women Age 15-44 US 1970-2013.csv
+2025-02-22 12:37:39,120 - INFO - ✅ Stored dataset: NCHS Percent Distribution of Births for Females by Age Group US.csv
+2025-02-22 12:37:39,121 - INFO - ✅ Stored dataset: NCHS Percent Distribution of Births to Unmarried Women by Age Group US.csv
+2025-02-22 12:37:39,122 - INFO - ✅ Stored dataset: NCHS Potentially Excess Deaths from the Five Leading Causes of Death.csv
+2025-02-22 12:37:39,123 - INFO - ✅ Stored dataset: NCHS Pregnancy Rates by Age for Hispanic Women US 1990-2010.csv
+2025-02-22 12:37:39,123 - INFO - ✅ Stored dataset: NCHS Pregnancy and Live Birth Rates by Marital Status and Race and Hispanic Origin US 1990-2010.csv
+2025-02-22 12:37:39,124 - INFO - ✅ Stored dataset: NCHS Rapid Surveys System.csv
+2025-02-22 12:37:39,125 - INFO - ✅ Stored dataset: NCHS Teen Birth Rates for Age Group 15-19 in the US by County.csv
+2025-02-22 12:37:39,126 - INFO - ✅ Stored dataset: NCHS Teen Birth Rates for Females by Age Group Race and Hispanic Origin US.csv
+2025-02-22 12:37:39,127 - INFO - ✅ Stored dataset: NCHS Top Five Leading Causes of Death US 1990 1950 2000.csv
+2025-02-22 12:37:39,128 - INFO - ✅ Stored dataset: NCHS U.S. and State Trends on Teen Births.csv
+2025-02-22 12:37:39,130 - INFO - ✅ Stored dataset: NCHS VSRR Quarterly provisional estimates for infant mortality.csv
+2025-02-22 12:37:39,130 - INFO - ✅ Stored dataset: NCHS VSRR Quarterly provisional estimates for selected birth indicators.csv
+2025-02-22 12:37:39,132 - INFO - ✅ Stored dataset: NCHS VSRR Quarterly provisional estimates for selected indicators of mortality.csv
+2025-02-22 12:37:39,133 - INFO - ✅ Stored dataset: NHANES Select Chronic Conditions Prevalence Estimates.csv
+2025-02-22 12:37:39,134 - INFO - ✅ Stored dataset: NHANES Select Infectious Diseases Prevalence Estimates.csv
+2025-02-22 12:37:39,135 - INFO - ✅ Stored dataset: NHANES Select Mean Dietary Intake Estimates.csv
+2025-02-22 12:37:39,135 - INFO - ✅ Stored dataset: NHANES Select Oral Health Prevalence Estimates.csv
+2025-02-22 12:37:39,136 - INFO - ✅ Stored dataset: NHIS Adult 3-Year Summary Health Statistics.csv
+2025-02-22 12:37:39,137 - INFO - ✅ Stored dataset: NHIS Adult Summary Health Statistics.csv
+2025-02-22 12:37:39,138 - INFO - ✅ Stored dataset: NHIS Child Summary Health Statistics.csv
+2025-02-22 12:37:39,139 - INFO - ✅ Stored dataset: NHIS Interactive Biannual Early Release Estimates.csv
+2025-02-22 12:37:39,140 - INFO - ✅ Stored dataset: NHIS Interactive Quarterly Early Release Estimates.csv
+2025-02-22 12:37:39,140 - INFO - ✅ Stored dataset: NHIS Teen.csv
+2025-02-22 12:37:39,141 - INFO - ✅ Stored dataset: NNDSS TABLE 1A. Anthrax to Arboviral diseases Eastern equine encephalitis virus disease.csv
+2025-02-22 12:37:39,142 - INFO - ✅ Stored dataset: NNDSS TABLE 1A. Anthrax to Arboviral diseases Eastern equine encephalitis virus disease 2019.csv
+2025-02-22 12:37:39,143 - INFO - ✅ Stored dataset: NNDSS TABLE 1A. Anthrax to Arboviral diseases Eastern equine encephalitis virus disease 2020.csv
+2025-02-22 12:37:39,144 - INFO - ✅ Stored dataset: NNDSS TABLE 1A. Anthrax to Arboviral diseases Eastern equine encephalitis virus disease 2021.csv
+2025-02-22 12:37:39,145 - INFO - ✅ Stored dataset: NNDSS TABLE 1A. Anthrax to Arboviral diseases Eastern equine encephalitis virus disease 2022.csv
+2025-02-22 12:37:39,145 - INFO - ✅ Stored dataset: NNDSS TABLE 1AA. Poliovirus infection nonparalytic to Psittacosis 2019.csv
+2025-02-22 12:37:39,146 - INFO - ✅ Stored dataset: NNDSS TABLE 1AA. Poliovirus infection nonparalytic to Psittacosis 2020.csv
+2025-02-22 12:37:39,148 - INFO - ✅ Stored dataset: NNDSS TABLE 1AA. Poliovirus infection nonparalytic to Psittacosis 2021.csv
+2025-02-22 12:37:39,149 - INFO - ✅ Stored dataset: NNDSS TABLE 1AA. Poliovirus infection nonparalytic to Psittacosis 2022.csv
+2025-02-22 12:37:39,150 - INFO - ✅ Stored dataset: NNDSS TABLE 1BB. Q fever Total to Q fever Chronic 2019.csv
+2025-02-22 12:37:39,150 - INFO - ✅ Stored dataset: NNDSS TABLE 1BB. Q fever Total to Q fever Chronic 2019 2.csv
+2025-02-22 12:37:39,151 - INFO - ✅ Stored dataset: NNDSS TABLE 1BB. Q fever Total to Q fever Chronic 2020.csv
+2025-02-22 12:37:39,152 - INFO - ✅ Stored dataset: NNDSS TABLE 1BB. Q fever Total to Q fever Chronic 2021.csv
+2025-02-22 12:37:39,153 - INFO - ✅ Stored dataset: NNDSS TABLE 1BB. Q fever Total to Q fever Chronic 2022.csv
+2025-02-22 12:37:39,153 - INFO - ✅ Stored dataset: NNDSS TABLE 1C. Arboviral diseases St. Louis encephalitis virus to Western equine encephalitis virus.csv
+2025-02-22 12:37:39,154 - INFO - ✅ Stored dataset: NNDSS TABLE 1C. Arboviral diseases St. Louis encephalitis virus to Western equine encephalitis virus 2019.csv
+2025-02-22 12:37:39,155 - INFO - ✅ Stored dataset: NNDSS TABLE 1CC. Rabies Animal to Rabies Human.csv
+2025-02-22 12:37:39,156 - INFO - ✅ Stored dataset: NNDSS TABLE 1CC. Rabies Animal to Rabies Human 2019.csv
+2025-02-22 12:37:39,158 - INFO - ✅ Stored dataset: NNDSS TABLE 1CC. Rabies Animal to Rabies Human 2019 2.csv
+2025-02-22 12:37:39,159 - INFO - ✅ Stored dataset: NNDSS TABLE 1CC. Rabies Animal to Rabies Human 2020.csv
+2025-02-22 12:37:39,160 - INFO - ✅ Stored dataset: NNDSS TABLE 1CC. Rabies Animal to Rabies Human 2021.csv
+2025-02-22 12:37:39,161 - INFO - ✅ Stored dataset: NNDSS TABLE 1D. Arboviral diseases West Nile virus to Babesiosis 2019.csv
+2025-02-22 12:37:39,162 - INFO - ✅ Stored dataset: NNDSS TABLE 1D. Arboviral diseases West Nile virus to Babesiosis 2019 2.csv
+2025-02-22 12:37:39,164 - INFO - ✅ Stored dataset: NNDSS TABLE 1DD. Rubella to Rubella congenital syndrome 2019.csv
+2025-02-22 12:37:39,165 - INFO - ✅ Stored dataset: NNDSS TABLE 1DD. Rubella to Rubella congenital syndrome 2019 2.csv
+2025-02-22 12:37:39,166 - INFO - ✅ Stored dataset: NNDSS TABLE 1DD. Rubella to Rubella congenital syndrome 2020.csv
+2025-02-22 12:37:39,166 - INFO - ✅ Stored dataset: NNDSS TABLE 1DD. Rubella to Rubella congenital syndrome 2021.csv
+2025-02-22 12:37:39,168 - INFO - ✅ Stored dataset: NNDSS TABLE 1DD. Rubella to Rubella congenital syndrome 2022.csv
+2025-02-22 12:37:39,169 - INFO - ✅ Stored dataset: NNDSS TABLE 1E. Botulism Foodborne to Botulism Other 2019.csv
+2025-02-22 12:37:39,170 - INFO - ✅ Stored dataset: NNDSS TABLE 1E. Botulism Foodborne to Botulism Other 2019 2.csv
+2025-02-22 12:37:39,171 - INFO - ✅ Stored dataset: NNDSS TABLE 1EE. Salmonella Paratyphi infection to Salmonellosis excluding Salmonella Typhi infection and Salmonella Paratyphi infection 2019.csv
+2025-02-22 12:37:39,172 - INFO - ✅ Stored dataset: NNDSS TABLE 1EE. Salmonella Paratyphi infection to Salmonellosis excluding Salmonella Typhi infection and Salmonella Paratyphi infection 2019 2.csv
+2025-02-22 12:37:39,173 - INFO - ✅ Stored dataset: NNDSS TABLE 1EE. Salmonella Paratyphi infection to Salmonellosis excluding Salmonella Typhi infection and Salmonella Paratyphi infection 2020.csv
+2025-02-22 12:37:39,174 - INFO - ✅ Stored dataset: NNDSS TABLE 1EE. Salmonella Paratyphi infection to Salmonellosis excluding Salmonella Typhi infection and Salmonella Paratyphi infection 2021.csv
+2025-02-22 12:37:39,174 - INFO - ✅ Stored dataset: NNDSS TABLE 1EE. Salmonella Paratyphi infection to Salmonellosis excluding Salmonella Typhi infection and Salmonella Paratyphi infection 2022.csv
+2025-02-22 12:37:39,175 - INFO - ✅ Stored dataset: NNDSS TABLE 1F. Brucellosis to Candida auris clinical 2019.csv
+2025-02-22 12:37:39,176 - INFO - ✅ Stored dataset: NNDSS TABLE 1F. Brucellosis to Candida auris clinical 2019 2.csv
+2025-02-22 12:37:39,177 - INFO - ✅ Stored dataset: NNDSS TABLE 1FF. Severe acute respiratory syndrome-associated coronavirus disease to Shigellosis.csv
+2025-02-22 12:37:39,178 - INFO - ✅ Stored dataset: NNDSS TABLE 1FF. Severe acute respiratory syndrome-associated coronavirus disease to Shigellosis 2019.csv
+2025-02-22 12:37:39,179 - INFO - ✅ Stored dataset: NNDSS TABLE 1FF. Severe acute respiratory syndrome-associated coronavirus disease to Shigellosis 2019 2.csv
+2025-02-22 12:37:39,180 - INFO - ✅ Stored dataset: NNDSS TABLE 1FF. Severe acute respiratory syndrome-associated coronavirus disease to Shigellosis 2021.csv
+2025-02-22 12:37:39,181 - INFO - ✅ Stored dataset: NNDSS TABLE 1FF. Severe acute respiratory syndrome-associated coronavirus disease to Shigellosis 2022.csv
+2025-02-22 12:37:39,182 - INFO - ✅ Stored dataset: NNDSS TABLE 1G. Carbapenemase-producing carbapenem-resistant Enterobacteriaceae to Chancroid 2019.csv
+2025-02-22 12:37:39,182 - INFO - ✅ Stored dataset: NNDSS TABLE 1G. Carbapenemase-producing carbapenem-resistant Enterobacteriaceae to Chancroid 2019 2.csv
+2025-02-22 12:37:39,183 - INFO - ✅ Stored dataset: NNDSS TABLE 1GG. Smallpox to Streptococcal toxic shock syndrome 2020.csv
+2025-02-22 12:37:39,185 - INFO - ✅ Stored dataset: NNDSS TABLE 1GG. Smallpox to Streptococcal toxic shock syndrome 2021.csv
+2025-02-22 12:37:39,185 - INFO - ✅ Stored dataset: NNDSS TABLE 1GG. Smallpox to Streptococcal toxic shock syndrome 2022.csv
+2025-02-22 12:37:39,186 - INFO - ✅ Stored dataset: NNDSS TABLE 1GG. Spotted fever rickettsiosis Confirmed to Smallpox 2019.csv
+2025-02-22 12:37:39,187 - INFO - ✅ Stored dataset: NNDSS TABLE 1GG. Spotted fever rickettsiosis Confirmed to Smallpox 2019 2.csv
+2025-02-22 12:37:39,188 - INFO - ✅ Stored dataset: NNDSS TABLE 1H. Cholera to Coccidioidomycosis 2019.csv
+2025-02-22 12:37:39,190 - INFO - ✅ Stored dataset: NNDSS TABLE 1H. Cholera to Coccidioidomycosis 2019 2.csv
+2025-02-22 12:37:39,191 - INFO - ✅ Stored dataset: NNDSS TABLE 1HH. Streptococcal toxic shock syndrome to Syphilis Primary and Secondary 2019.csv
+2025-02-22 12:37:39,192 - INFO - ✅ Stored dataset: NNDSS TABLE 1HH. Streptococcal toxic shock syndrome to Syphilis Primary and Secondary 2019 2.csv
+2025-02-22 12:37:39,193 - INFO - ✅ Stored dataset: NNDSS TABLE 1HH. Syphilis Congenital to Syphilis Primary and Secondary 2020.csv
+2025-02-22 12:37:39,195 - INFO - ✅ Stored dataset: NNDSS TABLE 1HH. Syphilis Congenital to Syphilis Primary and Secondary 2021.csv
+2025-02-22 12:37:39,195 - INFO - ✅ Stored dataset: NNDSS TABLE 1HH. Syphilis Congenital to Syphilis Primary and Secondary 2022.csv
+2025-02-22 12:37:39,196 - INFO - ✅ Stored dataset: NNDSS TABLE 1I. Cryptosporidiosis to Cyclosporiasis 2019.csv
+2025-02-22 12:37:39,197 - INFO - ✅ Stored dataset: NNDSS TABLE 1I. Cryptosporidiosis to Cyclosporiasis 2019 2.csv
+2025-02-22 12:37:39,198 - INFO - ✅ Stored dataset: NNDSS TABLE 1II. Tetanus to Trichinellosis.csv
+2025-02-22 12:37:39,199 - INFO - ✅ Stored dataset: NNDSS TABLE 1II. Tetanus to Trichinellosis 2019.csv
+2025-02-22 12:37:39,201 - INFO - ✅ Stored dataset: NNDSS TABLE 1II. Tetanus to Trichinellosis 2019 2.csv
+2025-02-22 12:37:39,202 - INFO - ✅ Stored dataset: NNDSS TABLE 1II. Tetanus to Trichinellosis 2020.csv
+2025-02-22 12:37:39,203 - INFO - ✅ Stored dataset: NNDSS TABLE 1II. Tetanus to Trichinellosis 2021.csv
+2025-02-22 12:37:39,205 - INFO - ✅ Stored dataset: NNDSS TABLE 1J. Dengue virus infections Dengue to Severe dengue 2019.csv
+2025-02-22 12:37:39,206 - INFO - ✅ Stored dataset: NNDSS TABLE 1J. Dengue virus infections Dengue to Severe dengue 2019 2.csv
+2025-02-22 12:37:39,207 - INFO - ✅ Stored dataset: NNDSS TABLE 1J. Dengue virus infections Dengue to Severe dengue 2020.csv
+2025-02-22 12:37:39,208 - INFO - ✅ Stored dataset: NNDSS TABLE 1J. Dengue virus infections Dengue to Severe dengue 2021.csv
+2025-02-22 12:37:39,210 - INFO - ✅ Stored dataset: NNDSS TABLE 1J. Dengue virus infections Dengue to Severe dengue 2022.csv
+2025-02-22 12:37:39,210 - INFO - ✅ Stored dataset: NNDSS TABLE 1JJ. Tuberculosis to Tularemia.csv
+2025-02-22 12:37:39,212 - INFO - ✅ Stored dataset: NNDSS TABLE 1JJ. Tuberculosis to Tularemia 2020.csv
+2025-02-22 12:37:39,213 - INFO - ✅ Stored dataset: NNDSS TABLE 1JJ. Tuberculosis to Tularemia 2021.csv
+2025-02-22 12:37:39,214 - INFO - ✅ Stored dataset: NNDSS TABLE 1JJ. Tularemia to Vancomycin-intermediate Staphylococcus aureus 2019.csv
+2025-02-22 12:37:39,216 - INFO - ✅ Stored dataset: NNDSS TABLE 1JJ. Tularemia to Vancomycin-intermediate Staphylococcus aureus 2019 2.csv
+2025-02-22 12:37:39,217 - INFO - ✅ Stored dataset: NNDSS TABLE 1K. Ehrlichiosis and Anaplasmosis Anaplasma phagocytophilum infection to Ehrlichia chaffeensis infection 2019.csv
+2025-02-22 12:37:39,219 - INFO - ✅ Stored dataset: NNDSS TABLE 1K. Ehrlichiosis and Anaplasmosis Anaplasma phagocytophilum infection to Ehrlichia chaffeensis infection 2019 2.csv
+2025-02-22 12:37:39,220 - INFO - ✅ Stored dataset: NNDSS TABLE 1K. Ehrlichiosis and Anaplasmosis Anaplasma phagocytophilum infection to Ehrlichia chaffeensis infection 2020.csv
+2025-02-22 12:37:39,221 - INFO - ✅ Stored dataset: NNDSS TABLE 1K. Ehrlichiosis and Anaplasmosis Anaplasma phagocytophilum infection to Ehrlichia chaffeensis infection 2021.csv
+2025-02-22 12:37:39,223 - INFO - ✅ Stored dataset: NNDSS TABLE 1K. Ehrlichiosis and Anaplasmosis Anaplasma phagocytophilum infection to Ehrlichia chaffeensis infection 2022.csv
+2025-02-22 12:37:39,225 - INFO - ✅ Stored dataset: NNDSS TABLE 1KK. Vancomycin-intermediate Staphylococcus aureus to Varicella morbidity.csv
+2025-02-22 12:37:39,226 - INFO - ✅ Stored dataset: NNDSS TABLE 1KK. Vancomycin-intermediate Staphylococcus aureus to Varicella morbidity 2020.csv
+2025-02-22 12:37:39,228 - INFO - ✅ Stored dataset: NNDSS TABLE 1KK. Vancomycin-intermediate Staphylococcus aureus to Varicella morbidity 2021.csv
+2025-02-22 12:37:39,229 - INFO - ✅ Stored dataset: NNDSS TABLE 1KK. Vancomycin-resistant Staphylococcus aureus to Varicella morbidity 2019.csv
+2025-02-22 12:37:39,230 - INFO - ✅ Stored dataset: NNDSS TABLE 1KK. Vancomycin-resistant Staphylococcus aureus to Varicella morbidity 2019 2.csv
+2025-02-22 12:37:39,231 - INFO - ✅ Stored dataset: NNDSS TABLE 1L. Ehrlichiosis and Anaplasmosis Ehrlichia ewingii infection to Giardiasis 2019.csv
+2025-02-22 12:37:39,233 - INFO - ✅ Stored dataset: NNDSS TABLE 1L. Ehrlichiosis and Anaplasmosis Ehrlichia ewingii infection to Giardiasis 2019 2.csv
+2025-02-22 12:37:39,235 - INFO - ✅ Stored dataset: NNDSS TABLE 1L. Ehrlichiosis and Anaplasmosis Ehrlichia ewingii infection to Giardiasis 2020.csv
+2025-02-22 12:37:39,237 - INFO - ✅ Stored dataset: NNDSS TABLE 1L. Ehrlichiosis and Anaplasmosis Ehrlichia ewingii infection to Giardiasis 2021.csv
+2025-02-22 12:37:39,238 - INFO - ✅ Stored dataset: NNDSS TABLE 1L. Ehrlichiosis and Anaplasmosis Ehrlichia ewingii infection to Giardiasis 2022.csv
+2025-02-22 12:37:39,240 - INFO - ✅ Stored dataset: NNDSS TABLE 1LL. Vibriosis Confirmed to Vibriosis Probable.csv
+2025-02-22 12:37:39,243 - INFO - ✅ Stored dataset: NNDSS TABLE 1LL. Vibriosis Confirmed to Vibriosis Probable 2019.csv
+2025-02-22 12:37:39,244 - INFO - ✅ Stored dataset: NNDSS TABLE 1LL. Vibriosis Confirmed to Vibriosis Probable 2019 2.csv
+2025-02-22 12:37:39,246 - INFO - ✅ Stored dataset: NNDSS TABLE 1LL. Vibriosis Confirmed to Vibriosis Probable 2020.csv
+2025-02-22 12:37:39,247 - INFO - ✅ Stored dataset: NNDSS TABLE 1LL. Vibriosis Confirmed to Vibriosis Probable 2021.csv
+2025-02-22 12:37:39,249 - INFO - ✅ Stored dataset: NNDSS TABLE 1M. Gonorrhea to Haemophilus influenzae invasive disease Age 5 years Serotype b 2020.csv
+2025-02-22 12:37:39,253 - INFO - ✅ Stored dataset: NNDSS TABLE 1M. Gonorrhea to Haemophilus influenzae invasive disease Age 5 years Serotype b 2021.csv
+2025-02-22 12:37:39,255 - INFO - ✅ Stored dataset: NNDSS TABLE 1M. Gonorrhea to Haemophilus influenzae invasive disease Age 5 years Serotype b 2022.csv
+2025-02-22 12:37:39,256 - INFO - ✅ Stored dataset: NNDSS TABLE 1M. Gonorrhea to Haemophilus influenzae invasive disease age 5 years Serotype b 2019.csv
+2025-02-22 12:37:39,257 - INFO - ✅ Stored dataset: NNDSS TABLE 1M. Gonorrhea to Haemophilus influenzae invasive disease age 5 years Serotype b 2019 2.csv
+2025-02-22 12:37:39,258 - INFO - ✅ Stored dataset: NNDSS TABLE 1MM. Viral hemorrhagic fevers Chapare virus to Ebola virus.csv
+2025-02-22 12:37:39,259 - INFO - ✅ Stored dataset: NNDSS TABLE 1MM. Viral hemorrhagic fevers Crimean-Congo hemorrhagic fever virus to Guanarito virus 2019.csv
+2025-02-22 12:37:39,260 - INFO - ✅ Stored dataset: NNDSS TABLE 1MM. Viral hemorrhagic fevers Crimean-Congo hemorrhagic fever virus to Guanarito virus 2019 2.csv
+2025-02-22 12:37:39,261 - INFO - ✅ Stored dataset: NNDSS TABLE 1MM. Viral hemorrhagic fevers Crimean-Congo hemorrhagic fever virus to Guanarito virus 2020.csv
+2025-02-22 12:37:39,262 - INFO - ✅ Stored dataset: NNDSS TABLE 1MM. Viral hemorrhagic fevers Crimean-Congo hemorrhagic fever virus to Guanarito virus 2021.csv
+2025-02-22 12:37:39,263 - INFO - ✅ Stored dataset: NNDSS TABLE 1N. Haemophilus influenzae invasive disease Age 5 years Non-b serotype to Unknown serotype 2020.csv
+2025-02-22 12:37:39,263 - INFO - ✅ Stored dataset: NNDSS TABLE 1N. Haemophilus influenzae invasive disease Age 5 years Non-b serotype to Unknown serotype 2021.csv
+2025-02-22 12:37:39,264 - INFO - ✅ Stored dataset: NNDSS TABLE 1N. Haemophilus influenzae invasive disease Age 5 years Non-b serotype to Unknown serotype 2022.csv
+2025-02-22 12:37:39,265 - INFO - ✅ Stored dataset: NNDSS TABLE 1N. Haemophilus influenzae invasive disease age 5 years Non-b serotype to Unknown serotype 2019.csv
+2025-02-22 12:37:39,266 - INFO - ✅ Stored dataset: NNDSS TABLE 1N. Haemophilus influenzae invasive disease age 5 years Non-b serotype to Unknown serotype 2019 2.csv
+2025-02-22 12:37:39,267 - INFO - ✅ Stored dataset: NNDSS TABLE 1NN. Viral hemorrhagic fevers Guanarito virus to Viral hemorrhagic fevers Lassa virus.csv
+2025-02-22 12:37:39,268 - INFO - ✅ Stored dataset: NNDSS TABLE 1NN. Viral hemorrhagic fevers Junin virus to Viral hemorrhagic fevers Lujo virus 2019.csv
+2025-02-22 12:37:39,270 - INFO - ✅ Stored dataset: NNDSS TABLE 1NN. Viral hemorrhagic fevers Junin virus to Viral hemorrhagic fevers Lujo virus 2019 2.csv
+2025-02-22 12:37:39,272 - INFO - ✅ Stored dataset: NNDSS TABLE 1NN. Viral hemorrhagic fevers Junin virus to Viral hemorrhagic fevers Lujo virus 2020.csv
+2025-02-22 12:37:39,274 - INFO - ✅ Stored dataset: NNDSS TABLE 1NN. Viral hemorrhagic fevers Junin virus to Viral hemorrhagic fevers Lujo virus 2021.csv
+2025-02-22 12:37:39,275 - INFO - ✅ Stored dataset: NNDSS TABLE 1O. Hansen s disease to Hantavirus pulmonary syndrome 2019.csv
+2025-02-22 12:37:39,277 - INFO - ✅ Stored dataset: NNDSS TABLE 1O. Hansen s disease to Hantavirus pulmonary syndrome 2019 2.csv
+2025-02-22 12:37:39,278 - INFO - ✅ Stored dataset: NNDSS TABLE 1O. Hansen s disease to Hantavirus pulmonary syndrome 2020.csv
+2025-02-22 12:37:39,281 - INFO - ✅ Stored dataset: NNDSS TABLE 1O. Hansen s disease to Hantavirus pulmonary syndrome 2021.csv
+2025-02-22 12:37:39,284 - INFO - ✅ Stored dataset: NNDSS TABLE 1O. Hansen s disease to Hantavirus pulmonary syndrome 2022.csv
+2025-02-22 12:37:39,286 - INFO - ✅ Stored dataset: NNDSS TABLE 1OO. Viral hemorrhagic fevers Lujo virus to Viral hemorrhagic fevers Marburg virus.csv
+2025-02-22 12:37:39,288 - INFO - ✅ Stored dataset: NNDSS TABLE 1OO. Viral hemorrhagic fevers Machupo virus to Viral hemorrhagic fevers Sabia virus 2019.csv
+2025-02-22 12:37:39,290 - INFO - ✅ Stored dataset: NNDSS TABLE 1OO. Viral hemorrhagic fevers Machupo virus to Viral hemorrhagic fevers Sabia virus 2020.csv
+2025-02-22 12:37:39,291 - INFO - ✅ Stored dataset: NNDSS TABLE 1OO. Viral hemorrhagic fevers Machupo virus to Viral hemorrhagic fevers Sabia virus 2021.csv
+2025-02-22 12:37:39,292 - INFO - ✅ Stored dataset: NNDSS TABLE 1P. Hemolytic uremic syndrome post-diarrheal to Hepatitis B acute 2020.csv
+2025-02-22 12:37:39,293 - INFO - ✅ Stored dataset: NNDSS TABLE 1P. Hemolytic uremic syndrome post-diarrheal to Hepatitis B acute 2021.csv
+2025-02-22 12:37:39,295 - INFO - ✅ Stored dataset: NNDSS TABLE 1P. Hemolytic uremic syndrome post-diarrheal to Hepatitis B acute 2022.csv
+2025-02-22 12:37:39,297 - INFO - ✅ Stored dataset: NNDSS TABLE 1P. Hemolytic uremic syndrome post-diarrheal to Hepatitis viral acute by type B 2019.csv
+2025-02-22 12:37:39,299 - INFO - ✅ Stored dataset: NNDSS TABLE 1P. Hemolytic uremic syndrome post-diarrheal to Hepatitis viral acute by type B 2019 2.csv
+2025-02-22 12:37:39,300 - INFO - ✅ Stored dataset: NNDSS TABLE 1PP. Viral hemorrhagic fevers Sabia virus to Zika virus disease non-congenital.csv
+2025-02-22 12:37:39,302 - INFO - ✅ Stored dataset: NNDSS TABLE 1PP. Yellow fever to Zika virus disease non-congenital.csv
+2025-02-22 12:37:39,303 - INFO - ✅ Stored dataset: NNDSS TABLE 1PP. Yellow fever to Zika virus disease non-congenital 2019.csv
+2025-02-22 12:37:39,304 - INFO - ✅ Stored dataset: NNDSS TABLE 1PP. Yellow fever to Zika virus disease non-congenital 2019 2.csv
+2025-02-22 12:37:39,306 - INFO - ✅ Stored dataset: NNDSS TABLE 1PP. Yellow fever to Zika virus disease non-congenital 2021.csv
+2025-02-22 12:37:39,307 - INFO - ✅ Stored dataset: NNDSS TABLE 1Q. Hepatitis B perinatal infection to Hepatitis C acute Probable.csv
+2025-02-22 12:37:39,309 - INFO - ✅ Stored dataset: NNDSS TABLE 1Q. Hepatitis B perinatal infection to Hepatitis C acute Probable 2020.csv
+2025-02-22 12:37:39,311 - INFO - ✅ Stored dataset: NNDSS TABLE 1Q. Hepatitis B perinatal infection to Hepatitis C acute Probable 2021.csv
+2025-02-22 12:37:39,312 - INFO - ✅ Stored dataset: NNDSS TABLE 1Q. Hepatitis B perinatal infection to Hepatitis C viral acute 2019 2 Probable.csv
+2025-02-22 12:37:39,314 - INFO - ✅ Stored dataset: NNDSS TABLE 1Q. Hepatitis B perinatal infection to Hepatitis C viral acute Probable 2019.csv
+2025-02-22 12:37:39,315 - INFO - ✅ Stored dataset: NNDSS TABLE 1R. Hepatitis C perinatal infection to Influenza-associated pediatric mortality 2019.csv
+2025-02-22 12:37:39,317 - INFO - ✅ Stored dataset: NNDSS TABLE 1R. Hepatitis C perinatal infection to Influenza-associated pediatric mortality 2019 2.csv
+2025-02-22 12:37:39,319 - INFO - ✅ Stored dataset: NNDSS TABLE 1R. Hepatitis C perinatal infection to Influenza-associated pediatric mortality 2020.csv
+2025-02-22 12:37:39,320 - INFO - ✅ Stored dataset: NNDSS TABLE 1R. Hepatitis C perinatal infection to Influenza-associated pediatric mortality 2021.csv
+2025-02-22 12:37:39,322 - INFO - ✅ Stored dataset: NNDSS TABLE 1R. Hepatitis C perinatal infection to Influenza-associated pediatric mortality 2022.csv
+2025-02-22 12:37:39,324 - INFO - ✅ Stored dataset: NNDSS TABLE 1S. Invasive pneumococcal disease all ages Confirmed to Invasive pneumococcal disease all ages Probable 2019.csv
+2025-02-22 12:37:39,326 - INFO - ✅ Stored dataset: NNDSS TABLE 1S. Invasive pneumococcal disease all ages Confirmed to Invasive pneumococcal disease all ages Probable 2019 2.csv
+2025-02-22 12:37:39,329 - INFO - ✅ Stored dataset: NNDSS TABLE 1S. Invasive pneumococcal disease all ages Confirmed to Invasive pneumococcal disease all ages Probable 2020.csv
+2025-02-22 12:37:39,331 - INFO - ✅ Stored dataset: NNDSS TABLE 1S. Invasive pneumococcal disease all ages Confirmed to Invasive pneumococcal disease all ages Probable 2021.csv
+2025-02-22 12:37:39,332 - INFO - ✅ Stored dataset: NNDSS TABLE 1S. Invasive pneumococcal disease all ages Confirmed to Invasive pneumococcal disease all ages Probable 2022.csv
+2025-02-22 12:37:39,334 - INFO - ✅ Stored dataset: NNDSS TABLE 1T. Invasive pneumococcal disease Age 5 years Confirmed to Legionellosis 2020.csv
+2025-02-22 12:37:39,337 - INFO - ✅ Stored dataset: NNDSS TABLE 1T. Invasive pneumococcal disease Age 5 years Confirmed to Legionellosis 2021.csv
+2025-02-22 12:37:39,338 - INFO - ✅ Stored dataset: NNDSS TABLE 1T. Invasive pneumococcal disease Age 5 years Confirmed to Legionellosis 2022.csv
+2025-02-22 12:37:39,340 - INFO - ✅ Stored dataset: NNDSS TABLE 1T. Invasive pneumococcal disease age 5 Confirmed to Invasive pneumococcal disease age 5 Probable 2019.csv
+2025-02-22 12:37:39,342 - INFO - ✅ Stored dataset: NNDSS TABLE 1T. Invasive pneumococcal disease age 5 Confirmed to Invasive pneumococcal disease age 5 Probable 2019 2.csv
+2025-02-22 12:37:39,345 - INFO - ✅ Stored dataset: NNDSS TABLE 1U. Legionellosis to Listeriosis 2019.csv
+2025-02-22 12:37:39,346 - INFO - ✅ Stored dataset: NNDSS TABLE 1U. Legionellosis to Listeriosis 2019 2.csv
+2025-02-22 12:37:39,347 - INFO - ✅ Stored dataset: NNDSS TABLE 1U. Leptospirosis to Listeriosis Probable 2020.csv
+2025-02-22 12:37:39,349 - INFO - ✅ Stored dataset: NNDSS TABLE 1U. Leptospirosis to Listeriosis Probable 2021.csv
+2025-02-22 12:37:39,350 - INFO - ✅ Stored dataset: NNDSS TABLE 1U. Leptospirosis to Listeriosis Probable 2022.csv
+2025-02-22 12:37:39,352 - INFO - ✅ Stored dataset: NNDSS TABLE 1V. Malaria to Measles Imported.csv
+2025-02-22 12:37:39,353 - INFO - ✅ Stored dataset: NNDSS TABLE 1V. Malaria to Measles Indigenous 2020.csv
+2025-02-22 12:37:39,355 - INFO - ✅ Stored dataset: NNDSS TABLE 1V. Malaria to Measles Indigenous 2021.csv
+2025-02-22 12:37:39,356 - INFO - ✅ Stored dataset: NNDSS TABLE 1V. Malaria to Measles Indigenous 2022.csv
+2025-02-22 12:37:39,357 - INFO - ✅ Stored dataset: NNDSS TABLE 1W. Meningococcal disease All serogroups to Meningococcal disease Serogroup B.csv
+2025-02-22 12:37:39,359 - INFO - ✅ Stored dataset: NNDSS TABLE 1W. Meningococcal disease All serogroups to Meningococcal disease Serogroup B 2019.csv
+2025-02-22 12:37:39,360 - INFO - ✅ Stored dataset: NNDSS TABLE 1W. Meningococcal disease All serogroups to Meningococcal disease Serogroup B 2019 2.csv
+2025-02-22 12:37:39,362 - INFO - ✅ Stored dataset: NNDSS TABLE 1W. Meningococcal disease All serogroups to Meningococcal disease Serogroup B 2020.csv
+2025-02-22 12:37:39,363 - INFO - ✅ Stored dataset: NNDSS TABLE 1W. Meningococcal disease All serogroups to Meningococcal disease Serogroup B 2021.csv
+2025-02-22 12:37:39,364 - INFO - ✅ Stored dataset: NNDSS TABLE 1X. Meningococcal disease Other serogroups to Meningococcal disease Unknown serogroup 2019.csv
+2025-02-22 12:37:39,366 - INFO - ✅ Stored dataset: NNDSS TABLE 1X. Meningococcal disease Other serogroups to Meningococcal disease Unknown serogroup 2019 2.csv
+2025-02-22 12:37:39,368 - INFO - ✅ Stored dataset: NNDSS TABLE 1X. Meningococcal disease Other serogroups to Meningococcal disease Unknown serogroup 2020.csv
+2025-02-22 12:37:39,370 - INFO - ✅ Stored dataset: NNDSS TABLE 1X. Meningococcal disease Other serogroups to Meningococcal disease Unknown serogroup 2021.csv
+2025-02-22 12:37:39,372 - INFO - ✅ Stored dataset: NNDSS TABLE 1X. Meningococcal disease Other serogroups to Meningococcal disease Unknown serogroup 2022.csv
+2025-02-22 12:37:39,374 - INFO - ✅ Stored dataset: NNDSS TABLE 1Y. Mumps to Novel influenza A virus infections 2019.csv
+2025-02-22 12:37:39,376 - INFO - ✅ Stored dataset: NNDSS TABLE 1Y. Mumps to Novel influenza A virus infections 2019 2.csv
+2025-02-22 12:37:39,377 - INFO - ✅ Stored dataset: NNDSS TABLE 1Y. Mumps to Novel influenza A virus infections 2020.csv
+2025-02-22 12:37:39,379 - INFO - ✅ Stored dataset: NNDSS TABLE 1Y. Mumps to Novel influenza A virus infections 2021.csv
+2025-02-22 12:37:39,380 - INFO - ✅ Stored dataset: NNDSS TABLE 1Y. Mumps to Novel influenza A virus infections 2022.csv
+2025-02-22 12:37:39,381 - INFO - ✅ Stored dataset: NNDSS TABLE 1Z. Pertussis to Poliomyelitis paralytic 2019.csv
+2025-02-22 12:37:39,383 - INFO - ✅ Stored dataset: NNDSS TABLE 1Z. Pertussis to Poliomyelitis paralytic 2019 2.csv
+2025-02-22 12:37:39,384 - INFO - ✅ Stored dataset: NNDSS TABLE 1Z. Pertussis to Poliomyelitis paralytic 2020.csv
+2025-02-22 12:37:39,386 - INFO - ✅ Stored dataset: NNDSS TABLE 1Z. Pertussis to Poliomyelitis paralytic 2021.csv
+2025-02-22 12:37:39,388 - INFO - ✅ Stored dataset: NNDSS TABLE 1Z. Pertussis to Poliomyelitis paralytic 2022.csv
+2025-02-22 12:37:39,391 - INFO - ✅ Stored dataset: NNDSS Table 1B. Arboviral diseases Jamestown Canyon to Powassan.csv
+2025-02-22 12:37:39,392 - INFO - ✅ Stored dataset: NNDSS Table 1B. Arboviral diseases Jamestown Canyon virus disease to Powassan virus disease 2020.csv
+2025-02-22 12:37:39,393 - INFO - ✅ Stored dataset: NNDSS Table 1B. Arboviral diseases Jamestown Canyon virus disease to Powassan virus disease 2021.csv
+2025-02-22 12:37:39,394 - INFO - ✅ Stored dataset: NNDSS Table 1B. Arboviral diseases Jamestown Canyon virus disease to Powassan virus disease 2022.csv
+2025-02-22 12:37:39,395 - INFO - ✅ Stored dataset: NNDSS Table 1B. Arboviral diseases neuroinvasive and non-neuroinvasive Jamestown Canyon virus disease to Powassan virus disease.csv
+2025-02-22 12:37:39,396 - INFO - ✅ Stored dataset: NNDSS Table 1C. Arboviral diseases St. Louis encephalitis virus disease to West Nile virus disease 2020.csv
+2025-02-22 12:37:39,397 - INFO - ✅ Stored dataset: NNDSS Table 1C. Arboviral diseases St. Louis encephalitis virus disease to West Nile virus disease 2021.csv
+2025-02-22 12:37:39,398 - INFO - ✅ Stored dataset: NNDSS Table 1C. Arboviral diseases St. Louis encephalitis virus disease to West Nile virus disease 2022.csv
+2025-02-22 12:37:39,399 - INFO - ✅ Stored dataset: NNDSS Table 1D. Arboviral diseases Western equine encephalitis virus disease to Babesiosis.csv
+2025-02-22 12:37:39,401 - INFO - ✅ Stored dataset: NNDSS Table 1D. Arboviral diseases Western equine encephalitis virus disease to Babesiosis 2021.csv
+2025-02-22 12:37:39,403 - INFO - ✅ Stored dataset: NNDSS Table 1D. Arboviral diseases Western equine encephalitis virus disease to Babesiosis 2022.csv
+2025-02-22 12:37:39,404 - INFO - ✅ Stored dataset: NNDSS Table 1E. Botulism Foodborne to Botulism Other wound unspecified 2020.csv
+2025-02-22 12:37:39,405 - INFO - ✅ Stored dataset: NNDSS Table 1E. Botulism Foodborne to Botulism Other wound unspecified 2021.csv
+2025-02-22 12:37:39,406 - INFO - ✅ Stored dataset: NNDSS Table 1E. Botulism Foodborne to Botulism Other wound unspecified 2022.csv
+2025-02-22 12:37:39,408 - INFO - ✅ Stored dataset: NNDSS Table 1F. Brucellosis to Candida auris clinical 2020.csv
+2025-02-22 12:37:39,409 - INFO - ✅ Stored dataset: NNDSS Table 1F. Brucellosis to Candida auris clinical 2021.csv
+2025-02-22 12:37:39,410 - INFO - ✅ Stored dataset: NNDSS Table 1F. Brucellosis to Candida auris clinical 2022.csv
+2025-02-22 12:37:39,411 - INFO - ✅ Stored dataset: NNDSS Table 1G. Carbapenemase-producing carbapenem-resistant Enterobacteriaceae to Chlamydia trachomatis infection 2020.csv
+2025-02-22 12:37:39,412 - INFO - ✅ Stored dataset: NNDSS Table 1G. Carbapenemase-producing carbapenem-resistant Enterobacteriaceae to Chlamydia trachomatis infection 2021.csv
+2025-02-22 12:37:39,413 - INFO - ✅ Stored dataset: NNDSS Table 1G. Carbapenemase-producing carbapenem-resistant Enterobacteriaceae to Chlamydia trachomatis infection 2022.csv
+2025-02-22 12:37:39,414 - INFO - ✅ Stored dataset: NNDSS Table 1H. Cholera to Coccidioidomycosis 2020.csv
+2025-02-22 12:37:39,415 - INFO - ✅ Stored dataset: NNDSS Table 1H. Cholera to Coccidioidomycosis 2021.csv
+2025-02-22 12:37:39,417 - INFO - ✅ Stored dataset: NNDSS Table 1H. Cholera to Coccidioidomycosis 2022.csv
+2025-02-22 12:37:39,418 - INFO - ✅ Stored dataset: NNDSS Table 1I. Cryptosporidiosis to Cyclosporiasis 2020.csv
+2025-02-22 12:37:39,419 - INFO - ✅ Stored dataset: NNDSS Table 1I. Cryptosporidiosis to Cyclosporiasis 2021.csv
+2025-02-22 12:37:39,420 - INFO - ✅ Stored dataset: NNDSS Table 1I. Cryptosporidiosis to Cyclosporiasis 2022.csv
+2025-02-22 12:37:39,421 - INFO - ✅ Stored dataset: NNDSS Table I. infrequently reported notifiable diseases 2014.csv
+2025-02-22 12:37:39,422 - INFO - ✅ Stored dataset: NNDSS Table I. infrequently reported notifiable diseases 2015.csv
+2025-02-22 12:37:39,424 - INFO - ✅ Stored dataset: NNDSS Table I. infrequently reported notifiable diseases 2016.csv
+2025-02-22 12:37:39,425 - INFO - ✅ Stored dataset: NNDSS Table I. infrequently reported notifiable diseases 2017.csv
+2025-02-22 12:37:39,427 - INFO - ✅ Stored dataset: NNDSS Table I. infrequently reported notifiable diseases 2018.csv
+2025-02-22 12:37:39,427 - INFO - ✅ Stored dataset: NNDSS Table II. Babesiosis to Campylobacteriosis 2015.csv
+2025-02-22 12:37:39,428 - INFO - ✅ Stored dataset: NNDSS Table II. Babesiosis to Campylobacteriosis 2016.csv
+2025-02-22 12:37:39,429 - INFO - ✅ Stored dataset: NNDSS Table II. Babesiosis to Campylobacteriosis 2017.csv
+2025-02-22 12:37:39,430 - INFO - ✅ Stored dataset: NNDSS Table II. Babesiosis to Campylobacteriosis 2018.csv
+2025-02-22 12:37:39,431 - INFO - ✅ Stored dataset: NNDSS Table II. Babesiosis to Coccidioidomycosis 2014.csv
+2025-02-22 12:37:39,432 - INFO - ✅ Stored dataset: NNDSS Table II. Carbapenemase-producing carbapenem-resistant Enterobacteriaceae 2018.csv
+2025-02-22 12:37:39,433 - INFO - ✅ Stored dataset: NNDSS Table II. Chlamydia to Coccidioidomycosis.csv
+2025-02-22 12:37:39,434 - INFO - ✅ Stored dataset: NNDSS Table II. Chlamydia to Coccidioidomycosis 2015.csv
+2025-02-22 12:37:39,435 - INFO - ✅ Stored dataset: NNDSS Table II. Chlamydia to Coccidioidomycosis 2016.csv
+2025-02-22 12:37:39,439 - INFO - ✅ Stored dataset: NNDSS Table II. Chlamydia trachomatis infection to Coccidioidomycosis 2018.csv
+2025-02-22 12:37:39,441 - INFO - ✅ Stored dataset: NNDSS Table II. Cryptosporidiosis to Dengue 2015.csv
+2025-02-22 12:37:39,443 - INFO - ✅ Stored dataset: NNDSS Table II. Cryptosporidiosis to Dengue 2016.csv
+2025-02-22 12:37:39,444 - INFO - ✅ Stored dataset: NNDSS Table II. Cryptosporidiosis to Dengue 2017.csv
+2025-02-22 12:37:39,446 - INFO - ✅ Stored dataset: NNDSS Table II. Cryptosporidiosis to Dengue Hemorrhagic Fever 2014.csv
+2025-02-22 12:37:39,447 - INFO - ✅ Stored dataset: NNDSS Table II. Cryptosporidiosis to Dengue virus infection 2018.csv
+2025-02-22 12:37:39,448 - INFO - ✅ Stored dataset: NNDSS Table II. Ehrlichiosis Anaplasmosis 2014.csv
+2025-02-22 12:37:39,450 - INFO - ✅ Stored dataset: NNDSS Table II. Ehrlichiosis Anaplasmosis 2015.csv
+2025-02-22 12:37:39,451 - INFO - ✅ Stored dataset: NNDSS Table II. Ehrlichiosis Anaplasmosis 2016.csv
+2025-02-22 12:37:39,452 - INFO - ✅ Stored dataset: NNDSS Table II. Ehrlichiosis and Anaplasmosis.csv
+2025-02-22 12:37:39,454 - INFO - ✅ Stored dataset: NNDSS Table II. Ehrlichiosis and Anaplasmosis Anaplasma phagocytophilum infection to Ehrlichia chaffeensis infection 2018.csv
+2025-02-22 12:37:39,462 - INFO - ✅ Stored dataset: NNDSS Table II. Ehrlichiosis and Anaplasmosis Ehrlichia ewingii infection to Undetermined 2018.csv
+2025-02-22 12:37:39,465 - INFO - ✅ Stored dataset: NNDSS Table II. Giardiasis to Haemophilus influenza 2014.csv
+2025-02-22 12:37:39,467 - INFO - ✅ Stored dataset: NNDSS Table II. Giardiasis to Haemophilus influenza 2015.csv
+2025-02-22 12:37:39,468 - INFO - ✅ Stored dataset: NNDSS Table II. Giardiasis to Haemophilus influenza 2016.csv
+2025-02-22 12:37:39,469 - INFO - ✅ Stored dataset: NNDSS Table II. Giardiasis to Haemophilus influenza 2017.csv
+2025-02-22 12:37:39,471 - INFO - ✅ Stored dataset: NNDSS Table II. Giardiasis to Haemophilus influenza 2018.csv
+2025-02-22 12:37:39,472 - INFO - ✅ Stored dataset: NNDSS Table II. Hepatitis viral acute.csv
+2025-02-22 12:37:39,473 - INFO - ✅ Stored dataset: NNDSS Table II. Hepatitis viral acute 2015.csv
+2025-02-22 12:37:39,474 - INFO - ✅ Stored dataset: NNDSS Table II. Hepatitis viral acute 2016.csv
+2025-02-22 12:37:39,475 - INFO - ✅ Stored dataset: NNDSS Table II. Hepatitis viral acute A B 2017.csv
+2025-02-22 12:37:39,476 - INFO - ✅ Stored dataset: NNDSS Table II. Hepatitis viral acute C.csv
+2025-02-22 12:37:39,477 - INFO - ✅ Stored dataset: NNDSS Table II. Hepatitis viral acute by type A B 2018.csv
+2025-02-22 12:37:39,478 - INFO - ✅ Stored dataset: NNDSS Table II. Hepatitis viral acute by type C 2018.csv
+2025-02-22 12:37:39,479 - INFO - ✅ Stored dataset: NNDSS Table II. Invasive Pneumococcal Diseases Age 5 2017.csv
+2025-02-22 12:37:39,480 - INFO - ✅ Stored dataset: NNDSS Table II. Invasive Pneumococcal Diseases All Ages 2017.csv
+2025-02-22 12:37:39,480 - INFO - ✅ Stored dataset: NNDSS Table II. Invasive Pneumococcal to Legionellosis 2014.csv
+2025-02-22 12:37:39,481 - INFO - ✅ Stored dataset: NNDSS Table II. Invasive Pneumococcal to Legionellosis 2015.csv
+2025-02-22 12:37:39,482 - INFO - ✅ Stored dataset: NNDSS Table II. Invasive Pneumococcal to Legionellosis 2016.csv
+2025-02-22 12:37:39,483 - INFO - ✅ Stored dataset: NNDSS Table II. Invasive pneumococcal disease age 5 2018.csv
+2025-02-22 12:37:39,484 - INFO - ✅ Stored dataset: NNDSS Table II. Invasive pneumococcal disease all ages 2018.csv
+2025-02-22 12:37:39,484 - INFO - ✅ Stored dataset: NNDSS Table II. Legionellosis to Malaria.csv
+2025-02-22 12:37:39,486 - INFO - ✅ Stored dataset: NNDSS Table II. Legionellosis to Malaria 2018.csv
+2025-02-22 12:37:39,488 - INFO - ✅ Stored dataset: NNDSS Table II. Lyme disease to Meningococcal.csv
+2025-02-22 12:37:39,489 - INFO - ✅ Stored dataset: NNDSS Table II. Lyme disease to Meningococcal 2015.csv
+2025-02-22 12:37:39,491 - INFO - ✅ Stored dataset: NNDSS Table II. Lyme disease to Meningococcal 2016.csv
+2025-02-22 12:37:39,493 - INFO - ✅ Stored dataset: NNDSS Table II. Meningococcal disease to Pertussis.csv
+2025-02-22 12:37:39,494 - INFO - ✅ Stored dataset: NNDSS Table II. Meningococcal to Pertussis.csv
+2025-02-22 12:37:39,495 - INFO - ✅ Stored dataset: NNDSS Table II. Mumps to Rabies animal.csv
+2025-02-22 12:37:39,497 - INFO - ✅ Stored dataset: NNDSS Table II. Mumps to Rabies animal 2015.csv
+2025-02-22 12:37:39,498 - INFO - ✅ Stored dataset: NNDSS Table II. Mumps to Rabies animal 2016.csv
+2025-02-22 12:37:39,498 - INFO - ✅ Stored dataset: NNDSS Table II. Rabies animal to Rubella congenital syndrome 2017.csv
+2025-02-22 12:37:39,500 - INFO - ✅ Stored dataset: NNDSS Table II. Rabies animal to Rubella congenital syndrome 2018.csv
+2025-02-22 12:37:39,502 - INFO - ✅ Stored dataset: NNDSS Table II. Rubella to Salmonellosis 2015.csv
+2025-02-22 12:37:39,503 - INFO - ✅ Stored dataset: NNDSS Table II. Rubella to Salmonellosis 2016.csv
+2025-02-22 12:37:39,504 - INFO - ✅ Stored dataset: NNDSS Table II. Salmonellosis excluding typhoid fever and paratyphoid fever to Shigellosis 2018.csv
+2025-02-22 12:37:39,507 - INFO - ✅ Stored dataset: NNDSS Table II. Salmonellosis to Shigellosis 2014.csv
+2025-02-22 12:37:39,508 - INFO - ✅ Stored dataset: NNDSS Table II. Salmonellosis to Shigellosis 2017.csv
+2025-02-22 12:37:39,509 - INFO - ✅ Stored dataset: NNDSS Table II. Shiga toxin to Shigellosis 2015.csv
+2025-02-22 12:37:39,510 - INFO - ✅ Stored dataset: NNDSS Table II. Shiga toxin to Shigellosis 2016.csv
+2025-02-22 12:37:39,511 - INFO - ✅ Stored dataset: NNDSS Table II. Spotted Fever Rickettsiosis to Syphilis 2014.csv
+2025-02-22 12:37:39,512 - INFO - ✅ Stored dataset: NNDSS Table II. Spotted Fever Rickettsiosis to Syphilis 2015.csv
+2025-02-22 12:37:39,513 - INFO - ✅ Stored dataset: NNDSS Table II. Spotted Fever Rickettsiosis to Syphilis 2016.csv
+2025-02-22 12:37:39,514 - INFO - ✅ Stored dataset: NNDSS Table II. Spotted Fever Rickettsiosis to Syphilis 2017.csv
+2025-02-22 12:37:39,516 - INFO - ✅ Stored dataset: NNDSS Table II. Spotted fever rickettsiosis to Syphilis primary and secondary 2018.csv
+2025-02-22 12:37:39,518 - INFO - ✅ Stored dataset: NNDSS Table II. Tetanus to Varicella 2017.csv
+2025-02-22 12:37:39,520 - INFO - ✅ Stored dataset: NNDSS Table II. Tetanus to Varicella 2018.csv
+2025-02-22 12:37:39,521 - INFO - ✅ Stored dataset: NNDSS Table II. Tetanus to Vibriosis 2015.csv
+2025-02-22 12:37:39,522 - INFO - ✅ Stored dataset: NNDSS Table II. Tetanus to Vibriosis 2016.csv
+2025-02-22 12:37:39,523 - INFO - ✅ Stored dataset: NNDSS Table II. Tuberculosis.csv
+2025-02-22 12:37:39,525 - INFO - ✅ Stored dataset: NNDSS Table II. Varicella to West Nile virus disease.csv
+2025-02-22 12:37:39,527 - INFO - ✅ Stored dataset: NNDSS Table II. Vibriosis 2018.csv
+2025-02-22 12:37:39,528 - INFO - ✅ Stored dataset: NNDSS Table II. West Nile to Zika.csv
+2025-02-22 12:37:39,530 - INFO - ✅ Stored dataset: NNDSS Table II. West Nile virus disease 2015.csv
+2025-02-22 12:37:39,531 - INFO - ✅ Stored dataset: NNDSS Table II. West Nile virus disease 2016.csv
+2025-02-22 12:37:39,533 - INFO - ✅ Stored dataset: NNDSS Table II. West Nile virus disease 2017.csv
+2025-02-22 12:37:39,535 - INFO - ✅ Stored dataset: NNDSS Table III. Tuberculosis 2017.csv
+2025-02-22 12:37:39,537 - INFO - ✅ Stored dataset: NNDSS Table III. Tuberculosis 2018.csv
+2025-02-22 12:37:39,539 - INFO - ✅ Stored dataset: NNDSS Table IV. Tuberculosis.csv
+2025-02-22 12:37:39,543 - INFO - ✅ Stored dataset: NNDSS Table IV. Tuberculosis 2014.csv
+2025-02-22 12:37:39,545 - INFO - ✅ Stored dataset: NNDSS Table IV. Tuberculosis 2016.csv
+2025-02-22 12:37:39,547 - INFO - ✅ Stored dataset: NNDSS Weekly Data.csv
+2025-02-22 12:37:39,549 - INFO - ✅ Stored dataset: NOHSS Adult Indicators.csv
+2025-02-22 12:37:39,550 - INFO - ✅ Stored dataset: NOHSS Adult Indicators 2010 And Prior BRFSS.csv
+2025-02-22 12:37:39,553 - INFO - ✅ Stored dataset: NOHSS Adult Indicators Adults who have visited a dentist or dental clinic in the past year.csv
+2025-02-22 12:37:39,554 - INFO - ✅ Stored dataset: NOHSS Child Indicators.csv
+2025-02-22 12:37:39,556 - INFO - ✅ Stored dataset: NORS.csv
+2025-02-22 12:37:39,558 - INFO - ✅ Stored dataset: NSSP Emergency Department Visit Trajectories by State and Sub State Regions COVID-19 Flu RSV Combined.csv
+2025-02-22 12:37:39,559 - INFO - ✅ Stored dataset: NSSP Emergency Department Visits COVID-19 Flu RSV Combined by Demographic Category.csv
+2025-02-22 12:37:39,561 - INFO - ✅ Stored dataset: NWSS Public SARS-CoV-2 Concentration in Wastewater Data.csv
+2025-02-22 12:37:39,562 - INFO - ✅ Stored dataset: NWSS Public SARS-CoV-2 Wastewater Metric Data.csv
+2025-02-22 12:37:39,563 - INFO - ✅ Stored dataset: National Adult Tobacco Survey NATS.csv
+2025-02-22 12:37:39,565 - INFO - ✅ Stored dataset: National Artesunate for Severe Malaria Program Artesunate Dosing Data April to December 2019.csv
+2025-02-22 12:37:39,567 - INFO - ✅ Stored dataset: National Artesunate for Severe Malaria Program Case Report Data April to December 2019.csv
+2025-02-22 12:37:39,568 - INFO - ✅ Stored dataset: National Artesunate for Severe Malaria Program Follow-On Antimalarial Dosing Data April to December 2019.csv
+2025-02-22 12:37:39,569 - INFO - ✅ Stored dataset: National Artesunate for Severe Malaria Program Microscopy Data April to December 2019.csv
+2025-02-22 12:37:39,570 - INFO - ✅ Stored dataset: National Community Based Survey of Supports for Healthy Eating and Active Living CBS HEAL.csv
+2025-02-22 12:37:39,572 - INFO - ✅ Stored dataset: National Health Interview Survey NHIS National Cardiovascular Disease Surveillance Data.csv
+2025-02-22 12:37:39,578 - INFO - ✅ Stored dataset: National Health Interview Survey NHIS Vision and Eye Health Surveillance.csv
+2025-02-22 12:37:39,580 - INFO - ✅ Stored dataset: National Health and Nutrition Examination Survey NHANES National Cardiovascular Disease Surveillance System.csv
+2025-02-22 12:37:39,582 - INFO - ✅ Stored dataset: National Health and Nutrition Examination Survey NHANES Vision and Eye Health Surveillance.csv
+2025-02-22 12:37:39,583 - INFO - ✅ Stored dataset: National Immunization Survey Adult COVID Module NIS-ACM COVIDVaxViews Data-Archived.csv
+2025-02-22 12:37:39,584 - INFO - ✅ Stored dataset: National Immunization Survey Adult COVID Module NIS-ACM COVIDVaxViews Data.csv
+2025-02-22 12:37:39,586 - INFO - ✅ Stored dataset: National Immunization Survey Adult COVID Module NIS-ACM RespVaxView Data.csv
+2025-02-22 12:37:39,587 - INFO - ✅ Stored dataset: National Immunization Survey Adult COVID Module NIS-ACM Trends in Behavioral Indicators Among Unvaccinated People.csv
+2025-02-22 12:37:39,590 - INFO - ✅ Stored dataset: National Immunization Survey Adult COVID Module NIS-ACM Trends in Vaccination Status and Intent.csv
+2025-02-22 12:37:39,591 - INFO - ✅ Stored dataset: National Immunization Survey Adult COVID Module NIS-ACM Vaccination Status and Intent by Demographics.csv
+2025-02-22 12:37:39,592 - INFO - ✅ Stored dataset: National Immunization Survey Child COVID Module NIS-CCM COVIDVaxViews Data-Archived.csv
+2025-02-22 12:37:39,594 - INFO - ✅ Stored dataset: National Immunization Survey Child COVID Module NIS-CCM COVIDVaxViews Data.csv
+2025-02-22 12:37:39,595 - INFO - ✅ Stored dataset: National Immunization Survey Child COVID Module NIS-CCM Vaccination Status and Intent by Demographics Data.csv
+2025-02-22 12:37:39,597 - INFO - ✅ Stored dataset: National Survey of Children s Health NSCH Vision and Eye Health Surveillance.csv
+2025-02-22 12:37:39,598 - INFO - ✅ Stored dataset: National Vital Statistics System NVSS National Cardiovascular Disease Surveillance Data.csv
+2025-02-22 12:37:39,599 - INFO - ✅ Stored dataset: Nationwide Commercial Laboratory Seroprevalence Survey.csv
+2025-02-22 12:37:39,600 - INFO - ✅ Stored dataset: New Chikungunya Cases Reported in the Americas.csv
+2025-02-22 12:37:39,602 - INFO - ✅ Stored dataset: Normal weight overweight and obesity among adults aged 20 and over by selected characteristics US.csv
+2025-02-22 12:37:39,604 - INFO - ✅ Stored dataset: Nowcast Predictions for Chikungunya Virus-Infected Travelers.csv
+2025-02-22 12:37:39,606 - INFO - ✅ Stored dataset: Nowcast Predictions for Local Transmission of Chikungunya Virus.csv
+2025-02-22 12:37:39,607 - INFO - ✅ Stored dataset: Number of Reported Malaria Cases by County US 2016.csv
+2025-02-22 12:37:39,608 - INFO - ✅ Stored dataset: Number of Reported Malaria Cases by County US 2017.csv
+2025-02-22 12:37:39,610 - INFO - ✅ Stored dataset: Nutrition Physical Activity and Obesity American Community Survey.csv
+2025-02-22 12:37:39,612 - INFO - ✅ Stored dataset: Nutrition Physical Activity and Obesity Behavioral Risk Factor Surveillance System.csv
+2025-02-22 12:37:39,613 - INFO - ✅ Stored dataset: Nutrition Physical Activity and Obesity National Immunization Survey Breastfeeding.csv
+2025-02-22 12:37:39,614 - INFO - ✅ Stored dataset: Nutrition Physical Activity and Obesity Policy and Environmental Data.csv
+2025-02-22 12:37:39,615 - INFO - ✅ Stored dataset: Nutrition Physical Activity and Obesity Women Infant and Child.csv
+2025-02-22 12:37:39,618 - INFO - ✅ Stored dataset: Nutrition Physical Activity and Obesity Youth Risk Behavior Surveillance System.csv
+2025-02-22 12:37:39,620 - INFO - ✅ Stored dataset: Obesity among children and adolescents aged 2 19 years by selected characteristics US.csv
+2025-02-22 12:37:39,622 - INFO - ✅ Stored dataset: Occupant and Alcohol-Impaired Driving Deaths in States 2005-2014.csv
+2025-02-22 12:37:39,624 - INFO - ✅ Stored dataset: Outbreak Data Restaurant Grading.csv
+2025-02-22 12:37:39,625 - INFO - ✅ Stored dataset: Outpatient Respiratory Illness Activity Map.csv
+2025-02-22 12:37:39,627 - INFO - ✅ Stored dataset: PLACES Census Tract Data GIS Friendly Format 2020 release.csv
+2025-02-22 12:37:39,628 - INFO - ✅ Stored dataset: PLACES Census Tract Data GIS Friendly Format 2021 release.csv
+2025-02-22 12:37:39,629 - INFO - ✅ Stored dataset: PLACES Census Tract Data GIS Friendly Format 2022 release.csv
+2025-02-22 12:37:39,630 - INFO - ✅ Stored dataset: PLACES Census Tract Data GIS Friendly Format 2023 release.csv
+2025-02-22 12:37:39,631 - INFO - ✅ Stored dataset: PLACES Census Tract Data GIS Friendly Format 2024 release.csv
+2025-02-22 12:37:39,632 - INFO - ✅ Stored dataset: PLACES County Data GIS Friendly Format 2020 release.csv
+2025-02-22 12:37:39,634 - INFO - ✅ Stored dataset: PLACES County Data GIS Friendly Format 2021 release.csv
+2025-02-22 12:37:39,637 - INFO - ✅ Stored dataset: PLACES County Data GIS Friendly Format 2022 release.csv
+2025-02-22 12:37:39,641 - INFO - ✅ Stored dataset: PLACES County Data GIS Friendly Format 2023 release.csv
+2025-02-22 12:37:39,643 - INFO - ✅ Stored dataset: PLACES County Data GIS Friendly Format 2024 release.csv
+2025-02-22 12:37:39,645 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health Census Tract Data 2020 release.csv
+2025-02-22 12:37:39,662 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health Census Tract Data 2021 release.csv
+2025-02-22 12:37:39,664 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health Census Tract Data 2022 release.csv
+2025-02-22 12:37:39,665 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health Census Tract Data 2023 release.csv
+2025-02-22 12:37:39,666 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health Census Tract Data 2024 release.csv
+2025-02-22 12:37:39,670 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health County Data 2020 release.csv
+2025-02-22 12:37:39,672 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health County Data 2021 release.csv
+2025-02-22 12:37:39,674 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health County Data 2022 release.csv
+2025-02-22 12:37:39,675 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health County Data 2023 release.csv
+2025-02-22 12:37:39,675 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health County Data 2024 release.csv
+2025-02-22 12:37:39,676 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health Place Data 2020 release.csv
+2025-02-22 12:37:39,677 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health Place Data 2021 release.csv
+2025-02-22 12:37:39,678 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health Place Data 2022 release.csv
+2025-02-22 12:37:39,679 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health Place Data 2023 release.csv
+2025-02-22 12:37:39,680 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health Place Data 2024 release.csv
+2025-02-22 12:37:39,681 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health ZCTA Data 2020 release.csv
+2025-02-22 12:37:39,683 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health ZCTA Data 2021 release.csv
+2025-02-22 12:37:39,684 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health ZCTA Data 2022 release.csv
+2025-02-22 12:37:39,685 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health ZCTA Data 2023 release.csv
+2025-02-22 12:37:39,687 - INFO - ✅ Stored dataset: PLACES Local Data for Better Health ZCTA Data 2024 release.csv
+2025-02-22 12:37:39,689 - INFO - ✅ Stored dataset: PLACES Place Data GIS Friendly Format 2020 release.csv
+2025-02-22 12:37:39,690 - INFO - ✅ Stored dataset: PLACES Place Data GIS Friendly Format 2021 release.csv
+2025-02-22 12:37:39,691 - INFO - ✅ Stored dataset: PLACES Place Data GIS Friendly Format 2022 release.csv
+2025-02-22 12:37:39,693 - INFO - ✅ Stored dataset: PLACES Place Data GIS Friendly Format 2023 release.csv
+2025-02-22 12:37:39,694 - INFO - ✅ Stored dataset: PLACES Place Data GIS Friendly Format 2024 release.csv
+2025-02-22 12:37:39,696 - INFO - ✅ Stored dataset: PLACES ZCTA Data GIS Friendly Format 2020 release.csv
+2025-02-22 12:37:39,698 - INFO - ✅ Stored dataset: PLACES ZCTA Data GIS Friendly Format 2021 release.csv
+2025-02-22 12:37:39,700 - INFO - ✅ Stored dataset: PLACES ZCTA Data GIS Friendly Format 2022 release.csv
+2025-02-22 12:37:39,702 - INFO - ✅ Stored dataset: PLACES ZCTA Data GIS Friendly Format 2023 release.csv
+2025-02-22 12:37:39,704 - INFO - ✅ Stored dataset: PLACES ZCTA Data GIS Friendly Format 2024 release.csv
+2025-02-22 12:37:39,705 - INFO - ✅ Stored dataset: PLACES and 500 Cities Data Dictionary.csv
+2025-02-22 12:37:39,706 - INFO - ✅ Stored dataset: PONE-D-15-23803.csv
+2025-02-22 12:37:39,708 - INFO - ✅ Stored dataset: Palmer Drought Severity Index 1895-2016.csv
+2025-02-22 12:37:39,709 - INFO - ✅ Stored dataset: Partial Variable Name.csv
+2025-02-22 12:37:39,711 - INFO - ✅ Stored dataset: Pathogen Detections Among Enrolled Children in the New Vaccine Surveillance Network NVSN Acute Respiratory Illnesses ARI 12 Month Rolling Period.csv
+2025-02-22 12:37:39,713 - INFO - ✅ Stored dataset: Pathway to Practice P2P Resource Center.csv
+2025-02-22 12:37:39,715 - INFO - ✅ Stored dataset: Patient Characteristics of Laboratory-Confirmed COVID-19 Hospitalizations from the COVID-NET Surveillance System.csv
+2025-02-22 12:37:39,717 - INFO - ✅ Stored dataset: Percent Positivity of COVID-19 Nucleic Acid Amplification Tests by HHS Region National Respiratory and Enteric Virus Surveillance System.csv
+2025-02-22 12:37:39,718 - INFO - ✅ Stored dataset: Percent Positivity of Respiratory Syncytial Virus Nucleic Acid Amplification Tests by HHS Region National Respiratory and Enteric Virus Surveillance System.csv
+2025-02-22 12:37:39,719 - INFO - ✅ Stored dataset: Percent Positivity of Viral Detections Among Enrolled Children in the New Vaccine Surveillance Network NVSN Acute Respiratory Illnesses ARI 2017 Present.csv
+2025-02-22 12:37:39,721 - INFO - ✅ Stored dataset: Percent of Tests Positive for Viral Respiratory Pathogens.csv
+2025-02-22 12:37:39,722 - INFO - ✅ Stored dataset: Percentage of Adults Who Report Driving After Drinking Too Much in the past 30 days 2012 2014 Region 10 Seattle.csv
+2025-02-22 12:37:39,724 - INFO - ✅ Stored dataset: Percentage of Adults Who Report Driving After Drinking Too Much in the past 30 days 2012 2014 Region 1 Boston.csv
+2025-02-22 12:37:39,725 - INFO - ✅ Stored dataset: Percentage of Adults Who Report Driving After Drinking Too Much in the past 30 days 2012 2014 Region 2 New York.csv
+2025-02-22 12:37:39,726 - INFO - ✅ Stored dataset: Percentage of Adults Who Report Driving After Drinking Too Much in the past 30 days 2012 2014 Region 3 Philadelphia.csv
+2025-02-22 12:37:39,727 - INFO - ✅ Stored dataset: Percentage of Adults Who Report Driving After Drinking Too Much in the past 30 days 2012 2014 Region 4 Atlanta.csv
+2025-02-22 12:37:39,729 - INFO - ✅ Stored dataset: Percentage of Adults Who Report Driving After Drinking Too Much in the past 30 days 2012 2014 Region 5 Chicago.csv
+2025-02-22 12:37:39,730 - INFO - ✅ Stored dataset: Percentage of Adults Who Report Driving After Drinking Too Much in the past 30 days 2012 2014 Region 6 Dallas.csv
+2025-02-22 12:37:39,731 - INFO - ✅ Stored dataset: Percentage of Adults Who Report Driving After Drinking Too Much in the past 30 days 2012 2014 Region 7 Kansas City.csv
+2025-02-22 12:37:39,734 - INFO - ✅ Stored dataset: Percentage of Adults Who Report Driving After Drinking Too Much in the past 30 days 2012 2014 Region 8 Denver.csv
+2025-02-22 12:37:39,735 - INFO - ✅ Stored dataset: Percentage of Adults Who Report Driving After Drinking Too Much in the past 30 days 2012 2014 Region 9 San Francisco.csv
+2025-02-22 12:37:39,737 - INFO - ✅ Stored dataset: Percentage of Adults Who Report Driving After Drinking Too Much in the past 30 days All States 2012 2014.csv
+2025-02-22 12:37:39,739 - INFO - ✅ Stored dataset: Percentage of Drivers and Front Seat Passengers Wearing Seat Belts 2012 2014 All States.csv
+2025-02-22 12:37:39,741 - INFO - ✅ Stored dataset: Percentage of Drivers and Front Seat Passengers Wearing Seat Belts 2012 2014 Region 10 Seattle.csv
+2025-02-22 12:37:39,743 - INFO - ✅ Stored dataset: Percentage of Drivers and Front Seat Passengers Wearing Seat Belts 2012 2014 Region 1 Boston.csv
+2025-02-22 12:37:39,745 - INFO - ✅ Stored dataset: Percentage of Drivers and Front Seat Passengers Wearing Seat Belts 2012 2014 Region 2 New York.csv
+2025-02-22 12:37:39,746 - INFO - ✅ Stored dataset: Percentage of Drivers and Front Seat Passengers Wearing Seat Belts 2012 2014 Region 3 Philadelphia.csv
+2025-02-22 12:37:39,748 - INFO - ✅ Stored dataset: Percentage of Drivers and Front Seat Passengers Wearing Seat Belts 2012 2014 Region 4 Atlanta.csv
+2025-02-22 12:37:39,750 - INFO - ✅ Stored dataset: Percentage of Drivers and Front Seat Passengers Wearing Seat Belts 2012 2014 Region 5 Chicago.csv
+2025-02-22 12:37:39,751 - INFO - ✅ Stored dataset: Percentage of Drivers and Front Seat Passengers Wearing Seat Belts 2012 2014 Region 6 Dallas.csv
+2025-02-22 12:37:39,753 - INFO - ✅ Stored dataset: Percentage of Drivers and Front Seat Passengers Wearing Seat Belts 2012 2014 Region 7 Kansas City.csv
+2025-02-22 12:37:39,755 - INFO - ✅ Stored dataset: Percentage of Drivers and Front Seat Passengers Wearing Seat Belts 2012 2014 Region 8 Denver.csv
+2025-02-22 12:37:39,757 - INFO - ✅ Stored dataset: Percentage of Drivers and Front Seat Passengers Wearing Seat Belts 2012 2014 Region 9 San Francisco.csv
+2025-02-22 12:37:39,759 - INFO - ✅ Stored dataset: Physician Experiences Related to COVID-19 from the National Ambulatory Medical Care Survey.csv
+2025-02-22 12:37:39,761 - INFO - ✅ Stored dataset: Population-Weighted Ultraviolet Irradiance 2004-2015.csv
+2025-02-22 12:37:39,763 - INFO - ✅ Stored dataset: Population Group Estimates used in the Healthy People 2020 Overview of Health Disparities.csv
+2025-02-22 12:37:39,765 - INFO - ✅ Stored dataset: Post-COVID Conditions.csv
+2025-02-22 12:37:39,767 - INFO - ✅ Stored dataset: Preliminary 2024-2025 U.S. COVID-19 Burden Estimates.csv
+2025-02-22 12:37:39,768 - INFO - ✅ Stored dataset: Preliminary 2024-2025 U.S. RSV Burden Estimates.csv
+2025-02-22 12:37:39,772 - INFO - ✅ Stored dataset: Preliminary Estimates of Cumulative COVID-19-associated Hospitalizations by Week for 2024-2025.csv
+2025-02-22 12:37:39,774 - INFO - ✅ Stored dataset: Preliminary Estimates of Cumulative RSV-associated Hospitalizations by Week for 2024-2025 season.csv
+2025-02-22 12:37:39,777 - INFO - ✅ Stored dataset: Preliminary Estimates of Visits to Health Centers in the US January 2022-June 2024.csv
+2025-02-22 12:37:39,779 - INFO - ✅ Stored dataset: Prevalence of Selected Measures Among Adults Aged 20 and Over US 1999-2000 through 2017-2018.csv
+2025-02-22 12:37:39,781 - INFO - ✅ Stored dataset: Prolonged Unplanned School Closures USA 2011-2019.csv
+2025-02-22 12:37:39,783 - INFO - ✅ Stored dataset: Provider Relief Fund Accelerated and Advance Payments.csv
+2025-02-22 12:37:39,785 - INFO - ✅ Stored dataset: Provider Relief Fund COVID-19 High-Impact Payments.csv
+2025-02-22 12:37:39,786 - INFO - ✅ Stored dataset: Provider Relief Fund COVID-19 Nursing Home Quality Incentive Program.csv
+2025-02-22 12:37:39,788 - INFO - ✅ Stored dataset: Provisional COVID-19 Death Counts by Age in Years 2020-2023.csv
+2025-02-22 12:37:39,791 - INFO - ✅ Stored dataset: Provisional COVID-19 Death Counts by Week Ending Date and State.csv
+2025-02-22 12:37:39,793 - INFO - ✅ Stored dataset: Provisional COVID-19 Death Counts in the US by County.csv
+2025-02-22 12:37:39,794 - INFO - ✅ Stored dataset: Provisional COVID-19 Deaths Distribution of Deaths by Race and Hispanic Origin.csv
+2025-02-22 12:37:39,796 - INFO - ✅ Stored dataset: Provisional COVID-19 Deaths Focus on Ages 0-18 Years.csv
+2025-02-22 12:37:39,797 - INFO - ✅ Stored dataset: Provisional COVID-19 Deaths by County and Race and Hispanic Origin.csv
+2025-02-22 12:37:39,799 - INFO - ✅ Stored dataset: Provisional COVID-19 Deaths by HHS Region Race and Age.csv
+2025-02-22 12:37:39,801 - INFO - ✅ Stored dataset: Provisional COVID-19 Deaths by Place of Death and Age.csv
+2025-02-22 12:37:39,802 - INFO - ✅ Stored dataset: Provisional COVID-19 Deaths by Place of Death and State.csv
+2025-02-22 12:37:39,804 - INFO - ✅ Stored dataset: Provisional COVID-19 Deaths by Race and Hispanic Origin and Age.csv
+2025-02-22 12:37:39,805 - INFO - ✅ Stored dataset: Provisional COVID-19 Deaths by Sex and Age.csv
+2025-02-22 12:37:39,806 - INFO - ✅ Stored dataset: Provisional COVID-19 Deaths by Week Sex and Age.csv
+2025-02-22 12:37:39,808 - INFO - ✅ Stored dataset: Provisional COVID-19 Deaths by Week and County Social Vulnerability Index.csv
+2025-02-22 12:37:39,810 - INFO - ✅ Stored dataset: Provisional COVID-19 Deaths by Week and Urbanicity.csv
+2025-02-22 12:37:39,811 - INFO - ✅ Stored dataset: Provisional COVID-19 death counts and rates by jurisdiction of residence and demographic characteristics.csv
+2025-02-22 12:37:39,812 - INFO - ✅ Stored dataset: Provisional COVID-19 death counts and rates by month jurisdiction of residence and demographic characteristics.csv
+2025-02-22 12:37:39,814 - INFO - ✅ Stored dataset: Provisional COVID-19 death counts rates and percent of total deaths by jurisdiction of residence.csv
+2025-02-22 12:37:39,816 - INFO - ✅ Stored dataset: Provisional Death Counts for Coronavirus Disease COVID-19.csv
+2025-02-22 12:37:39,817 - INFO - ✅ Stored dataset: Provisional Death Counts for Influenza Pneumonia and COVID-19.csv
+2025-02-22 12:37:39,819 - INFO - ✅ Stored dataset: Provisional Drug Overdose Deaths by Urban Rural Classification Scheme for 12 month-ending December 2018-December 2020.csv
+2025-02-22 12:37:39,821 - INFO - ✅ Stored dataset: Provisional Percent of Deaths for COVID-19 Influenza and RSV.csv
+2025-02-22 12:37:39,823 - INFO - ✅ Stored dataset: Provisional Percent of Deaths for COVID-19 Influenza and RSV by Select Characteristics.csv
+2025-02-22 12:37:39,825 - INFO - ✅ Stored dataset: Provisional drug overdose death counts for specific drugs.csv
+2025-02-22 12:37:39,827 - INFO - ✅ Stored dataset: Question Inventory on Tobacco QIT.csv
+2025-02-22 12:37:39,829 - INFO - ✅ Stored dataset: Quitline 7-Month Follow-Up Not Comparable Across States 2010-2011.csv
+2025-02-22 12:37:39,831 - INFO - ✅ Stored dataset: Quitline Quitline Names and Phone Numbers.csv
+2025-02-22 12:37:39,833 - INFO - ✅ Stored dataset: Quitline Service Utilization 2010 To Present.csv
+2025-02-22 12:37:39,836 - INFO - ✅ Stored dataset: Quitline Services Available Counseling 2010 To Present.csv
+2025-02-22 12:37:39,838 - INFO - ✅ Stored dataset: Quitline Services Available Hours Of Operation And Available Languages 2010 To Present.csv
+2025-02-22 12:37:39,841 - INFO - ✅ Stored dataset: Quitline Services Available Medications 2010 To Present.csv
+2025-02-22 12:37:39,842 - INFO - ✅ Stored dataset: RESP-LENS.csv
+2025-02-22 12:37:39,844 - INFO - ✅ Stored dataset: Race and Ethnic Disparities in Cigarette Smoking Among Adults.csv
+2025-02-22 12:37:39,846 - INFO - ✅ Stored dataset: Rates and Trends in Coronary Heart Disease and Stroke Mortality Data Among US Adults 35 by County 1999-2018.csv
+2025-02-22 12:37:39,848 - INFO - ✅ Stored dataset: Rates and Trends in Heart Disease and Stroke Mortality Among US Adults 35 by County Age Group Race Ethnicity and Sex 2000-2019.csv
+2025-02-22 12:37:39,850 - INFO - ✅ Stored dataset: Rates and Trends in Hypertension-related Cardiovascular Disease Mortality Among US Adults 35 by County Age Group Race Ethnicity and Sex 2000-2019.csv
+2025-02-22 12:37:39,852 - INFO - ✅ Stored dataset: Rates of COVID-19 Cases or Deaths by Age Group and Updated Bivalent Booster Status.csv
+2025-02-22 12:37:39,854 - INFO - ✅ Stored dataset: Rates of COVID-19 Cases or Deaths by Age Group and Vaccination Status.csv
+2025-02-22 12:37:39,856 - INFO - ✅ Stored dataset: Rates of COVID-19 Cases or Deaths by Age Group and Vaccination Status and Booster Dose.csv
+2025-02-22 12:37:39,859 - INFO - ✅ Stored dataset: Rates of COVID-19 Cases or Deaths by Age Group and Vaccination Status and Second Booster Dose.csv
+2025-02-22 12:37:39,861 - INFO - ✅ Stored dataset: Rates of Laboratory-Confirmed RSV COVID-19 and Flu Hospitalizations from the RESP-NET Surveillance Systems.csv
+2025-02-22 12:37:39,862 - INFO - ✅ Stored dataset: Rates of TBI-related Deaths by Age Group US 2001 2010.csv
+2025-02-22 12:37:39,864 - INFO - ✅ Stored dataset: Rates of TBI-related Emergency Department Visits Hospitalizations and Deaths US 2001 2010.csv
+2025-02-22 12:37:39,866 - INFO - ✅ Stored dataset: Rates of TBI-related Emergency Department Visits Hospitalizations and Deaths by Sex US 2001 2010.csv
+2025-02-22 12:37:39,868 - INFO - ✅ Stored dataset: Reasons for No Eye Care Age-adjusted Prevalence.csv
+2025-02-22 12:37:39,869 - INFO - ✅ Stored dataset: Reduced Access to Care During COVID-19.csv
+2025-02-22 12:37:39,872 - INFO - ✅ Stored dataset: Respiratory Syncytial Virus Laboratory Data NREVSS.csv
+2025-02-22 12:37:39,873 - INFO - ✅ Stored dataset: Respiratory Virus Response RVR US Hospitalization Metrics by Jurisdiction Timeseries ARCHIVED.csv
+2025-02-22 12:37:39,875 - INFO - ✅ Stored dataset: SAMHSA Synar Reports Youth Tobacco Sales.csv
+2025-02-22 12:37:39,877 - INFO - ✅ Stored dataset: SARS-CoV-2 Variant Proportions.csv
+2025-02-22 12:37:39,880 - INFO - ✅ Stored dataset: SDOH Measures for Census Tract ACS 2017-2021.csv
+2025-02-22 12:37:39,882 - INFO - ✅ Stored dataset: SDOH Measures for County ACS 2017-2021.csv
+2025-02-22 12:37:39,884 - INFO - ✅ Stored dataset: SDOH Measures for Place ACS 2017-2021.csv
+2025-02-22 12:37:39,886 - INFO - ✅ Stored dataset: SDOH Measures for ZCTA ACS 2017-2021.csv
+2025-02-22 12:37:39,888 - INFO - ✅ Stored dataset: Science Clips.csv
+2025-02-22 12:37:39,890 - INFO - ✅ Stored dataset: Sex at Birth Related Disparities in Cigarette Smoking Among Adults.csv
+2025-02-22 12:37:39,892 - INFO - ✅ Stored dataset: Smoking-Attributable Mortality Morbidity and Economic Costs SAMMEC Smoking-Attributable Expenditures SAE.csv
+2025-02-22 12:37:39,894 - INFO - ✅ Stored dataset: Smoking-Attributable Mortality Morbidity and Economic Costs SAMMEC Smoking-Attributable Mortality SAM.csv
+2025-02-22 12:37:39,895 - INFO - ✅ Stored dataset: Social Vulnerability Index 2018 US county.csv
+2025-02-22 12:37:39,897 - INFO - ✅ Stored dataset: Social Vulnerability Index 2018 US tract.csv
+2025-02-22 12:37:39,898 - INFO - ✅ Stored dataset: SocrataDataRefresh Test.csv
+2025-02-22 12:37:39,899 - INFO - ✅ Stored dataset: Sports Drinks.csv
+2025-02-22 12:37:39,901 - INFO - ✅ Stored dataset: Standardized Precipitation Evapotranspiration Index 1895-2016.csv
+2025-02-22 12:37:39,903 - INFO - ✅ Stored dataset: Standardized Precipitation Index 1895-2016.csv
+2025-02-22 12:37:39,906 - INFO - ✅ Stored dataset: State-Level Restrictions on Vaccine Mandate Currently in Effect.csv
+2025-02-22 12:37:39,909 - INFO - ✅ Stored dataset: State-Level Restrictions on Vaccine Mandates All.csv
+2025-02-22 12:37:39,920 - INFO - ✅ Stored dataset: State-Level Vaccine Mandates All.csv
+2025-02-22 12:37:39,949 - INFO - ✅ Stored dataset: State-Level Vaccine Mandates Currently in Effect.csv
+2025-02-22 12:37:39,952 - INFO - ✅ Stored dataset: State Specific Influenza Vaccination Coverage Among Women With Live Birth PRAMS 2009-10 Influenza Season.csv
+2025-02-22 12:37:39,954 - INFO - ✅ Stored dataset: State Tobacco Related Disparities Dashboard Data.csv
+2025-02-22 12:37:39,956 - INFO - ✅ Stored dataset: Stroke Mortality Data Among US Adults 35 by State Territory and County.csv
+2025-02-22 12:37:39,960 - INFO - ✅ Stored dataset: Stroke Mortality Data Among US Adults 35 by State Territory and County 2015-2017.csv
+2025-02-22 12:37:39,962 - INFO - ✅ Stored dataset: Stroke Mortality Data Among US Adults 35 by State Territory and County 2016-2018.csv
+2025-02-22 12:37:39,967 - INFO - ✅ Stored dataset: Stroke Mortality Data Among US Adults 35 by State Territory and County 2017-2019.csv
+2025-02-22 12:37:39,969 - INFO - ✅ Stored dataset: Stroke Mortality Data Among US Adults 35 by State Territory and County 2018-2020.csv
+2025-02-22 12:37:39,973 - INFO - ✅ Stored dataset: Stroke Mortality Data Among US Adults 35 by State Territory and County 2019-2021.csv
+2025-02-22 12:37:39,976 - INFO - ✅ Stored dataset: Survey Data Restaurant Grading.csv
+2025-02-22 12:37:39,980 - INFO - ✅ Stored dataset: TABLE III. Deaths in 122 U.S. cities 2015.csv
+2025-02-22 12:37:39,982 - INFO - ✅ Stored dataset: TABLE III. Deaths in 122 U.S. cities 2016.csv
+2025-02-22 12:37:39,983 - INFO - ✅ Stored dataset: Table for STATE System Appropriations Grants Total Per Capita UIC Interactive Map.csv
+2025-02-22 12:37:39,986 - INFO - ✅ Stored dataset: Table for STATE System Comprehensive Medicaid Coverage of Cessation Treatments Interactive Map.csv
+2025-02-22 12:37:39,987 - INFO - ✅ Stored dataset: Table for STATE System Current Cigarette Use Among Adults Interactive Map.csv
+2025-02-22 12:37:39,989 - INFO - ✅ Stored dataset: Table for STATE System Current Cigarette Use Among Youth Interactive Map.csv
+2025-02-22 12:37:39,990 - INFO - ✅ Stored dataset: Table for STATE System Excise Taxes on Cigarettes Interactive Map.csv
+2025-02-22 12:37:39,991 - INFO - ✅ Stored dataset: Table for STATE System Expenditures as a Percentage of CDC Recommended Level UIC Interactive Map.csv
+2025-02-22 12:37:39,992 - INFO - ✅ Stored dataset: Table for STATE System Preemption on Licensure Smokefree Indoor Air and Youth Access Interactive Map.csv
+2025-02-22 12:37:39,993 - INFO - ✅ Stored dataset: Table for STATE System Quitline Service Utilization Callers Who Received Counseling and or Medications per 1 000 Callers NQDW OSH Interactive Map.csv
+2025-02-22 12:37:39,994 - INFO - ✅ Stored dataset: Table for STATE System Quitline Service Utilization Incoming Calls per 10 000 State Population NQDW OSH Interactive Map.csv
+2025-02-22 12:37:39,997 - INFO - ✅ Stored dataset: Table for STATE System Smokefree Indoor Air Private Worksites Restaurants and Bars Interactive Map.csv
+2025-02-22 12:37:40,000 - INFO - ✅ Stored dataset: Table of Comprehensive Medicaid Coverage of Treatments Lung Association Cessation Coverage.csv
+2025-02-22 12:37:40,002 - INFO - ✅ Stored dataset: Table of Excise Taxes on Combustible Tobacco Products CDC STATE System Tobacco Legislation Tax.csv
+2025-02-22 12:37:40,006 - INFO - ✅ Stored dataset: Table of Excise Taxes on Non-Combustible Tobacco Products CDC STATE System Tobacco Legislation Tax.csv
+2025-02-22 12:37:40,008 - INFO - ✅ Stored dataset: Table of Gross Cigarette Tax Revenue Per State Orzechowski and Walker Tax Burden on Tobacco.csv
+2025-02-22 12:37:40,010 - INFO - ✅ Stored dataset: Table of Licensure for Vending Machines CDC STATE System Tobacco Legislation.csv
+2025-02-22 12:37:40,015 - INFO - ✅ Stored dataset: Table of Medicaid Barriers to Treatments Lung Association Cessation Coverage.csv
+2025-02-22 12:37:40,019 - INFO - ✅ Stored dataset: Table of Medicaid Coverage of Treatments Counseling Lung Association Cessation Coverage.csv
+2025-02-22 12:37:40,025 - INFO - ✅ Stored dataset: Table of Medicaid Coverage of Treatments Lung Association Cessation Coverage.csv
+2025-02-22 12:37:40,035 - INFO - ✅ Stored dataset: Table of Medicaid Coverage of Treatments Medications Lung Association Cessation Coverage.csv
+2025-02-22 12:37:40,057 - INFO - ✅ Stored dataset: Table of Preemption on Licensure Tobacco Legislation Preemption.csv
+2025-02-22 12:37:40,061 - INFO - ✅ Stored dataset: Table of Preemption on Smokefree Indoor Air Tobacco Legislation Preemption.csv
+2025-02-22 12:37:40,062 - INFO - ✅ Stored dataset: Table of Preemption on Youth Access Tobacco Legislation Preemption.csv
+2025-02-22 12:37:40,063 - INFO - ✅ Stored dataset: Table of Recommended Funding Levels by Program Components CDC Best Practices for Comprehensive Tobacco Control Programs 2014.csv
+2025-02-22 12:37:40,065 - INFO - ✅ Stored dataset: Table of Recommended Per-Capita Funding Levels for State Programs CDC Best Practices for Comprehensive Tobacco Control Programs 2014.csv
+2025-02-22 12:37:40,066 - INFO - ✅ Stored dataset: Table of Recommended Total Funding Levels for State Programs CDC Best Practices for Comprehensive Tobacco Control Programs 2014.csv
+2025-02-22 12:37:40,067 - INFO - ✅ Stored dataset: Table of Smokefree Indoor Air for Private Worksites Restaurants and Bars Tobacco Legislation Smokefree Indoor Air.csv
+2025-02-22 12:37:40,068 - INFO - ✅ Stored dataset: Table of Smokefree Non-Tribal Gaming Facilities Tobacco Legislation Smokefree Indoor Air.csv
+2025-02-22 12:37:40,069 - INFO - ✅ Stored dataset: Table of States with Laws Prohibiting Sales of E-Cigarettes to Minors E-Cigarette Legislation Youth Access.csv
+2025-02-22 12:37:40,070 - INFO - ✅ Stored dataset: Table of States with Laws Prohibiting the Use of E-Cigarettes in Indoor Areas of Private Worksites Restaurants and Bars E-Cigarette Legislation Smokefree Indoor Air.csv
+2025-02-22 12:37:40,071 - INFO - ✅ Stored dataset: Table of States with Laws Requiring Licenses For Over-the-counter Sales of Cigarettes Tobacco Legislation Licensure.csv
+2025-02-22 12:37:40,072 - INFO - ✅ Stored dataset: Table of States with Laws Requiring Licenses For Over-the-counter Sales of E-Cigarettes E-Cigarette Legislation Licensure.csv
+2025-02-22 12:37:40,073 - INFO - ✅ Stored dataset: Table of States with Laws Taxing E-Cigarettes E-Cigarette Legislation Tax.csv
+2025-02-22 12:37:40,074 - INFO - ✅ Stored dataset: Telemedicine Use in the Last 4 Weeks.csv
+2025-02-22 12:37:40,075 - INFO - ✅ Stored dataset: Tests for antibodies to trachoma PGP3 antigen.csv
+2025-02-22 12:37:40,076 - INFO - ✅ Stored dataset: The Tax Burden on Tobacco 1970-2019.csv
+2025-02-22 12:37:40,077 - INFO - ✅ Stored dataset: Tobacco Use Supplement to the Current Population Survey TUS-CPS Data.csv
+2025-02-22 12:37:40,078 - INFO - ✅ Stored dataset: Top syndicated pages from CDC.gov by weekly page views.csv
+2025-02-22 12:37:40,078 - INFO - ✅ Stored dataset: Total COVID-19 Deaths since January 1 2020 by Age Group Race Ethnicity and Sex.csv
+2025-02-22 12:37:40,079 - INFO - ✅ Stored dataset: Trends in COVID-19 Cases and Deaths in the US by County-level Population Factors ARCHIVED.csv
+2025-02-22 12:37:40,080 - INFO - ✅ Stored dataset: U.S. COVID-19 MakeMyTestCount Self-Test Data.csv
+2025-02-22 12:37:40,081 - INFO - ✅ Stored dataset: U.S. COVID-19 Self-Test Data.csv
+2025-02-22 12:37:40,082 - INFO - ✅ Stored dataset: U.S. Chronic Disease Indicators.csv
+2025-02-22 12:37:40,084 - INFO - ✅ Stored dataset: U.S. Chronic Disease Indicators CDI 2023 Release.csv
+2025-02-22 12:37:40,085 - INFO - ✅ Stored dataset: U.S. Life Expectancy at Birth by State and Census Tract 2010-2015.csv
+2025-02-22 12:37:40,085 - INFO - ✅ Stored dataset: U.S. State Life Expectancy by Sex 2018.csv
+2025-02-22 12:37:40,086 - INFO - ✅ Stored dataset: U.S. State Life Expectancy by Sex 2019.csv
+2025-02-22 12:37:40,087 - INFO - ✅ Stored dataset: U.S. State Life Expectancy by Sex 2020.csv
+2025-02-22 12:37:40,088 - INFO - ✅ Stored dataset: U.S. State Life Expectancy by Sex 2021.csv
+2025-02-22 12:37:40,090 - INFO - ✅ Stored dataset: U.S. State Territorial and County Stay-At-Home Orders March 15-May 5 by County by Day.csv
+2025-02-22 12:37:40,091 - INFO - ✅ Stored dataset: U.S. State and Territorial Gathering Bans March 11 2020-August 15 2021 by County by Day.csv
+2025-02-22 12:37:40,092 - INFO - ✅ Stored dataset: U.S. State and Territorial Gathering Bans March 11 2020-May 31 2021 by County by Day.csv
+2025-02-22 12:37:40,093 - INFO - ✅ Stored dataset: U.S. State and Territorial Orders Closing and Reopening Bars Issued from March 11 2020 through August 15 2021 by County by Day.csv
+2025-02-22 12:37:40,094 - INFO - ✅ Stored dataset: U.S. State and Territorial Orders Closing and Reopening Bars Issued from March 11 2020 through May 31 2021 by County by Day.csv
+2025-02-22 12:37:40,094 - INFO - ✅ Stored dataset: U.S. State and Territorial Orders Closing and Reopening Restaurants Issued from March 11 2020 through August 15 2021 by County by Day.csv
+2025-02-22 12:37:40,095 - INFO - ✅ Stored dataset: U.S. State and Territorial Orders Closing and Reopening Restaurants Issued from March 11 2020 through May 31 2021 by County by Day.csv
+2025-02-22 12:37:40,096 - INFO - ✅ Stored dataset: U.S. State and Territorial Public Mask Mandates From April 10 2020 through August 15 2021 by County by Day.csv
+2025-02-22 12:37:40,097 - INFO - ✅ Stored dataset: U.S. State and Territorial Public Mask Mandates From April 10 2020 through July 20 2021 by County by Day.csv
+2025-02-22 12:37:40,098 - INFO - ✅ Stored dataset: U.S. State and Territorial Public Mask Mandates From April 8 2020 through August 15 2021 by State by Day.csv
+2025-02-22 12:37:40,099 - INFO - ✅ Stored dataset: U.S. State and Territorial Stay-At-Home Orders March 15 2020 August 15 2021 by County by Day.csv
+2025-02-22 12:37:40,100 - INFO - ✅ Stored dataset: U.S. State and Territorial Stay-At-Home Orders March 15 2020 May 31 2021 by County by Day.csv
+2025-02-22 12:37:40,101 - INFO - ✅ Stored dataset: US COVID-19 Community Levels by County.csv
+2025-02-22 12:37:40,102 - INFO - ✅ Stored dataset: US COVID-19 County Level Data Sources ARCHIVED.csv
+2025-02-22 12:37:40,102 - INFO - ✅ Stored dataset: US COVID-19 County Level of Community Transmission Historical Changes ARCHIVED.csv
+2025-02-22 12:37:40,103 - INFO - ✅ Stored dataset: US COVID-19 County Level of Community Transmission as Originally Posted ARCHIVED.csv
+2025-02-22 12:37:40,104 - INFO - ✅ Stored dataset: US COVID-19 Hospitalization Metrics by Jurisdiction Timeseries ARCHIVED.csv
+2025-02-22 12:37:40,105 - INFO - ✅ Stored dataset: US Census Annual Estimates of the Resident Population for Selected Age Groups by Sex for the US.csv
+2025-02-22 12:37:40,107 - INFO - ✅ Stored dataset: US Drought Monitor 2000-2016.csv
+2025-02-22 12:37:40,108 - INFO - ✅ Stored dataset: University of Illinois at Chicago Health Policy Center Funding.csv
+2025-02-22 12:37:40,111 - INFO - ✅ Stored dataset: Urban-Rural Related Disparities in Cigarette Smoking Among Adults.csv
+2025-02-22 12:37:40,113 - INFO - ✅ Stored dataset: VSRR Provisional County-Level Drug Overdose Death Counts.csv
+2025-02-22 12:37:40,114 - INFO - ✅ Stored dataset: VSRR Provisional Drug Overdose Death Counts.csv
+2025-02-22 12:37:40,115 - INFO - ✅ Stored dataset: VSRR Provisional Maternal Death Counts and Rates.csv
+2025-02-22 12:37:40,116 - INFO - ✅ Stored dataset: VSRR State and National Provisional Counts for Live Births Deaths and Infant Deaths.csv
+2025-02-22 12:37:40,117 - INFO - ✅ Stored dataset: Vaccination Concerns Issues and Motivators RespVaxView Data Centers for Disease Control and Prevention cdc.gov.csv
+2025-02-22 12:37:40,118 - INFO - ✅ Stored dataset: Vaccination Coverage among Adolescents 13-17 Years.csv
+2025-02-22 12:37:40,118 - INFO - ✅ Stored dataset: Vaccination Coverage among Adults 18 Years.csv
+2025-02-22 12:37:40,119 - INFO - ✅ Stored dataset: Vaccination Coverage among Health Care Personnel.csv
+2025-02-22 12:37:40,121 - INFO - ✅ Stored dataset: Vaccination Coverage among Nursing Home Residents.csv
+2025-02-22 12:37:40,122 - INFO - ✅ Stored dataset: Vaccination Coverage among Pregnant Women.csv
+2025-02-22 12:37:40,123 - INFO - ✅ Stored dataset: Vaccination Coverage among Young Children 0-35 Months.csv
+2025-02-22 12:37:40,125 - INFO - ✅ Stored dataset: Vaccination Coverage and Exemptions among Kindergartners.csv
+2025-02-22 12:37:40,125 - INFO - ✅ Stored dataset: Vaccination coverage among children 19 35 months of age for selected diseases by race Hispanic origin poverty level and location of residence in metropolitan area .csv
+2025-02-22 12:37:40,126 - INFO - ✅ Stored dataset: Vaccination coverage among children 19 35 months of age for selected diseases by race Hispanic origin poverty level and location of residence in metropolitan area meta.csv
+2025-02-22 12:37:40,127 - INFO - ✅ Stored dataset: Vaccine Hesitancy for COVID-19 County and local estimates.csv
+2025-02-22 12:37:40,128 - INFO - ✅ Stored dataset: Vaccine Hesitancy for COVID-19 Public Use Microdata Areas PUMAs.csv
+2025-02-22 12:37:40,129 - INFO - ✅ Stored dataset: Vaccines.gov COVID-19 vaccinating provider locations.csv
+2025-02-22 12:37:40,130 - INFO - ✅ Stored dataset: Vaccines.gov Flu vaccinating provider locations.csv
+2025-02-22 12:37:40,131 - INFO - ✅ Stored dataset: Vision Service Plan VSP Vision and Eye Health Surveillance.csv
+2025-02-22 12:37:40,133 - INFO - ✅ Stored dataset: Visits to physician offices hospital outpatient departments and hospital emergency departments by age sex and race US.csv
+2025-02-22 12:37:40,134 - INFO - ✅ Stored dataset: Water Fluoridation Percentage of PWS population who receive fluoridated water.csv
+2025-02-22 12:37:40,134 - INFO - ✅ Stored dataset: Water Fluoridation Statistics Percent of PWS population receiving fluoridated water.csv
+2025-02-22 12:37:40,135 - INFO - ✅ Stored dataset: Weekly COVID-19 County Level of Community Transmission Historical Changes ARCHIVED.csv
+2025-02-22 12:37:40,136 - INFO - ✅ Stored dataset: Weekly COVID-19 County Level of Community Transmission as Originally Posted ARCHIVED.csv
+2025-02-22 12:37:40,137 - INFO - ✅ Stored dataset: Weekly COVID-19 Vaccination Coverage Among Pregnant Women 18-49 Years by Race and Ethnicity.csv
+2025-02-22 12:37:40,138 - INFO - ✅ Stored dataset: Weekly COVID-19 Vaccination Coverage among Pregnant Persons by Race and Ethnicity.csv
+2025-02-22 12:37:40,139 - INFO - ✅ Stored dataset: Weekly COVID-19 cases among persons 5 years old among unvaccinated and vaccinated with a Pfizer-BioNTech series by age group January 16 to May 28 2022.csv
+2025-02-22 12:37:40,140 - INFO - ✅ Stored dataset: Weekly Counts of Death by Jurisdiction and Select Causes of Death.csv
+2025-02-22 12:37:40,141 - INFO - ✅ Stored dataset: Weekly Counts of Deaths by Jurisdiction and Age.csv
+2025-02-22 12:37:40,142 - INFO - ✅ Stored dataset: Weekly Counts of Deaths by Jurisdiction and Race and Hispanic Origin.csv
+2025-02-22 12:37:40,143 - INFO - ✅ Stored dataset: Weekly Counts of Deaths by State and Select Causes 2014-2019.csv
+2025-02-22 12:37:40,144 - INFO - ✅ Stored dataset: Weekly Cumulative COVID-19 Vaccination Coverage and Intent Overall by Selected Demographics and Jurisdiction Among Adults 18 Years and Older.csv
+2025-02-22 12:37:40,145 - INFO - ✅ Stored dataset: Weekly Cumulative COVID-19 Vaccination Coverage by Season and Race and Ethnicity Medicare Fee-For-Service Beneficiaries aged 65 years.csv
+2025-02-22 12:37:40,146 - INFO - ✅ Stored dataset: Weekly Cumulative Doses in Millions of Influenza Vaccine Distributed by Flu Season in the US.csv
+2025-02-22 12:37:40,147 - INFO - ✅ Stored dataset: Weekly Cumulative Doses in Millions of Influenza Vaccines Distributed by Season US.csv
+2025-02-22 12:37:40,148 - INFO - ✅ Stored dataset: Weekly Cumulative Estimated Number of COVID-19 Vaccinations Administered in Pharmacies and Physician Medical Offices Adults 18 years and older by Season and Age Group US.csv
+2025-02-22 12:37:40,149 - INFO - ✅ Stored dataset: Weekly Cumulative Estimated Number of Influenza Vaccinations Administered in Pharmacies and Physician Medical Offices Adults 18 years and older US.csv
+2025-02-22 12:37:40,150 - INFO - ✅ Stored dataset: Weekly Cumulative Estimated Number of Influenza Vaccinations Administered in Pharmacies and Physician Medical Offices Adults 18 years and older US ARCHIVED.csv
+2025-02-22 12:37:40,151 - INFO - ✅ Stored dataset: Weekly Cumulative Estimated Number of Influenza Vaccinations Administered in Pharmacies and Physician Medical Offices Adults 18 years and older by Flu Season and Age Group US.csv
+2025-02-22 12:37:40,152 - INFO - ✅ Stored dataset: Weekly Cumulative Estimated Number of RSV Vaccinations Administered in Pharmacies and Physician Medical Offices Adults 60 years and older US.csv
+2025-02-22 12:37:40,153 - INFO - ✅ Stored dataset: Weekly Cumulative Estimated Number of RSV Vaccinations Administered in Retail Pharmacies and Physicians Medical Offices Adults 60 to 74 Years and 75 years and older US.csv
+2025-02-22 12:37:40,154 - INFO - ✅ Stored dataset: Weekly Cumulative Estimated Number of Updated 2023-24 COVID-19 Vaccinations Administered in Pharmacies and Physician Medical Offices Adults 18 years and older US .csv
+2025-02-22 12:37:40,154 - INFO - ✅ Stored dataset: Weekly Cumulative Estimated Number of Updated 2023-24 COVID-19 Vaccinations Administered in Pharmacies and Physician Medical Offices Adults 18 years and older US meta.csv
+2025-02-22 12:37:40,155 - INFO - ✅ Stored dataset: Weekly Cumulative Influenza Vaccination Coverage Adults 18 and Older US.csv
+2025-02-22 12:37:40,156 - INFO - ✅ Stored dataset: Weekly Cumulative Influenza Vaccination Coverage Children 6 months through 17 years US.csv
+2025-02-22 12:37:40,157 - INFO - ✅ Stored dataset: Weekly Cumulative Influenza Vaccination Coverage Children 6 months through 17 years US 2.csv
+2025-02-22 12:37:40,158 - INFO - ✅ Stored dataset: Weekly Cumulative Influenza Vaccination Coverage Comparison between Current and Previous Season Children 6 Months through 17 Years US.csv
+2025-02-22 12:37:40,159 - INFO - ✅ Stored dataset: Weekly Cumulative Influenza Vaccination Coverage and Comparison Between 2023 24 and 2024 25 by Jurisdiction Children 6 Months 17 Years US.csv
+2025-02-22 12:37:40,160 - INFO - ✅ Stored dataset: Weekly Cumulative Influenza Vaccination Coverage and Comparison Between 2024 25 and 2023 24 Overall by Jurisdiction Among Adults 18 Years and Older.csv
+2025-02-22 12:37:40,161 - INFO - ✅ Stored dataset: Weekly Cumulative Influenza Vaccination Coverage by Flu Season Selected Demographics and Race and Ethnicity Among Children 6 Months-17 Years US.csv
+2025-02-22 12:37:40,162 - INFO - ✅ Stored dataset: Weekly Cumulative Influenza Vaccination Coverage by Flu Season and Race Ethnicity Medicare Fee-For-Service Beneficiaries aged 65 years US.csv
+2025-02-22 12:37:40,163 - INFO - ✅ Stored dataset: Weekly Cumulative Influenza Vaccination Coverage by Flu Season and Race and Ethnicity Medicare Fee-For-Service Beneficiaries aged 65 years US.csv
+2025-02-22 12:37:40,164 - INFO - ✅ Stored dataset: Weekly Cumulative Influenza Vaccine Doses Distributed in the US.csv
+2025-02-22 12:37:40,165 - INFO - ✅ Stored dataset: Weekly Cumulative Percentage of Adults 18 Years and Older Vaccinated with the Updated 2023-24 COVID-19 Vaccine by Jurisdiction.csv
+2025-02-22 12:37:40,166 - INFO - ✅ Stored dataset: Weekly Cumulative Percentage of Adults 60 Years and Older Vaccinated with RSV Vaccine by Jurisdiction.csv
+2025-02-22 12:37:40,167 - INFO - ✅ Stored dataset: Weekly Cumulative Percentage of Children Ages 6 Months 17 Years Who Are Up to date with COVID-19 Vaccines and Comparison Between 2023-24 and 2024-25 by Jurisdiction.csv
+2025-02-22 12:37:40,168 - INFO - ✅ Stored dataset: Weekly Cumulative Percentage of Children Ages 6 Months 17 Years Who Are Up to date with COVID-19 Vaccines by Selected Demographics and by Season US.csv
+2025-02-22 12:37:40,169 - INFO - ✅ Stored dataset: Weekly Cumulative Percentage of Children Ages 6 Months 17 Years who are up to date with the updated 2023-24 COVID-19 Vaccine by Jurisdiction.csv
+2025-02-22 12:37:40,170 - INFO - ✅ Stored dataset: Weekly Cumulative RSV Vaccination Coverage and Intent Overall by Selected Demographics and Jurisdiction Among Adults 75 and Older and 60-74 Years with High-Risk Conditions US.csv
+2025-02-22 12:37:40,171 - INFO - ✅ Stored dataset: Weekly Cumulative RSV Vaccination Coverage by Race and Ethnicity Medicare Fee-For-Service Beneficiaries aged 65 years US.csv
+2025-02-22 12:37:40,172 - INFO - ✅ Stored dataset: Weekly Cumulative RSV Vaccination Coverage by Race and Ethnicity Medicare Fee-For-Service Beneficiaries aged 75 years and enrolled in a Part D plan US.csv
+2025-02-22 12:37:40,174 - INFO - ✅ Stored dataset: Weekly Cumulative Updated 2023-24 COVID-19 Vaccination Coverage by Race and Ethnicity Medicare Fee-For-Service Beneficiaries aged 65 years US.csv
+2025-02-22 12:37:40,175 - INFO - ✅ Stored dataset: Weekly Data COVID-19 vaccination among pregnant people ages 18-49 years before and during pregnancy overall by race ethnicity and week ending date Vaccine Safety Datalink US.csv
+2025-02-22 12:37:40,176 - INFO - ✅ Stored dataset: Weekly Differences in Cumulative COVID-19 Vaccination Coverage and Comparison Between 2024 25 and 2023 24 Among Adults 18 Years Overall by Selected Demographics.csv
+2025-02-22 12:37:40,177 - INFO - ✅ Stored dataset: Weekly Differences in Cumulative COVID-19 Vaccination Coverage and Comparison Between 2024 25 and 2023 24 Overall by Jurisdiction Among Adults 18 Years.csv
+2025-02-22 12:37:40,178 - INFO - ✅ Stored dataset: Weekly Differences in Cumulative Influenza Vaccination Coverage and Comparison Between 2024-25 and 2023-24 Among Adults 18 Years Overall by Selected Demographics.csv
+2025-02-22 12:37:40,178 - INFO - ✅ Stored dataset: Weekly Differences in Cumulative Influenza Vaccination Coverage by Selected Demographics and by Season 2024-25 and 2024-25 Compared with 2023-24 Children 6 Months 17 Years US.csv
+2025-02-22 12:37:40,179 - INFO - ✅ Stored dataset: Weekly Differences in Cumulative Percentage of Adults 18 Years and Older Vaccinated with the Updated 2023-24 COVID-19 Vaccine by Selected Demographics.csv
+2025-02-22 12:37:40,180 - INFO - ✅ Stored dataset: Weekly Differences in Cumulative Percentage of Children Ages 6 Months 17 Years who are up to date with the updated 2023-24 COVID-19 Vaccine by Selected Demographics.csv
+2025-02-22 12:37:40,182 - INFO - ✅ Stored dataset: Weekly Differences in Cumulative RSV Vaccination Coverage Among Adults 75 and Older and 60 74 Years with High-Risk Conditions Ever Vaccinated with RSV Vaccine by Selected Demographics.csv
+2025-02-22 12:37:40,183 - INFO - ✅ Stored dataset: Weekly Hospital Respiratory Data HRD Metrics by Jurisdiction National Healthcare Safety Network NHSN.csv
+2025-02-22 12:37:40,184 - INFO - ✅ Stored dataset: Weekly Hospital Respiratory Data HRD Metrics by Jurisdiction National Healthcare Safety Network NHSN Historical.csv
+2025-02-22 12:37:40,185 - INFO - ✅ Stored dataset: Weekly Hospital Respiratory Data HRD Metrics by Jurisdiction National Healthcare Safety Network NHSN Preliminary.csv
+2025-02-22 12:37:40,186 - INFO - ✅ Stored dataset: Weekly Influenza Vaccination Coverage Among Pregnant Women 18-49 Years by Race and Ethnicity.csv
+2025-02-22 12:37:40,187 - INFO - ✅ Stored dataset: Weekly Influenza Vaccination Coverage and Intent for Vaccination Overall by Selected Demographics and Jurisdiction Among Adults 18 Years and Older.csv
+2025-02-22 12:37:40,187 - INFO - ✅ Stored dataset: Weekly Influenza Vaccination Status and Intent for Vaccination Overall by Selected Demographics and Jurisdiction Children 6 Months-17 Years US.csv
+2025-02-22 12:37:40,188 - INFO - ✅ Stored dataset: Weekly Influenza Vaccination Status and Intent for Vaccination Overall by Selected Demographics and Jurisdiction Children 6 Months 17 Years 2023-24 US.csv
+2025-02-22 12:37:40,190 - INFO - ✅ Stored dataset: Weekly Intent for Vaccination and Cumulative Percentage of Adults 18 Years and Older Vaccinated with Updated 2023-24 COVID-19 Vaccine.csv
+2025-02-22 12:37:40,191 - INFO - ✅ Stored dataset: Weekly Intent for Vaccination and Cumulative Percentage of Adults 60 Years and Older Vaccinated with RSV Vaccine.csv
+2025-02-22 12:37:40,191 - INFO - ✅ Stored dataset: Weekly Parental Intent for Vaccination and Cumulative Percentage of Children 6 Months-17 Years who are up to date with the updated 2023-24 COVID-19 Vaccine.csv
+2025-02-22 12:37:40,192 - INFO - ✅ Stored dataset: Weekly Parental Intent for Vaccination and Cumulative Percentage of Children 6 Months 17 Years Who are Up to date with the COVID-19 Vaccines by Season US.csv
+2025-02-22 12:37:40,194 - INFO - ✅ Stored dataset: Weekly Provisional Counts of Deaths by State and Select Causes 2020-2023.csv
+2025-02-22 12:37:40,195 - INFO - ✅ Stored dataset: Weekly Rates of Laboratory-Confirmed COVID-19 Hospitalizations from the COVID-NET Surveillance System.csv
+2025-02-22 12:37:40,195 - INFO - ✅ Stored dataset: Weekly Rates of Laboratory-Confirmed RSV Hospitalizations from the RSV-NET Surveillance System.csv
+2025-02-22 12:37:40,196 - INFO - ✅ Stored dataset: Weekly Respiratory Syncytial Virus RSV Vaccination Coverage among Pregnant Persons by Race and Ethnicity.csv
+2025-02-22 12:37:40,198 - INFO - ✅ Stored dataset: Weekly Respiratory Syncytial Virus RSV Vaccination Coverage among Pregnant or Recently Pregnant Women 18-49 Years by Race and Ethnicity.csv
+2025-02-22 12:37:40,199 - INFO - ✅ Stored dataset: Weekly Respiratory Virus Vaccination Data Children 6 Months-17 Years and Adults 18 Years and Older National Immunization Survey.csv
+2025-02-22 12:37:40,200 - INFO - ✅ Stored dataset: Weekly US COVID-19 Cases and Deaths among Dialysis Patients ARCHIVED.csv
+2025-02-22 12:37:40,201 - INFO - ✅ Stored dataset: Weekly US COVID-19 Cases and Deaths by County ARCHIVED.csv
+2025-02-22 12:37:40,202 - INFO - ✅ Stored dataset: Weekly US COVID-19 Cases and Deaths by State ARCHIVED.csv
+2025-02-22 12:37:40,203 - INFO - ✅ Stored dataset: Weekly US COVID-19 Hospitalization Metrics by County ARCHIVED.csv
+2025-02-22 12:37:40,204 - INFO - ✅ Stored dataset: Weekly US COVID-19 Hospitalization Metrics by County Historical ARCHIVED.csv
+2025-02-22 12:37:40,205 - INFO - ✅ Stored dataset: Weekly US COVID-19 Hospitalization Metrics by Jurisdiction ARCHIVED.csv
+2025-02-22 12:37:40,206 - INFO - ✅ Stored dataset: Weekly US Hospitalization Metrics by Jurisdiction During Mandatory Reporting Period from August 1 2020 to April 30 2024 and for Data Reported Voluntarily Beginning May 1 2024.csv
+2025-02-22 12:37:40,207 - INFO - ✅ Stored dataset: Weekly US Hospitalization Metrics by Jurisdiction During Mandatory Reporting Period from August 1 2020 to April 30 2024 and for Data Reported Voluntarily Beginning May 1 2024 2.csv
+2025-02-22 12:37:40,208 - INFO - ✅ Stored dataset: Weekly counts of deaths from all causes by jurisdiction 2015-2019.csv
+2025-02-22 12:37:40,209 - INFO - ✅ Stored dataset: YRBSS HS Multiple Sexual Partners Excluding Sexual Identity.csv
+2025-02-22 12:37:40,210 - INFO - ✅ Stored dataset: YRBSS HS Multiple Sexual Partners Including Sexual Identity.csv
+2025-02-22 12:37:40,211 - INFO - ✅ Stored dataset: YRBSS HS Multiple Sexual Partners by total sex grade race Including Sexual Identity.csv
+2025-02-22 12:37:40,212 - INFO - ✅ Stored dataset: YRBSS HS Multiple Sexual Partners by total sex race grade Excluding Sexual Identity.csv
+2025-02-22 12:37:40,213 - INFO - ✅ Stored dataset: YRBS State Tobacco Variables 2013 v2.csv
+2025-02-22 12:37:40,214 - INFO - ✅ Stored dataset: Youth Risk Behavioral Surveillance System YRBSS Data.csv
+2025-02-22 12:37:40,215 - INFO - ✅ Stored dataset: Youth Tobacco Survey YTS Data.csv
+2025-02-22 12:37:40,216 - INFO - ✅ Stored dataset: attachments/trachoma data dictionary.csv
+2025-02-22 12:37:40,217 - INFO - ✅ Stored dataset: autism prevalence studies.csv
+2025-02-22 12:37:40,218 - INFO - ✅ Stored dataset: county-level ASD prevalence estimates.csv
+2025-02-22 12:37:40,219 - INFO - ✅ Stored dataset: dataset for databricks demo.csv
+2025-02-22 12:37:40,220 - INFO - ✅ Stored dataset: dhds dataset.csv
+2025-02-22 12:37:40,222 - INFO - ✅ Stored dataset: edav-demo-dataset-api.csv
+2025-02-22 12:37:40,223 - INFO - ✅ Stored dataset: testing cte aspost.csv
+2025-02-22 12:37:40,227 - INFO - 🎉 1129 datasets successfully stored in MongoDB.
+2025-02-22 12:37:40,246 - WARNING -  * Debugger is active!
+2025-02-22 12:37:40,259 - INFO -  * Debugger PIN: 137-700-184
+2025-02-22 12:39:28,838 - INFO -  * Detected change in '/Users/donghyunkim/Georgia_Tech/CS/Hackalytics25/VesAIlius/fetch_datasets.py', reloading
+2025-02-22 12:39:29,591 - INFO -  * Restarting with watchdog (fsevents)
+2025-02-22 12:40:04,748 - INFO - 🔄 Fetching dataset file list from Internet Archive...
+2025-02-22 12:41:01,702 - WARNING - ⚠️ Could not process meta file AH_Provisional_COVID-19_Deaths_by_HHS_Region_Race_and_Age_Group_2020-2021 (1)-meta.csv: URL can't contain control characters. '/download/20250128-cdc-datasets/AH_Provisional_COVID-19_Deaths_by_HHS_Region_Race_and_Age_Group_2020-2021 (1)-meta.csv' (found at least ' ')
+2025-02-22 12:41:06,923 - WARNING - ⚠️ Could not process meta file AH_Provisional_COVID-19_Deaths_by_Week_and_Age (1)-meta.csv: URL can't contain control characters. '/download/20250128-cdc-datasets/AH_Provisional_COVID-19_Deaths_by_Week_and_Age (1)-meta.csv' (found at least ' ')
+2025-02-22 12:41:06,924 - WARNING - ⚠️ Could not process meta file AH_Provisional_COVID-19_Deaths_by_Week_and_Age (2)-meta.csv: URL can't contain control characters. '/download/20250128-cdc-datasets/AH_Provisional_COVID-19_Deaths_by_Week_and_Age (2)-meta.csv' (found at least ' ')
+2025-02-22 12:41:27,718 - INFO - 🔄 Fetching dataset file list from Internet Archive...
+2025-02-22 12:42:17,855 - INFO - 🔄 Fetching dataset file list from Internet Archive...
+2025-02-22 12:43:13,368 - WARNING - ⚠️ Could not process meta file AH_Provisional_COVID-19_Deaths_by_HHS_Region_Race_and_Age_Group_2020-2021 (1)-meta.csv: URL can't contain control characters. '/download/20250128-cdc-datasets/AH_Provisional_COVID-19_Deaths_by_HHS_Region_Race_and_Age_Group_2020-2021 (1)-meta.csv' (found at least ' ')
+2025-02-22 12:43:18,126 - WARNING - ⚠️ Could not process meta file AH_Provisional_COVID-19_Deaths_by_Week_and_Age (1)-meta.csv: URL can't contain control characters. '/download/20250128-cdc-datasets/AH_Provisional_COVID-19_Deaths_by_Week_and_Age (1)-meta.csv' (found at least ' ')
+2025-02-22 12:43:18,126 - WARNING - ⚠️ Could not process meta file AH_Provisional_COVID-19_Deaths_by_Week_and_Age (2)-meta.csv: URL can't contain control characters. '/download/20250128-cdc-datasets/AH_Provisional_COVID-19_Deaths_by_Week_and_Age (2)-meta.csv' (found at least ' ')
+2025-02-22 12:55:20,681 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-22 12:55:20,681 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-22 12:55:20,689 - INFO -  * Restarting with watchdog (fsevents)
+2025-02-22 12:55:21,865 - WARNING -  * Debugger is active!
+2025-02-22 12:55:21,878 - INFO -  * Debugger PIN: 137-700-184
+2025-02-22 12:55:32,969 - INFO - 127.0.0.1 - - [22/Feb/2025 12:55:32] "GET / HTTP/1.1" 200 -
+2025-02-22 12:55:37,551 - INFO - 127.0.0.1 - - [22/Feb/2025 12:55:37] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:55:38,588 - INFO - 127.0.0.1 - - [22/Feb/2025 12:55:38] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:55:38,814 - INFO - 127.0.0.1 - - [22/Feb/2025 12:55:38] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:55:38,999 - INFO - 127.0.0.1 - - [22/Feb/2025 12:55:38] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:55:39,164 - INFO - 127.0.0.1 - - [22/Feb/2025 12:55:39] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:51,904 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:51] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:52,029 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:52] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:52,163 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:52] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:52,313 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:52] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:52,460 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:52] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:52,611 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:52] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:52,770 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:52] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:52,894 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:52] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:53,022 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:53] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:53,162 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:53] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:53,313 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:53] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:53,444 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:53] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:53,579 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:53] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:53,744 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:53] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:53,893 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:53] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:54,049 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:54] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:54,195 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:54] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:54,344 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:54] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:54,495 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:54] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:54,645 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:54] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:54,798 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:54] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:54,941 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:54] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:55,097 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:55] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:56:55,228 - INFO - 127.0.0.1 - - [22/Feb/2025 12:56:55] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:01,778 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:01] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:02,006 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:02] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:02,189 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:02] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:02,344 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:02] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:02,476 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:02] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:02,620 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:02] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:02,753 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:02] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:02,931 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:02] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:04,246 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:04] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:08,462 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:08] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:12,579 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:12] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:12,734 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:12] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:12,858 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:12] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:13,007 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:13] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:24,245 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:24] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:25,303 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:25] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:25,478 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:25] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:25,677 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:25] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:25,828 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:25] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:25,974 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:25] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -
+2025-02-22 12:57:26,444 - INFO - 127.0.0.1 - - [22/Feb/2025 12:57:26] "[35m[1mGET /search?query=covid HTTP/1.1[0m" 500 -

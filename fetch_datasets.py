@@ -1,36 +1,55 @@
+import logging
+import internetarchive as ia
+import pandas as pd
 from pymongo import MongoClient
-import requests
-from bs4 import BeautifulSoup
-from config import BASE_URL
+from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME, CONFIG_COLLECTION
 
-# Connect to MongoDB
-client = MongoClient("mongodb://localhost:27017/")
-db = client["cdc_database"]
-collection = db["datasets"]
+logging.basicConfig(filename="dataset_fetch.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-def fetch_cdc_datasets():
-    """Scrapes dataset filenames, stores in MongoDB, and returns dataset list."""
-    
-    response = requests.get(BASE_URL)
-    if response.status_code != 200:
-        return []
+client = MongoClient(MONGO_URI)
+db = client[DATABASE_NAME]
+collection = db[COLLECTION_NAME]
+config_collection = db[CONFIG_COLLECTION]
 
-    soup = BeautifulSoup(response.text, "html.parser")
-    files = soup.find_all("a")
+def should_fetch_data():
+    """Check if the dataset update flag is set to True."""
+    config = config_collection.find_one({"_id": "update_flag"})
+    return config and config.get("fetch", False)
 
-    datasets = []
-    for file in files:
-        filename = file.get("href")
-        if filename and filename.endswith(".csv"):
+def set_fetch_flag(value):
+    """Set the dataset update flag to True or False."""
+    config_collection.update_one({"_id": "update_flag"}, {"$set": {"fetch": value}}, upsert=True)
+
+def fetch_and_store_cdc_data():
+    """Fetch CDC datasets from Internet Archive and store in MongoDB, only if the update flag is set."""
+    if not should_fetch_data():
+        logging.info("✅ Fetching skipped as update flag is not set.")
+        return
+
+    COLLECTION_ID = "20250128-cdc-datasets"
+    logging.info("🔄 Fetching dataset file list from Internet Archive...")
+
+    search_results = ia.get_item(COLLECTION_ID)
+    dataset_count = 0
+
+    for file in search_results.files:
+        filename = file["name"]
+        if filename.endswith(".csv") and "-meta.csv" not in filename:
             dataset = {
                 "id": filename,
-                "title": filename.replace("_", " ").replace(".csv", ""),
-                "url": f"{BASE_URL}{filename}",
-                "description": f"CDC dataset file: {filename}"
+                "title": filename.replace("_", " "),
+                "description": f"CDC dataset file: {filename}",
+                "url": f"https://archive.org/download/{COLLECTION_ID}/{filename}"
             }
-            datasets.append(dataset)
+            collection.update_one({"id": dataset["id"]}, {"$set": dataset}, upsert=True)
+            dataset_count += 1
+            logging.info(f"✅ Stored dataset: {dataset['title']}")
 
-            # Store in MongoDB (avoid duplicates)
-            collection.update_one({"id": filename}, {"$set": dataset}, upsert=True)
-    
-    return datasets[:100]  # Return only top 100 datasets
+    collection.create_index([("title", "text"), ("description", "text")])
+    logging.info(f"🎉 {dataset_count} datasets successfully stored in MongoDB.")
+
+    # Reset the fetch flag after updating
+    set_fetch_flag(False)
+
+if __name__ == "__main__":
+    fetch_and_store_cdc_data()

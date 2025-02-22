@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDC Dataset Search</title>
     <script>
         async function search() {
@@ -19,8 +17,13 @@
             }
 
             data.forEach(item => {
-                resultsDiv.innerHTML += `<p><a href="${item.url}" target="_blank">${item.title}</a> - ${item.description}</p>`;
+                resultsDiv.innerHTML += `<p><a href="${item.url}" target="_blank">${item.title}</a></p>`;
             });
+        }
+
+        async function updateDatasets() {
+            await fetch("/update_datasets", { method: "POST" });
+            alert("Dataset update triggered!");
         }
     </script>
 </head>
@@ -28,6 +31,7 @@
     <h1>CDC Dataset Search</h1>
     <input type="text" id="query" placeholder="Enter a search term...">
     <button onclick="search()">Search</button>
+    <button onclick="updateDatasets()">Update Datasets</button>
     <div id="results"></div>
 </body>
 </html>
