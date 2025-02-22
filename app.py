@@ -1,27 +1,40 @@
 from flask import Flask, jsonify, request, render_template
 from pymongo import MongoClient
 from bson.objectid import ObjectId
+from match_datasets import match_datasets
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import internetarchive as ia
 import torch
 from bson.json_util import dumps
 import os
 
+if __name__ == "__main__":
+    app.run(debug=True)
+
 app = Flask(__name__, template_folder="templates")
 
 # MongoDB connection details
-connection_string = "mongodb+srv://mikeiio:Vessy123@main.nazv8.mongodb.net/?retryWrites=true&w=majority&appName=Main"
-# connection_string = "mongodb://localhost:27017/"
-database_name = "the_data"  # Replace with your actual database name
-collection_name = "the_collection"  # Replace with your actual collection name
+# connection_string = "mongodb+srv://mikeiio:Vessy123@main.nazv8.mongodb.net/?retryWrites=true&w=majority&appName=Main"
+connection_string = "mongodb://localhost:27017/"
+db = "put_in_database_here"  # Replace with your actual database name
+query_collection = "put_in_collection_here"  # Replace with your actual collection name
 
 # Connect to MongoDB
 client = MongoClient(connection_string)
-# db = client[database_name]
-# collection = db[collection_name]
+db = client[db]
+collection = db[query_collection]
 
-db = client["cdc_database"]
-collection = db["datasets"]
+@app.route("/search", methods=["GET"])
+def search():
+    user_query = request.args.get("query", "")
+    if not user_query:
+        return jsonify({"error": "No query provided"}), 400
+
+    # Store user query in MongoDB
+    query_collection.insert_one({"query": user_query})
+
+    results = match_datasets(user_query)
+    return jsonify(results)
 
 # Function to fetch and store CDC datasets from Internet Archive
 def fetch_and_store_cdc_data():
@@ -118,16 +131,6 @@ def delete_data(id):
         return jsonify({"message": "Data deleted successfully"})
     else:
         return jsonify({"error": "Data not found"}), 404
-    
-@app.route('/search', methods=['GET'])
-def search():
-    query = request.args.get('query', '')
-    if not query:
-        return jsonify({"error": "No search query provided"}), 400
-
-    # Search MongoDB (full-text search)
-    results = list(collection.find({"title": {"$exists": True, "$regex": query, "$options": "i"}}, {"_id": 0}))
-    return dumps(results)
 
 if __name__ == '__main__':
     app.run(debug=True)
