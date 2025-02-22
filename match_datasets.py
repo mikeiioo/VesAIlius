@@ -25,7 +25,7 @@ def search_and_rank_datasets(user_query, num_results=5):
                 "index": "default",  # Replace with your actual index name
                 "path": "embedding",
                 "queryVector": query_embedding,
-                "numCandidates": 10,  # Number of candidates for search
+                "numCandidates": 100,  # Number of candidates for search
                 "limit": num_results
             }
         }
