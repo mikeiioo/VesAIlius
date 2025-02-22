@@ -1,13 +1,12 @@
 import logging
 import internetarchive as ia
 from pymongo import MongoClient
-from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME, CONFIG_COLLECTION, AUTO_FETCH_ON_START
+from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME, AUTO_FETCH_ON_START
 import os
 import csv
 import requests
 from sentence_transformers import SentenceTransformer
 import numpy as np
-import math
 
 LOG_FILE = "dataset_fetch.log"
 MAX_LOG_LINES = 1000  # Maximum lines before truncation
@@ -72,7 +71,8 @@ def generate_embedding(title, tags):
     return model.encode(combined_text).tolist()  # Convert to list for MongoDB storage
 
 # if you want to limit how many files are used for testing purposes
-maxIterations = math.inf
+# maxIterations = math.inf
+maxIterations = 10
 def fetch_and_store_cdc_data():
     """Fetch CDC datasets, process metadata, and store in MongoDB with embeddings."""
     if not AUTO_FETCH_ON_START:
@@ -109,7 +109,7 @@ def fetch_and_store_cdc_data():
 
             dataset = {
                 "id": filename,
-                "title": filename.replace("_", " "),
+                "title": filename.replace("_", " ").replace(".csv", ""),
                 "url": f"https://archive.org/download/{COLLECTION_ID}/{filename}",
                 "url-meta": meta_url,
                 "tags": tags,

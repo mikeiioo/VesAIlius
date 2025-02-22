@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify, render_template
 from pymongo import MongoClient
-from fetch_datasets import fetch_and_store_cdc_data
 from match_datasets import search_and_rank_datasets
 from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME
 import openai
@@ -10,9 +9,6 @@ app = Flask(__name__, template_folder="templates")
 client = MongoClient(MONGO_URI)
 db = client[DATABASE_NAME]
 collection = db[COLLECTION_NAME]
-
-# Ensure datasets are fetched on startup by the implementer
-fetch_and_store_cdc_data()
 
 @app.route('/')
 def home():
