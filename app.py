@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 from pymongo import MongoClient
-from fetch_datasets import fetch_and_store_cdc_data, set_fetch_flag
+from fetch_datasets import fetch_and_store_cdc_data
 from match_datasets import search_and_rank_datasets
 from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME
 import openai
@@ -11,6 +11,7 @@ client = MongoClient(MONGO_URI)
 db = client[DATABASE_NAME]
 collection = db[COLLECTION_NAME]
 
+# Ensure datasets are fetched on startup by the implementer
 fetch_and_store_cdc_data()
 
 @app.route('/')
@@ -25,13 +26,6 @@ def search_datasets():
 
     results = search_and_rank_datasets(user_query)
     return jsonify(results)
-
-# @app.route('/update_datasets', methods=['POST'])
-# def update_datasets():
-#     """Manually trigger dataset fetching by setting the update flag."""
-#     set_fetch_flag(True) # Set to True to fetch data, False when not fetching
-#     fetch_and_store_cdc_data()
-#     return jsonify({"message": "Dataset update triggered."})
 
 if __name__ == '__main__':
     app.run(debug=True)

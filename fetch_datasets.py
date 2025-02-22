@@ -1,32 +1,35 @@
 import logging
 import internetarchive as ia
-import pandas as pd
 from pymongo import MongoClient
 from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME, CONFIG_COLLECTION, AUTO_FETCH_ON_START
+import os
 
-##### If you want to fetch on startup, set AUTO_FETCH_ON_START to True in config.py #####
+LOG_FILE = "dataset_fetch.log"
+MAX_LOG_LINES = 1000  # Maximum lines before truncation
 
-logging.basicConfig(filename="dataset_fetch.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(filename=LOG_FILE, level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 client = MongoClient(MONGO_URI)
 db = client[DATABASE_NAME]
 collection = db[COLLECTION_NAME]
-config_collection = db[CONFIG_COLLECTION]
 
-def should_fetch_data():
-    """Check if the dataset update flag is set to True."""
-    config = config_collection.find_one({"_id": "update_flag"})
-    return config and config.get("fetch", False) 
+def truncate_log():
+    """Remove the oldest 1000 lines from the log file if it exceeds the limit."""
+    try:
+        if os.path.exists(LOG_FILE):
+            with open(LOG_FILE, "r") as log_file:
+                lines = log_file.readlines()
 
-def set_fetch_flag(value):
-    """Set the dataset update flag to True or False."""
-    config_collection.update_one({"_id": "update_flag"}, {"$set": {"fetch": value}}, upsert=True)
+            if len(lines) > MAX_LOG_LINES:
+                with open(LOG_FILE, "w") as log_file:
+                    log_file.writelines(lines[-MAX_LOG_LINES:])  # Keep only the last MAX_LOG_LINES
+                logging.info("🔄 Log file truncated: Removed oldest lines.")
+    except Exception as e:
+        print(f"⚠️ Error truncating log file: {e}")
 
 def fetch_and_store_cdc_data():
-    """Fetch CDC datasets from Internet Archive and store in MongoDB, only if the update flag is set."""
-    if not should_fetch_data():
-        logging.info("✅ Fetching skipped as update flag is not set.")
-        return
+    """Fetch CDC datasets from Internet Archive and store in MongoDB."""
+    truncate_log()  # Ensure log truncation happens before writing new entries
 
     COLLECTION_ID = "20250128-cdc-datasets"
     logging.info("🔄 Fetching dataset file list from Internet Archive...")
@@ -50,10 +53,6 @@ def fetch_and_store_cdc_data():
     collection.create_index([("title", "text"), ("description", "text")])
     logging.info(f"🎉 {dataset_count} datasets successfully stored in MongoDB.")
 
-    # Reset the fetch flag after updating
-    set_fetch_flag(False)
-    
 if __name__ == "__main__":
     if AUTO_FETCH_ON_START:
-        set_fetch_flag(True)
-    fetch_and_store_cdc_data()
+        fetch_and_store_cdc_data()
