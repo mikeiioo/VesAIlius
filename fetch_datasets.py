@@ -28,7 +28,13 @@ def truncate_log():
         print(f"⚠️ Error truncating log file: {e}")
 
 def fetch_and_store_cdc_data():
-    """Fetch CDC datasets from Internet Archive and store in MongoDB."""
+    """Fetch CDC datasets from Internet Archive and store in MongoDB only if AUTO_FETCH_ON_START is True."""
+    
+    # ✅ Stop execution if auto-fetch is disabled
+    if not AUTO_FETCH_ON_START:
+        logging.info("🚫 Auto-fetch is disabled in config. Skipping dataset fetch.")
+        return
+
     truncate_log()  # Ensure log truncation happens before writing new entries
 
     COLLECTION_ID = "20250128-cdc-datasets"
@@ -54,5 +60,6 @@ def fetch_and_store_cdc_data():
     logging.info(f"🎉 {dataset_count} datasets successfully stored in MongoDB.")
 
 if __name__ == "__main__":
+    # ✅ Auto-fetch only runs if explicitly enabled
     if AUTO_FETCH_ON_START:
         fetch_and_store_cdc_data()
