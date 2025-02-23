@@ -54,15 +54,17 @@ const HomePage = () => {
         {/* Show Featured Datasets ONLY when datasets exist */}
         {datasets.length > 0 && !loading && (
           <div className="mt-6">
-            <h2 className="text-2xl font-bold">Relevant Datasets</h2>
+            <h2 className="text-2xl font-medium text-gray-100">Relevant Datasets</h2>
             <div className="grid grid-cols-1 gap-4 mt-4">
               {datasets.map((dataset, index) => (
                 <div
                   key={dataset.id}
                   onClick={() => handleDatasetClick(dataset)}
-                  className="border border-gray-700 p-4 rounded cursor-pointer bg-gray-800 hover:bg-gray-700 relative pl-10" // Added padding-left
+                  className="border border-gray-700 p-4 rounded cursor-pointer bg-gray-800 hover:bg-gray-700 relative pl-10 pr-10" // Added padding-left
                 >
-                  <span className="absolute top-2 left-2 text-blue-400 text-lg font-bold">{index + 1}</span>
+                  <span className="absolute top-2 left-2 text-blue-400 text-lg font-bold opacity-50">
+                    {index + 1}
+                  </span>
                   <h3 className="text-xl font-semibold text-gray-300">{dataset.title}</h3>
                   <p className="text-gray-400">{dataset.summary}</p>
                 </div>

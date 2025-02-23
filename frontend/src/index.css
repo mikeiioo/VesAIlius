@@ -16,6 +16,22 @@
   }
 }
 
+.number-border {
+  position: relative;
+}
+
+.number-border::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid #1e40af; /* Blue border color */
+  border-radius: 50%;
+  z-index: -1;
+}
+
 body {
   /* background-color: #000000; Black background */
   background: linear-gradient(135deg, #091c42, #1f4baa);
