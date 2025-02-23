@@ -85,7 +85,7 @@ const DatasetPage = () => {
       </a>
       {csvData && (
         <>
-          <div className="mt-4">
+          <div className="flex flex-wrap justify-center gap-2 mt-4">
             {columnOrder.map((key) => (
               <button
                 key={key}
