@@ -22,9 +22,9 @@ def ranked_query(user_query):
 
     # Format the conversation-style input
     messages = [
-        {"role": "system", "content": "You are an AI assistant trained to rank datasets based on relevance to a query."},
-        {"role": "user", "content": f"""Rank all of the following datasets based on relevance to the query; do not format with 
-        bold, do not skip lines, do not number responses, and do not add an explanation for your ranking '{user_query}':\n\n"""}
+        {"role": "system", "content": "You are an AI assistant trained to rank datasets based on relevance to a query. Strictly format with numbers and periods like the following:\n1. Dataset1.csv\n2. Dataset2.csv\n3. Dataset3.csv\n4. Dataset4.csv\n5. Dataset5.csv\n6. Dataset6.csv\n7. Dataset7.csv\n8. Dataset8.csv\n9. Dataset9.csv\n10. Dataset10.csv"},
+        {"role": "user", "content": f"""Rank all of the following datasets in ascending order based on relevance to the query; do not format with 
+        bold, do not skip lines, do not add an explanation for your ranking '{user_query}':\n\n"""}
     ]
 
     # Add dataset list as part of the conversation
@@ -40,6 +40,8 @@ def ranked_query(user_query):
 
     ranked_response = response.choices[0].message.content.strip().split('\n')
     ranked_datasets = []
+
+   
     for line in ranked_response:
         parts = line.split('. ', 1)
         if len(parts) == 2:
@@ -47,6 +49,11 @@ def ranked_query(user_query):
             dataset = collection.find_one({"id": id})
             dataset["embedding"] = None
             ranked_datasets.append(dataset)
+
+    print("!-----------------")
+    print("RANKED:", len(ranked_response), ranked_response)
+    print(len(ranked_datasets), ranked_datasets)
+    print("-----------------")
 
     return ranked_datasets
 
