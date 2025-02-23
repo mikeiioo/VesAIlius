@@ -22,7 +22,7 @@ const SearchBar = ({ onSearch }) => {
   return (
     <div className="flex justify-center mt-6">
       {/* Search Bar Container */}
-      <div className="flex items-center border border-gray-300 rounded-full shadow-md p-3 w-96">
+      <div className="flex items-center border border-gray-300 rounded-full shadow-md p-2 w-96">
         {/* Input Field */}
         <input
           type="text"
