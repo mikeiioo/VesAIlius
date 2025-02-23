@@ -15,7 +15,6 @@ const DatasetPage = () => {
   useEffect(() => {
     const fetchDataset = async () => {
       try {
-
         // Fetch dataset details first to get the URL for the CSV data
         const datasetResponse = await axios.get(`http://127.0.0.1:5000/dataset/${datasetId}`);
         setDataset(datasetResponse.data);
@@ -65,7 +64,11 @@ const DatasetPage = () => {
   };
 
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className="flex justify-center mt-6">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-blue-500"></div>
+      </div>
+    )
   }
 
   if (!dataset) {
