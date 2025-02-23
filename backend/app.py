@@ -12,10 +12,6 @@ client = MongoClient(MONGO_URI)
 db = client[DATABASE_NAME]
 collection = db[COLLECTION_NAME]
 
-@app.route('/')
-def home():
-    return render_template("index.html")
-
 @app.route('/search', methods=['GET'])
 def search_datasets():
     """Search and return relevant datasets based on user query."""

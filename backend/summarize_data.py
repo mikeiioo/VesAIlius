@@ -1,22 +1,43 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 import pandas as pd
+import io
+import internetarchive as ia
+from internetarchive import get_item
+from mistralai import Mistral
+from mistralai.client import MistralClient
+import requests
 
-model = "meta-llama/Llama-2-7B-chat-hf"
-tokenizer = AutoTokenizer.from_pretrained(model)
-generator = pipeline("text-generation", model=model)
+temp = "Impaired_Driving_Death_Rate_by_Age_and_Gender_2012_2014_Region_10_Seattle.csv"
+def summarize_data(file):
 
-response = generator("What are the benefits of AI?", max_length=200)
-print(response)
-# Load your dataframe
-df = pd.read_csv('/path/to/your/data.csv')
+    item_id = "20250128-cdc-datasets"
+    file_name = file
+    item = get_item(item_id)
 
-# Extract headers and some contents
-headers = df.columns.tolist()
-sample_data = df.head().to_dict()
+    file_url = f"https://archive.org/download/{item_id}/{file_name}"
+    response = requests.get(file_url, stream=True)
 
-# Prepare the prompt for the model
-prompt = f"The dataset has the following columns: {headers}. Here are some sample rows: {sample_data}. Summarize what this data is about."
 
-# Generate the summary
-response = generator(prompt, max_length=200)
-print(response)
+    if response.status_code == 200:
+        df = pd.read_csv(io.StringIO(response.content.decode('utf-8')))
+    headers = df.columns.tolist()
+    sample_data = df.head().to_dict()
+
+    api_key = "qmkFbpB1AT6chW0KTfLh16L2dainN8bN"
+    model = "ft:ministral-3b-latest:08590df2:20250222:16ee7d91"
+    client = Mistral(api_key=api_key)
+
+    messages = [
+        {"role": "system", "content": "You are an AI assistant trained to read and summarize datasets."},
+        {"role": "user", "content": f"""Based on the following pandas dataframe headers and sample data, summarize
+        the data in this dataset in 3-4 sentences. Specify timeframe and location, if available and applicable. '{headers}' '{sample_data}':\n\n"""}
+    ]
+
+    response = client.chat.complete(
+        model=model,
+        messages=messages,
+        max_tokens=300
+    )
+
+    print(response.choices[0].message.content)
+
+summarize_data(temp)
