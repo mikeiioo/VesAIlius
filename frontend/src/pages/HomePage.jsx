@@ -35,21 +35,24 @@ const HomePage = () => {
         </div>
       )}
 
-      <div className="mt-6">
-        <h2 className="text-2xl font-bold">Featured Datasets</h2>
-        <div className="grid grid-cols-1 gap-4 mt-4">
-          {datasets.map((dataset) => (
-            <div
-              key={dataset.id}
-              onClick={() => handleDatasetClick(dataset)}
-              className="border p-4 rounded cursor-pointer hover:bg-gray-100"
-            >
-              <h3 className="text-xl font-semibold">{dataset.title}</h3>
-              <p>{dataset.summary}</p>
-            </div>
-          ))}
+      {/* Show Featured Datasets ONLY when datasets exist */}
+      {datasets.length > 0 && !loading && (
+        <div className="mt-6">
+          <h2 className="text-2xl font-bold">Featured Datasets</h2>
+          <div className="grid grid-cols-1 gap-4 mt-4">
+            {datasets.map((dataset) => (
+              <div
+                key={dataset.id}
+                onClick={() => handleDatasetClick(dataset)}
+                className="border p-4 rounded cursor-pointer hover:bg-gray-100"
+              >
+                <h3 className="text-xl font-semibold">{dataset.title}</h3>
+                <p>{dataset.summary}</p>
+              </div>
+            ))}
+          </div> 
         </div>
-      </div>
+      )}
     </div>
   );
 };
