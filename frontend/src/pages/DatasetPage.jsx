@@ -34,6 +34,7 @@ const DatasetPage = () => {
 
         console.log("FINISHED FETCHING CSV:");
         const csvText = await csvResponse.data.text();
+        console.log("CSV", csvText)
 
         // Parse CSV data
         const parsedData = Papa.parse(csvText, { header: true });

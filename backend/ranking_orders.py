@@ -47,6 +47,8 @@ def ranked_query(user_query):
         if len(parts) == 2:
             id = parts[1].strip()
             dataset = collection.find_one({"id": id})
+            if not dataset:
+                continue
             dataset["embedding"] = None
             ranked_datasets.append(dataset)
 

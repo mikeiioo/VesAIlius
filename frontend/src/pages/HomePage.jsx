@@ -53,7 +53,7 @@ const HomePage = () => {
       {/* Show Featured Datasets ONLY when datasets exist */}
       {datasets.length > 0 && !loading && (
         <div className="mt-6">
-          <h2 className="text-2xl font-bold">Featured Datasets</h2>
+          <h2 className="text-2xl font-bold">Relevant Datasets</h2>
           <div className="grid grid-cols-1 gap-4 mt-4">
             {datasets.map((dataset) => (
               <div
