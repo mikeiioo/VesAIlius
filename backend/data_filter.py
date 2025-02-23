@@ -58,11 +58,16 @@ def download_full_file(file_url, response, download_dir="downloads"):
 def download_all_exclude_columns(file_url, response, download_dir="downloads", exclude_columns=[]):
     if response.status_code == 200:
         df = pd.read_csv(io.StringIO(response.content.decode('utf-8')))
-        df = df.drop(exclude_columns, axis=1)
+        # Remove only columns that actually exist
+        existing_columns = set(df.columns)
+        columns_to_drop = [col for col in exclude_columns if col in existing_columns]
+        if columns_to_drop:
+            df = df.drop(columns=columns_to_drop)
         reduced_csv = df.to_csv(index=False)
         with open(f"{download_dir}/reduced.csv", "w") as f:
-            for chunk in reduced_csv.iter_content(chunk_size=128):
-                f.write(chunk)
+            f.write(reduced_csv)
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)

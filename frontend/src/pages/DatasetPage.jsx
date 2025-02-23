@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Papa from 'papaparse';
 
 const DatasetPage = () => {
   const { datasetId } = useParams();
-  const navigate = useNavigate();
   const [dataset, setDataset] = useState(null);
   const [loading, setLoading] = useState(true);
   const [csvData, setCsvData] = useState(null);
   const [summary, setSummary] = useState('');
   const [selectedColumns, setSelectedColumns] = useState([]);
   const [columnOrder, setColumnOrder] = useState([]);
+  const [columnsToExclude, setColumnsToExclude] = useState('');
 
   const title = datasetId.replaceAll('_', ' ').replaceAll(".csv", "");
   console.log(title)
@@ -73,18 +73,69 @@ const DatasetPage = () => {
       console.error("No file name found for dataset.");
       return;
     }
-
+  
     try {
-      const response = await axios.get(dataset.url);
-
-      const url = dataset.url;
+      const response = await axios.get(
+        `http://127.0.0.1:5000/download_first_hundred`,
+        {
+          params: { file_name: dataset.file_name },
+          responseType: 'blob'
+        }
+      );
+  
+      const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement("a");
       link.href = url;
-      link.setAttribute("download", "first_100_rows.csv");
+      link.setAttribute("download", `first_100_${dataset.file_name}`);
       document.body.appendChild(link);
       link.click();
+      link.remove();
     } catch (error) {
       console.error("Error downloading first 100 rows:", error);
+    }
+  };
+
+  const handleDownloadFiltered = async () => {
+    if (!dataset?.file_name) {
+      console.error("No file name found for dataset.");
+      return;
+    }
+  
+    try {
+      // Convert input to properly formatted comma-separated string
+      const excludedColumns = columnsToExclude
+        .split(',')
+        .map(col => col.trim())
+        .filter(col => col)
+        .join(','); // Add this line to convert array back to string
+  
+      const response = await axios.get(
+        `http://127.0.0.1:5000/download_all_exclude_columns`,
+        {
+          params: { 
+            file_name: dataset.file_name,
+            exclude_columns: excludedColumns // Use the joined string here
+          },
+          responseType: 'blob'
+        }
+      );
+  
+      // Add error handling for empty response
+      if (!response.data) {
+        throw new Error('Empty response from server');
+      }
+  
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", `filtered_${dataset.file_name}`);
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    } catch (error) {
+      console.error("Error downloading filtered dataset:", error);
+      // Add user feedback
+      alert(`Download failed: ${error.message}`);
     }
   };
 
@@ -104,36 +155,51 @@ const DatasetPage = () => {
   }
 
   return (
-    <div className="p-8 bg-gray-900 min-h-screen relative">
-      <button
-        onClick={() => navigate(-1)}
-        className="absolute top-4 left-4 p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all"
-      >
-        <img src="/icon-return.png" alt="Back" className="w-6 h-6 opacity-50" />
-      </button>
-      <div className="flex items-center text-center mb-4" style={{ paddingLeft: '4rem', paddingRight: '4rem' }}>
-        <h2 className="text-2xl font-bold text-center flex-1">{dataset.title}</h2>
-      </div>
+    <div className="p-8 bg-gray-900 min-h-screen">
+      <h2 className="text-2xl font-bold text-center mb-4">{dataset.title}</h2>
       <p className="text-center text-gray-400 mb-6">{summary}</p>
       {/* Buttons for downloading dataset */}
-      <div className="mt-4 justify-center flex gap-4">
-        <a
-          href={dataset.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-all"
-        >
-          Download Dataset
-        </a>
-        <a
-          href={dataset["url-meta"]}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-all"
-        >
-          Download Meta
-        </a>
-      </div>
+      <div className="mt-4 flex flex-col items-center gap-4">
+  {/* First row of buttons */}
+  <div className="flex gap-4">
+    <button
+      onClick={handleDownloadFirst100}
+      className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-all"
+    >
+      Download First 100 Rows
+    </button>
+
+    <a
+      href={dataset.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-all"
+    >
+      Download Entire Dataset
+    </a>
+
+    <button
+      onClick={handleDownloadFiltered}
+      className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-all"
+    >
+      Download Filtered Dataset
+    </button>
+  </div>
+
+  {/* Column exclusion input */}
+  <div className="w-full max-w-xl">
+    <input
+      type="text"
+      placeholder="Columns to exclude (comma-separated, e.g., 'age,city,phone_number')"
+      className="w-full px-4 py-2 rounded-lg border border-gray-600 bg-gray-800 text-white placeholder-gray-400"
+      value={columnsToExclude}
+      onChange={(e) => setColumnsToExclude(e.target.value)}
+    />
+    <p className="text-gray-400 text-sm mt-1 ml-1">
+      Enter column names to exclude from the filtered download
+    </p>
+  </div>
+</div>
       {csvData && (
         <>
           <div className="flex flex-wrap justify-center gap-2 mt-4">
