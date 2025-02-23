@@ -27,9 +27,21 @@ const HomePage = () => {
 
   return (
     <div className="p-8 text-center">
-      <h1 className="text-4xl font-bold mb-4">Welcome to VesAIlius</h1>
+      <h1 className="text-4xl font-bold mb-4">Welcome to Vesalius</h1>
       <p className="text-gray-600 mb-6">AI-powered exploration of CDC datasets.</p>
+
       <SearchBar onSearch={handleSearch} />
+
+      {/* What is Vesalius? Section - Disappears After Search */}
+      {!searched && (
+        <div className="bg-white shadow-md rounded-full p-6 max-w-2xl mx-auto mt-6">
+          <h2 className="text-2xl font-bold text-gray-800">What is Vesalius?</h2>
+          <p className="text-gray-600 mt-2">
+            Vesalius is an AI-driven tool that helps users discover, summarize, and explore CDC datasets with ease. 
+            Utilizing advanced search and ranking algorithms, it allows seamless interaction with large-scale public health data.
+          </p>
+        </div>
+      )}
 
       {/* Show loading indicator while fetching results */}
       {loading && (

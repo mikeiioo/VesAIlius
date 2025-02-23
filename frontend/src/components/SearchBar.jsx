@@ -22,7 +22,7 @@ const SearchBar = ({ onSearch }) => {
   return (
     <div className="flex justify-center mt-6">
       {/* Search Bar Container */}
-      <div className="flex items-center border border-gray-300 rounded-full shadow-md p-3 w-96">
+      <div className="flex items-center border border-gray-300 rounded-full shadow-md p-2 w-96">
         {/* Input Field */}
         <input
           type="text"
@@ -30,7 +30,7 @@ const SearchBar = ({ onSearch }) => {
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={handleKeyPress} // Detect Enter key press
           placeholder="Search datasets..."
-          className="outline-none w-full px-3 text-gray-700 text-lg"
+          className="outline-none w-full px-3 text-gray-700"
         />
 
         {/* Search Icon (Button) */}
