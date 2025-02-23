@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import DatasetPage from "./pages/DatasetPage";
 import HomePage from "./pages/HomePage";
+import DatasetPage from "./pages/DatasetPage";
 
 const App = () => {
   return (
