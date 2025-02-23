@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Papa from 'papaparse';
 
 const DatasetPage = () => {
   const { datasetId } = useParams();
+  const navigate = useNavigate();
   const [dataset, setDataset] = useState(null);
   const [loading, setLoading] = useState(true);
   const [csvData, setCsvData] = useState(null);
@@ -83,8 +84,16 @@ const DatasetPage = () => {
   }
 
   return (
-    <div className="p-8 bg-gray-900 min-h-screen">
-      <h2 className="text-2xl font-bold text-center mb-4">{dataset.title}</h2>
+    <div className="p-8 bg-gray-900 min-h-screen relative">
+      <button
+        onClick={() => navigate(-1)}
+        className="absolute top-4 left-4 p-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all"
+      >
+        <img src="/icon-return.png" alt="Back" className="w-6 h-6 opacity-50" />
+      </button>
+      <div className="flex items-center text-center mb-4" style={{ paddingLeft: '4rem', paddingRight: '4rem' }}>
+        <h2 className="text-2xl font-bold text-center flex-1">{dataset.title}</h2>
+      </div>
       <p className="text-center text-gray-400 mb-6">{summary}</p>
       {/* Buttons for downloading dataset */}
       <div className="mt-4 justify-center flex gap-4">
@@ -92,18 +101,17 @@ const DatasetPage = () => {
           href={dataset.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-all"
+          className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-all"
         >
-          Download First 100 Rows
+          Download Dataset
         </a>
-
         <a
-          href={dataset.url}
+          href={dataset["url-meta"]}
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-all"
         >
-          Download Entire Dataset
+          Download Meta
         </a>
       </div>
       {csvData && (
