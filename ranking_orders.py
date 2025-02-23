@@ -4,7 +4,7 @@ from mistralai import Mistral
 from mistralai.client import MistralClient
 
 # Define the user query
-user_query = "tobacco use"
+user_query = "motor vehicle death"
 
 # Use the search_and_rank function to get a list of datasets
 datasets = search_and_rank_datasets(user_query)
