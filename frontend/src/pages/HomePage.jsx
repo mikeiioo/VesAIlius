@@ -60,7 +60,7 @@ const HomePage = () => {
                 <div
                   key={dataset.id}
                   onClick={() => handleDatasetClick(dataset)}
-                  className="border border-gray-700 p-4 rounded cursor-pointer bg-gray-800 hover:bg-gray-700 relative pl-10 pr-10" // Added padding-left
+                  className="border border-gray-700 p-4 rounded cursor-pointer bg-gray-800 hover:bg-gray-900 relative pl-10 pr-10" // Added padding-left
                 >
                   <span className="absolute top-2 left-2 text-blue-400 text-lg font-bold opacity-50">
                     {index + 1}
