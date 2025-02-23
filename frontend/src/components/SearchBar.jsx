@@ -6,18 +6,20 @@ const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState("");
 
   const handleSearch = () => {
-    if (isExpanded && query.trim() !== "") {
-      onSearch(query); // Execute search only if expanded & query is not empty
+    if (query.trim() !== "") {
+      onSearch(query);  // Execute search if query is filled
+      setIsExpanded(true); // Keep the search bar expanded
+    } else {
+      setIsExpanded(!isExpanded); // Toggle expansion only if empty
     }
-    setIsExpanded(!isExpanded); // Toggle expansion
   };
 
   return (
-    <div className="flex items-center justify-center mt-4">
+    <div className="flex justify-center mt-6">
       {/* Search Bar Container */}
       <div
         className={`flex items-center border border-gray-300 rounded-full shadow-md transition-all duration-300 ease-in-out ${
-          isExpanded ? "w-72 p-2" : "w-12 p-2"
+          isExpanded ? "w-72 p-2" : "w-12 p-2 justify-center"
         }`}
       >
         {/* Input Field */}
@@ -34,7 +36,7 @@ const SearchBar = ({ onSearch }) => {
         {/* Search Icon (Button) */}
         <button
           onClick={handleSearch}
-          className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-all"
+          className="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-all flex items-center justify-center"
         >
           <FiSearch size={20} />
         </button>
