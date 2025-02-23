@@ -13,6 +13,7 @@ const DatasetPage = () => {
   const [columnOrder, setColumnOrder] = useState([]);
 
   const title = datasetId.replaceAll('_', ' ').replaceAll(".csv", "");
+  console.log(title)
 
   useEffect(() => {
     const fetchDataset = async () => {
@@ -68,8 +69,8 @@ const DatasetPage = () => {
 
   if (loading) {
     return (
-      <div className="p-8">
-        <h2 className="text-2xl font-bold">{title}</h2>,
+      <div className="p-8 bg-gray-900 min-h-screen flex flex-col items-center justify-center">
+        <h2 className="text-2xl font-bold">{title}</h2>
         <div className="flex justify-center mt-6">
           <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-blue-500"></div>
         </div>
@@ -78,14 +79,14 @@ const DatasetPage = () => {
   }
 
   if (!dataset) {
-    return <p>No dataset found.</p>;
+    return <p className="text-center text-gray-500">No dataset found.</p>;
   }
 
   return (
-    <div className="p-8">
-      <h2 className="text-2xl font-bold">{dataset.title}</h2>
-      <p>{summary}</p>
-      <a href={dataset.url} target="_blank" rel="noopener noreferrer" className="text-blue-500">
+    <div className="p-8 bg-gray-900 min-h-screen">
+      <h2 className="text-2xl font-bold text-center mb-4">{dataset.title}</h2>
+      <p className="text-center text-gray-400 mb-6">{summary}</p>
+      <a href={dataset.url} target="_blank" rel="noopener noreferrer" className="text-blue-400 block text-center mt-4 hover:text-blue-300">
         View Full Dataset
       </a>
       {csvData && (
@@ -95,26 +96,26 @@ const DatasetPage = () => {
               <button
                 key={key}
                 onClick={() => toggleColumn(key)}
-                className={`px-4 py-2 m-1 border ${selectedColumns.includes(key) ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+                className={`px-4 py-2 m-1 border rounded transition-colors duration-200 ${selectedColumns.includes(key) ? 'bg-blue-600 text-white border-blue-700 hover:bg-blue-500' : 'bg-gray-800 text-gray-300 border-gray-600 hover:bg-gray-700'}`}
               >
                 {key}
               </button>
             ))}
           </div>
           <div className="overflow-x-auto mt-4">
-            <table className="table-auto mx-auto">
+            <table className="table-auto mx-auto bg-gray-800 text-gray-300">
               <thead>
                 <tr>
                   {columnOrder.filter((key) => selectedColumns.includes(key)).map((key) => (
-                    <th key={key} className="px-4 py-2 border">{key}</th>
+                    <th key={key} className="px-4 py-2 border border-gray-600">{key}</th>
                   ))}
                 </tr>
               </thead>
               <tbody>
                 {csvData.slice(0, 100).map((row, index) => (
-                  <tr key={index}>
+                  <tr key={index} className="hover:bg-gray-700">
                     {columnOrder.filter((key) => selectedColumns.includes(key)).map((key) => (
-                      <td key={key} className="border px-4 py-2">{row[key]}</td>
+                      <td key={key} className="border border-gray-600 px-4 py-2">{row[key]}</td>
                     ))}
                   </tr>
                 ))}

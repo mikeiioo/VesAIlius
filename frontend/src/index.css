@@ -4,7 +4,25 @@
 
 /****** Custom CSS BELOW ******/
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
+  /* background-color: #000000; Black background */
+  background: linear-gradient(135deg, #091c42, #1f4baa);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  
+  color: #ffffff; /* White text */
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
