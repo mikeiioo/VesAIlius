@@ -8,6 +8,7 @@ const DatasetPage = () => {
   const [dataset, setDataset] = useState(null);
   const [loading, setLoading] = useState(true);
   const [csvData, setCsvData] = useState(null);
+  const [summary, setSummary] = useState('');
   const [selectedColumns, setSelectedColumns] = useState([]);
   const [columnOrder, setColumnOrder] = useState([]);
 
@@ -15,19 +16,25 @@ const DatasetPage = () => {
     const fetchDataset = async () => {
       try {
         console.log("FETCHING DATASET:", datasetId);
-        const response = await axios.get(`http://127.0.0.1:5000/dataset/${datasetId}`);
-        console.log("DATASET RESPONSE:", response.data);
-        setDataset(response.data);
 
-        // Fetch the CSV data from the backend
-        console.log("FETCHING CSV:", response.data.url);
-        const csvResponse = await axios.get(`http://127.0.0.1:5000/fetch_csv`, {
-          params: { url: response.data.url },
-          responseType: 'blob' // Ensure the response is treated as a blob
-        });
+        // Fetch dataset details first to get the URL for the CSV data
+        const datasetResponse = await axios.get(`http://127.0.0.1:5000/dataset/${datasetId}`);
+        console.log("DATASET RESPONSE:", datasetResponse.data);
+        setDataset(datasetResponse.data);
+
+        // Fetch summary and CSV data concurrently
+        const [summaryResponse, csvResponse] = await Promise.all([
+          axios.get(`http://127.0.0.1:5000/summary/${datasetId}`),
+          axios.get(`http://127.0.0.1:5000/fetch_csv`, {
+            params: { url: datasetResponse.data.url },
+            responseType: 'blob' // Ensure the response is treated as a blob
+          })
+        ]);
+
+        console.log("SUMMARY RESPONSE:", summaryResponse.data);
+        setSummary(summaryResponse.data.summary);
+
         console.log("FINISHED FETCHING CSV:");
-        
-        // Convert blob to text
         const csvText = await csvResponse.data.text();
         console.log("CSV TEXT:", csvText);
 
@@ -71,7 +78,7 @@ const DatasetPage = () => {
   return (
     <div className="p-8">
       <h2 className="text-2xl font-bold">{dataset.title}</h2>
-      <p>{dataset.summary}</p>
+      <p>{summary}</p>
       <a href={dataset.url} target="_blank" rel="noopener noreferrer" className="text-blue-500">
         View Full Dataset
       </a>

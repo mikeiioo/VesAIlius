@@ -47,12 +47,12 @@ def get_dataset(dataset_id):
     return jsonify({
         "id": dataset["id"],
         "title": dataset["title"],
-        "summary": dataset.get("summary", summarize_data(dataset_id)),
         "url": dataset["url"],
         "url-meta": dataset["url-meta"]
     })
 
-def get_dataset(dataset_id):
+@app.route('/summary/<dataset_id>', methods=['GET'])
+def get_summary(dataset_id):
     """Fetch and return dataset details by ID."""
     dataset = collection.find_one({"id": dataset_id})
 
@@ -60,11 +60,7 @@ def get_dataset(dataset_id):
         return jsonify({"error": "Dataset not found"}), 404
 
     return jsonify({
-        "id": dataset["id"],
-        "title": dataset["title"],
         "summary": dataset.get("summary", summarize_data(dataset_id)),
-        "url": dataset["url"],
-        "url-meta": dataset["url-meta"]
     })
 
 @app.route('/fetch_csv', methods=['GET'])
