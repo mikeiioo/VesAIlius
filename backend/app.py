@@ -6,6 +6,8 @@ from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME
 from ranking_orders import ranked_query
 import requests
 from summarize_data import summarize_data
+from lines import get_x_lines
+import math
 
 app = Flask(__name__, template_folder="templates")
 CORS(app, resources={r"/*": {"origins": "*"}})  # Allow all origins
@@ -67,17 +69,14 @@ def get_summary(dataset_id):
 def fetch_csv():
     """Fetch CSV data from the provided URL."""
     csv_url = request.args.get("url")
+
     print("CSV URL COMPUTING!", csv_url)
     if not csv_url:
         return jsonify({"error": "No URL provided"}), 400
 
-    response = requests.get(csv_url)
-    print("RESPONSE DONE", response)
-
-    if response.status_code != 200:
-        return jsonify({"error": "Failed to fetch CSV data"}), response.status_code
+    response = get_x_lines(csv_url, 500)
     
-    return Response(response.content, mimetype='text/csv')
+    return Response(response, mimetype='text/csv')
 
 if __name__ == '__main__':
     app.run(debug=True)
