@@ -86,9 +86,26 @@ const DatasetPage = () => {
     <div className="p-8 bg-gray-900 min-h-screen">
       <h2 className="text-2xl font-bold text-center mb-4">{dataset.title}</h2>
       <p className="text-center text-gray-400 mb-6">{summary}</p>
-      <a href={dataset.url} target="_blank" rel="noopener noreferrer" className="text-blue-400 block text-center mt-4 hover:text-blue-300">
-        View Full Dataset
-      </a>
+      {/* Buttons for downloading dataset */}
+      <div className="mt-4 justify-center flex gap-4">
+        <a
+          href={dataset.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-all"
+        >
+          Download First 100 Rows
+        </a>
+
+        <a
+          href={dataset.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-all"
+        >
+          Download Entire Dataset
+        </a>
+      </div>
       {csvData && (
         <>
           <div className="flex flex-wrap justify-center gap-2 mt-4">

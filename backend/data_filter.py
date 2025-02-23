@@ -1,12 +1,14 @@
 import pandas as pd
+from flask import Flask, request, send_file
 from internetarchive import get_item
 from internetarchive import download
 import requests
 import io
 import os
 
+app = Flask(__name__)
+
 item_id = "20250128-cdc-datasets"
-temp = "COVID-19_Case_Surveillance_Public_Use_Data.csv"
 
 def filter_data(file, op_code):
     file_name = file
@@ -59,5 +61,5 @@ def download_all_exclude_columns(file_url, response, download_dir="downloads", e
             for chunk in reduced_csv.iter_content(chunk_size=128):
                 f.write(chunk)
 
-filter_data(temp, 0)
-
+if __name__ == "__main__":
+    app.run(debug=True)
