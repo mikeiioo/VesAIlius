@@ -15,13 +15,12 @@ const DatasetPage = () => {
   useEffect(() => {
     const fetchDataset = async () => {
       try {
-        console.log("FETCHING DATASET:", datasetId);
 
         // Fetch dataset details first to get the URL for the CSV data
         const datasetResponse = await axios.get(`http://127.0.0.1:5000/dataset/${datasetId}`);
-        console.log("DATASET RESPONSE:", datasetResponse.data);
         setDataset(datasetResponse.data);
 
+        console.log("FETCHING MAIN DATA:", datasetId);
         // Fetch summary and CSV data concurrently
         const [summaryResponse, csvResponse] = await Promise.all([
           axios.get(`http://127.0.0.1:5000/summary/${datasetId}`),
@@ -36,18 +35,16 @@ const DatasetPage = () => {
 
         console.log("FINISHED FETCHING CSV:");
         const csvText = await csvResponse.data.text();
-        console.log("CSV TEXT:", csvText);
 
         // Parse CSV data
         const parsedData = Papa.parse(csvText, { header: true });
-        console.log("PARSED CSV DATA:", parsedData.data);
 
         // Set CSV data
         setCsvData(parsedData.data);
         const columns = Object.keys(parsedData.data[0]);
         setSelectedColumns(columns); // Initialize selected columns with all columns
         setColumnOrder(columns); // Store the original column order
-        console.log("SET CSV DATA:", parsedData.data);
+        console.log("SET CSV DATA");
       } catch (error) {
         console.error(`Error fetching dataset ${datasetId}:`, error);
       } finally {

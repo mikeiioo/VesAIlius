@@ -66,8 +66,8 @@ def get_summary(dataset_id):
 @app.route('/fetch_csv', methods=['GET'])
 def fetch_csv():
     """Fetch CSV data from the provided URL."""
-    print("CSV URL COMPUTING!")
     csv_url = request.args.get("url")
+    print("CSV URL COMPUTING!", csv_url)
     if not csv_url:
         return jsonify({"error": "No URL provided"}), 400
 
