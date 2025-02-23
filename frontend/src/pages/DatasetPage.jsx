@@ -173,7 +173,7 @@ const DatasetPage = () => {
   <div className="flex gap-4">
     <button
       onClick={handleDownloadFirst100}
-      className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-red-600 transition-all"
+      className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-all"
     >
       Download First 100 Rows
     </button>
@@ -189,7 +189,7 @@ const DatasetPage = () => {
 
     <button
       onClick={handleDownloadFiltered}
-      className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-green-600 transition-all"
+      className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-all"
     >
       Download Filtered Dataset
     </button>
