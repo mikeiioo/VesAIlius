@@ -52,6 +52,21 @@ def get_dataset(dataset_id):
         "url-meta": dataset["url-meta"]
     })
 
+def get_dataset(dataset_id):
+    """Fetch and return dataset details by ID."""
+    dataset = collection.find_one({"id": dataset_id})
+
+    if not dataset:
+        return jsonify({"error": "Dataset not found"}), 404
+
+    return jsonify({
+        "id": dataset["id"],
+        "title": dataset["title"],
+        "summary": dataset.get("summary", summarize_data(dataset_id)),
+        "url": dataset["url"],
+        "url-meta": dataset["url-meta"]
+    })
+
 @app.route('/fetch_csv', methods=['GET'])
 def fetch_csv():
     """Fetch CSV data from the provided URL."""

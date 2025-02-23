@@ -8,6 +8,8 @@ const DatasetPage = () => {
   const [dataset, setDataset] = useState(null);
   const [loading, setLoading] = useState(true);
   const [csvData, setCsvData] = useState(null);
+  const [selectedColumns, setSelectedColumns] = useState([]);
+  const [columnOrder, setColumnOrder] = useState([]);
 
   useEffect(() => {
     const fetchDataset = async () => {
@@ -35,6 +37,9 @@ const DatasetPage = () => {
 
         // Set CSV data
         setCsvData(parsedData.data);
+        const columns = Object.keys(parsedData.data[0]);
+        setSelectedColumns(columns); // Initialize selected columns with all columns
+        setColumnOrder(columns); // Store the original column order
         console.log("SET CSV DATA:", parsedData.data);
       } catch (error) {
         console.error(`Error fetching dataset ${datasetId}:`, error);
@@ -46,6 +51,14 @@ const DatasetPage = () => {
 
     fetchDataset();
   }, [datasetId]);
+
+  const toggleColumn = (column) => {
+    setSelectedColumns((prevSelectedColumns) =>
+      prevSelectedColumns.includes(column)
+        ? prevSelectedColumns.filter((col) => col !== column)
+        : [...prevSelectedColumns, column]
+    );
+  };
 
   if (loading) {
     return <p>Loading...</p>;
@@ -63,24 +76,39 @@ const DatasetPage = () => {
         View Full Dataset
       </a>
       {csvData && (
-        <table className="table-auto mt-4">
-          <thead>
-            <tr>
-              {Object.keys(csvData[0]).map((key) => (
-                <th key={key} className="px-4 py-2">{key}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {csvData.slice(0, 100).map((row, index) => (
-              <tr key={index}>
-                {Object.values(row).map((value, i) => (
-                  <td key={i} className="border px-4 py-2">{value}</td>
-                ))}
-              </tr>
+        <>
+          <div className="mt-4">
+            {columnOrder.map((key) => (
+              <button
+                key={key}
+                onClick={() => toggleColumn(key)}
+                className={`px-4 py-2 m-1 border ${selectedColumns.includes(key) ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+              >
+                {key}
+              </button>
             ))}
-          </tbody>
-        </table>
+          </div>
+          <div className="overflow-x-auto mt-4">
+            <table className="table-auto mx-auto">
+              <thead>
+                <tr>
+                  {columnOrder.filter((key) => selectedColumns.includes(key)).map((key) => (
+                    <th key={key} className="px-4 py-2 border">{key}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {csvData.slice(0, 100).map((row, index) => (
+                  <tr key={index}>
+                    {columnOrder.filter((key) => selectedColumns.includes(key)).map((key) => (
+                      <td key={key} className="border px-4 py-2">{row[key]}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
       )}
     </div>
   );

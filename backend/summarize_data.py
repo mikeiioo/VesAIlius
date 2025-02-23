@@ -11,11 +11,9 @@ def summarize_data(file):
 
     item_id = "20250128-cdc-datasets"
     file_name = file
-    item = get_item(item_id)
 
     file_url = f"https://archive.org/download/{item_id}/{file_name}"
     response = requests.get(file_url, stream=True)
-
 
     if response.status_code == 200:
         df = pd.read_csv(io.StringIO(response.content.decode('utf-8')))
@@ -38,6 +36,6 @@ def summarize_data(file):
         max_tokens=300
     )
 
-    print(response.choices[0].message.content)
+    return response.choices[0].message.content
 
 summarize_data(temp)
