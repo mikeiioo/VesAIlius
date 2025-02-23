@@ -67,6 +67,26 @@ const DatasetPage = () => {
     );
   };
 
+  const handleDownloadFirst100 = async () => {
+    if (!dataset?.file_name) {
+      console.error("No file name found for dataset.");
+      return;
+    }
+
+    try {
+      const response = await axios.get(dataset.url);
+
+      const url = dataset.url;
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "first_100_rows.csv");
+      document.body.appendChild(link);
+      link.click();
+    } catch (error) {
+      console.error("Error downloading first 100 rows:", error);
+    }
+  };
+
   if (loading) {
     return (
       <div className="p-8 bg-gray-900 min-h-screen flex flex-col items-center justify-center">
@@ -88,14 +108,12 @@ const DatasetPage = () => {
       <p className="text-center text-gray-400 mb-6">{summary}</p>
       {/* Buttons for downloading dataset */}
       <div className="mt-4 justify-center flex gap-4">
-        <a
-          href={dataset.url}
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={handleDownloadFirst100}
           className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-all"
         >
           Download First 100 Rows
-        </a>
+        </button>
 
         <a
           href={dataset.url}
