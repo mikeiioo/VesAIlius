@@ -30,7 +30,7 @@ const SearchBar = ({ onSearch }) => {
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={handleKeyPress} // Detect Enter key press
           placeholder="Search datasets..."
-          className="outline-none w-full px-3 text-gray-700"
+          className="outline-none w-full px-3 text-gray-700 text-lg"
         />
 
         {/* Search Icon (Button) */}
