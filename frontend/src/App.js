@@ -1,22 +1,18 @@
-import { useState } from "react";
-import { searchDatasets } from "./api";
-import SearchBar from "./components/SearchBar";
-import DatasetList from "./components/DatasetList";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import DatasetPage from "./pages/DatasetPage";
+import HomePage from "./pages/HomePage";
 
 const App = () => {
-  const [datasets, setDatasets] = useState([]);
-
-  const handleSearch = async (query) => {
-    const results = await searchDatasets(query);
-    setDatasets(results);
-  };
-
   return (
-    <div className="max-w-3xl mx-auto p-4">
-      <h1 className="text-3xl font-bold text-center mb-4">VesAIlius Dataset Search</h1>
-      <SearchBar onSearch={handleSearch} />
-      <DatasetList datasets={datasets} />
-    </div>
+    <Router>
+      <div className="max-w-3xl mx-auto p-4">
+        <h1 className="text-3xl font-bold text-center mb-4">VesAIlius Dataset Search</h1>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/dataset/:datasetId" element={<DatasetPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 

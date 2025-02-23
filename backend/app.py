@@ -1,11 +1,12 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from pymongo import MongoClient
 from match_datasets import search_and_rank_datasets
 from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME
+from ranking_orders import ranked_query
 
 app = Flask(__name__, template_folder="templates")
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})  # Allow all origins
 
 client = MongoClient(MONGO_URI)
 db = client[DATABASE_NAME]
@@ -23,19 +24,35 @@ def search_datasets():
     if not user_query:
         return jsonify({"error": "No query provided"}), 400
 
-    results = search_and_rank_datasets(user_query)
+    results = ranked_query(user_query)
 
     # Format response
     formatted_results = [
         {
             "title": dataset["title"],
-            "tags": dataset.get("tags", []),
-            "url": dataset["url"]
+            "url": dataset["url"],
+            "id": dataset["id"],
         }
         for dataset in results
     ]
 
     return jsonify(formatted_results)
+
+@app.route('/dataset/<dataset_id>', methods=['GET'])
+def get_dataset(dataset_id):
+    """Fetch and return dataset details by ID."""
+    dataset = collection.find_one({"id": dataset_id})
+
+    if not dataset:
+        return jsonify({"error": "Dataset not found"}), 404
+
+    return jsonify({
+        "id": dataset["id"],
+        "title": dataset["title"],
+        "summary": dataset.get("summary", "No summary available."),
+        "url": dataset["url"],
+        "url-meta": dataset["url-meta"]
+    })
 
 if __name__ == '__main__':
     app.run(debug=True)
