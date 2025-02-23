@@ -11,13 +11,3 @@ export const searchDatasets = async (query) => {
     return [];
   }
 };
-
-export const fetchDatasetDetails = async (datasetId) => {
-  try {
-    const response = await axios.get(`${API_BASE_URL}/dataset/${datasetId}`);
-    return response.data;
-  } catch (error) {
-    console.error("Error fetching dataset details:", error);
-    return null;
-  }
-};
