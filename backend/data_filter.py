@@ -17,6 +17,8 @@ def filter_data(file, op_code):
         download_first_hundred(file_url, response)
     elif op_code == 1:
         download_full_file(file_url, response)
+    elif op_code == 2:
+        download_all_exclude_columns(file_url, response, exclude_columns=[])
     
 
 def download_first_hundred(file_url, response, download_dir="downloads"):
@@ -30,6 +32,15 @@ def download_full_file(file_url, response, download_dir="downloads"):
     if response.status_code == 200:
         with open(f"{download_dir}/{file_url.split('/')[-1]}", "wb") as f:
             for chunk in response.iter_content(chunk_size=128):
+                f.write(chunk)
+
+def download_all_exclude_columns(file_url, response, download_dir="downloads", exclude_columns=[]):
+    if response.status_code == 200:
+        df = pd.read_csv(io.StringIO(response.content.decode('utf-8')))
+        df = df.drop(exclude_columns, axis=1)
+        reduced_csv = df.to_csv(index=False)
+        with open(f"{download_dir}/reduced.csv", "w") as f:
+            for chunk in reduced_csv.iter_content(chunk_size=128):
                 f.write(chunk)
 
 
