@@ -68,6 +68,26 @@ const DatasetPage = () => {
     );
   };
 
+  const handleDownloadFirst100 = async () => {
+    if (!dataset?.file_name) {
+      console.error("No file name found for dataset.");
+      return;
+    }
+
+    try {
+      const response = await axios.get(dataset.url);
+
+      const url = dataset.url;
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "first_100_rows.csv");
+      document.body.appendChild(link);
+      link.click();
+    } catch (error) {
+      console.error("Error downloading first 100 rows:", error);
+    }
+  };
+
   if (loading) {
     return (
       <div className="p-8 bg-gray-900 min-h-screen flex flex-col items-center justify-center">

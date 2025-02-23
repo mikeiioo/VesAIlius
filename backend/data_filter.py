@@ -30,21 +30,24 @@ def download_first_hundred(file_url, download_dir=None):
     if download_dir is None:
         download_dir = os.path.join(os.path.expanduser("~"), "Downloads")
 
-    response = requests.get(file_url, stream=True)  # Enable streaming
-    
-    if response.status_code == 200:
-        os.makedirs(download_dir, exist_ok=True)  # Ensure the directory exists
+    # Ensure the directory exists
+    os.makedirs(download_dir, exist_ok=True)
 
-        file_name = file_url.split("/")[-1]  # Extract filename from URL
-        file_path = os.path.join(download_dir, file_name)  # Full path
+    # Extract filename from URL and append "_first100" to avoid overwriting
+    file_name = file_url.split("/")[-1]
+    file_name = f"first_100_{file_name}"
+    file_path = os.path.join(download_dir, file_name)
 
-        with open(file_path, "wb") as f:
-            line_count = 0
-            for line in response.iter_lines():  # Read file line by line
-                f.write(line + b"\n")  # Write each line to file
-                line_count += 1
-                if line_count >= 100:  # Stop after 100 lines
-                    break
+    response = requests.get(file_url, stream=True, timeout=10)  # Set a timeout for reliability
+    response.raise_for_status()  # Raise an error if the request fails
+
+    with open(file_path, "wb") as f:
+        line_count = 0
+        for line in response.iter_lines(decode_unicode=False):  # Preserve original encoding
+            f.write(line + b"\n")  # Write each line with newline
+            line_count += 1
+            if line_count >= 100:
+                break
 
 def download_full_file(file_url, response, download_dir="downloads"):
     if response.status_code == 200:
