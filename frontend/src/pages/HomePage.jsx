@@ -6,10 +6,12 @@ import { searchDatasets } from "../api";
 const HomePage = () => {
   const [datasets, setDatasets] = useState([]);
   const [loading, setLoading] = useState(false); // Track loading state
+  const [searched, setSearched] = useState(false); // Track if search was performed
   const navigate = useNavigate();
 
   const handleSearch = async (query) => {
     setLoading(true);
+    setSearched(true); // Mark that a search has been performed
     console.log("SEARCHING FOR:", query);
     const results = await searchDatasets(query);
     console.log("RESULTS", results);
@@ -20,6 +22,7 @@ const HomePage = () => {
   const handleDatasetClick = (dataset) => {
     console.log("CLICKED ON DATASET:", dataset);
     navigate(`/dataset/${dataset.id}`);
+    setSearched(false); // Mark that user has left page
   };
 
   return (
@@ -51,6 +54,13 @@ const HomePage = () => {
               </div>
             ))}
           </div> 
+        </div>
+      )}
+
+      {/* Show No Results Message if No Datasets Found and a Search was Performed */}
+      {!loading && searched && datasets.length === 0 && (
+        <div className="mt-6 flex flex-col items-center">
+          <p className="text-xl text-gray-500">🚫 No results found. Try a different search.</p>
         </div>
       )}
     </div>
