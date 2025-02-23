@@ -4,14 +4,14 @@ def get_x_lines(file_url, x):
     response = requests.get(file_url, stream=True)  # Enable streaming
     
     if response.status_code == 200:
-        lines = []
+        lines = ""
         line_count = 0
         for line in response.iter_lines(decode_unicode=True):  # Read file line by line
-            lines.append(line)
+            lines += line + "\n"  # Write each line to file
             line_count += 1
             if line_count >= x:  # Stop after 100 lines
                 break
-        return "\n".join(lines)
+        return lines
     else:
         raise Exception(f"Failed to fetch CSV data. Status code: {response.status_code}")
     

@@ -12,6 +12,8 @@ const DatasetPage = () => {
   const [selectedColumns, setSelectedColumns] = useState([]);
   const [columnOrder, setColumnOrder] = useState([]);
 
+  const title = datasetId.replaceAll('_', ' ').replaceAll(".csv", "");
+
   useEffect(() => {
     const fetchDataset = async () => {
       try {
@@ -66,8 +68,11 @@ const DatasetPage = () => {
 
   if (loading) {
     return (
-      <div className="flex justify-center mt-6">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-blue-500"></div>
+      <div className="p-8">
+        <h2 className="text-2xl font-bold">{title}</h2>,
+        <div className="flex justify-center mt-6">
+          <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-blue-500"></div>
+        </div>
       </div>
     )
   }
