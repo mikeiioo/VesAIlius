@@ -5,6 +5,7 @@ from match_datasets import search_and_rank_datasets
 from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME
 from ranking_orders import ranked_query
 import requests
+from summarize_data import summarize_data
 
 app = Flask(__name__, template_folder="templates")
 CORS(app, resources={r"/*": {"origins": "*"}})  # Allow all origins
@@ -46,7 +47,7 @@ def get_dataset(dataset_id):
     return jsonify({
         "id": dataset["id"],
         "title": dataset["title"],
-        "summary": dataset.get("summary", "No summary available."),
+        "summary": dataset.get("summary", summarize_data(dataset_id)),
         "url": dataset["url"],
         "url-meta": dataset["url-meta"]
     })
