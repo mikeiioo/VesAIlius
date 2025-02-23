@@ -22,7 +22,7 @@ const SearchBar = ({ onSearch }) => {
   return (
     <div className="flex justify-center mt-6">
       {/* Search Bar Container */}
-      <div className="flex items-center border border-gray-300 rounded-full shadow-md p-2 w-72">
+      <div className="flex items-center border border-gray-300 rounded-full shadow-md p-3 w-96">
         {/* Input Field */}
         <input
           type="text"
@@ -30,17 +30,17 @@ const SearchBar = ({ onSearch }) => {
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={handleKeyPress} // Detect Enter key press
           placeholder="Search datasets..."
-          className="outline-none w-full px-3 text-gray-700"
+          className="outline-none w-full px-3 text-gray-700 text-lg"
         />
 
         {/* Search Icon (Button) */}
         <button
           onClick={handleSearch}
-          className={`p-2 text-white rounded-full transition-all flex items-center justify-center ${
+          className={`p-3 text-white rounded-full transition-all flex items-center justify-center ${
             isPressed ? "bg-blue-700" : "bg-blue-500 hover:bg-blue-600"
           }`}
         >
-          <FiSearch size={20} />
+          <FiSearch size={24} />
         </button>
       </div>
     </div>
