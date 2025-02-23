@@ -14,18 +14,10 @@ def filter_data(file, op_code):
     response = requests.get(file_url, stream=True)
 
     if op_code == 0:
-        return show_first_five(file_url, response)
-    elif op_code == 1:
         download_first_hundred(file_url, response)
-    elif op_code == 2:
+    elif op_code == 1:
         download_full_file(file_url, response)
     
-
-
-def show_first_five(file_url, response):
-    if response.status_code == 200:
-        df = pd.read_csv(io.StringIO(response.content.decode('utf-8')))
-    return df.head(10)
 
 def download_first_hundred(file_url, response, download_dir="downloads"):
     if response.status_code == 200:
