@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify, render_template
 from pymongo import MongoClient
 from match_datasets import search_and_rank_datasets
 from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME
-import openai
 
 app = Flask(__name__, template_folder="templates")
 
