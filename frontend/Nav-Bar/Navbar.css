@@ -1,0 +1,58 @@
+/* Navbar container */
+nav {
+  position: relative;
+}
+
+/* Hamburger menu button */
+.menu-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Navbar list */
+.LGNavBar {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #f8f8f8;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  list-style: none;
+  z-index: 999;
+}
+
+.LGNavBar.visible {
+  display: flex;
+}
+
+/* Close button */
+#closer {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+#closer svg {
+  cursor: pointer;
+}
+
+/* Navbar links */
+.LGNavBar li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+}
+
+.LGNavBar li a:hover {
+  background-color: #ddd;
+}
