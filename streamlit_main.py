@@ -1,12 +1,11 @@
 import streamlit as st
 import pandas as pd
 
+# Flask Backend URL
+API_BASE_URL = "http://127.0.0.1:5000"
+
 st.markdown("# Ves**AI**ius")
 st.write("This is a test!")
-
-name = st.text_input("Enter your name")
-st.write(f"Hello {name}")
-
 
 st.markdown(
     "<h1>Ves<span style='color: red; font-weight: bold;'>AI</span>ius</h1>", 
